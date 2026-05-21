@@ -1,0 +1,1989 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EU AI Act – Workshop für KMU | PINGEL AI Solutions</title>
+<style>
+/* ── Design Tokens (exakt von fabian-pingel.de) ─────────────────── */
+:root {
+  --color-brand:       #182145;
+  --color-primary:     #182145;
+  --color-accent:      #c4902a;
+  --color-accent-dark: #a87820;
+  --color-accent-light:#e8c97a;
+  --color-bg:          #f5f7fb;
+  --color-surface:     #ffffff;
+  --color-text:        #1a2340;
+  --color-muted:       #5a6a8a;
+  --color-border:      #dde3f0;
+  --color-hero-from:   #182145;
+  --color-hero-to:     #243668;
+  --color-subtle:      #cbd5e1;
+  --font-sans:         'Montserrat', system-ui, -apple-system, sans-serif;
+  --radius:            0.75rem;
+  --shadow-md:         0 4px 16px rgba(0,0,0,.10);
+  --shadow-lg:         0 8px 32px rgba(0,0,0,.18);
+}
+
+/* ── Reset & Base ────────────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+
+html, body {
+  width: 100%; height: 100%;
+  font-family: var(--font-sans);
+  background: #0d1527;
+  overflow: hidden;
+  color: var(--color-text);
+}
+
+/* ── Slide Engine ────────────────────────────────────────────────── */
+.deck {
+  width: 100vw; height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 4rem;
+  opacity: 0;
+  transform: translateX(60px);
+  transition: opacity .4s ease, transform .4s ease;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.slide.active {
+  opacity: 1;
+  transform: translateX(0);
+  pointer-events: all;
+}
+
+.slide.exit {
+  opacity: 0;
+  transform: translateX(-60px);
+}
+
+/* ── Slide Layouts ───────────────────────────────────────────────── */
+
+/* HERO / TITLE */
+.slide--hero {
+  background: linear-gradient(135deg, var(--color-hero-from) 0%, var(--color-hero-to) 100%);
+  color: #fff;
+  text-align: center;
+}
+
+/* DARK (wie Hero, aber für Abschnittstrenner) */
+.slide--dark {
+  background: linear-gradient(135deg, var(--color-hero-from) 0%, var(--color-hero-to) 100%);
+  color: #fff;
+  text-align: center;
+}
+
+/* LIGHT (Standardfolie) */
+.slide--light {
+  background: var(--color-bg);
+  color: var(--color-text);
+}
+
+/* SURFACE (weiße Karte) */
+.slide--surface {
+  background: var(--color-surface);
+  color: var(--color-text);
+}
+
+/* ACCENT (Gold-Highlight) */
+.slide--accent {
+  background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-accent-dark) 100%);
+  color: #fff;
+  text-align: center;
+}
+
+/* ── Content Container ───────────────────────────────────────────── */
+.slide__inner {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* ── Typography ──────────────────────────────────────────────────── */
+.eyebrow {
+  font-size: .75rem;
+  font-weight: 700;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+  color: var(--color-accent-light);
+  margin-bottom: .75rem;
+}
+.eyebrow--dark { color: var(--color-accent); }
+
+h1 {
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: clamp(1.5rem, 2.5vw, 2.25rem);
+  font-weight: 700;
+  line-height: 1.15;
+  margin-bottom: 1rem;
+  color: var(--color-primary);
+}
+
+h2.light { color: #fff; }
+
+h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: .5rem;
+  color: var(--color-primary);
+}
+
+.subtitle {
+  font-size: clamp(1rem, 1.8vw, 1.25rem);
+  font-weight: 400;
+  color: var(--color-subtle);
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  line-height: 1.6;
+}
+
+.lead {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--color-muted);
+  margin-bottom: 1.5rem;
+}
+
+p { line-height: 1.65; color: var(--color-muted); }
+
+/* ── Badges / Tags ───────────────────────────────────────────────── */
+.badge {
+  display: inline-block;
+  padding: .25rem .75rem;
+  border-radius: 999px;
+  font-size: .7rem;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+.badge--navy  { background: var(--color-brand);        color: #fff; }
+.badge--gold  { background: var(--color-accent);       color: #fff; }
+.badge--light { background: rgba(255,255,255,.2);      color: #fff; }
+.badge--green { background: #16a34a;                   color: #fff; }
+.badge--red   { background: #dc2626;                   color: #fff; }
+.badge--orange{ background: #ea580c;                   color: #fff; }
+
+/* ── Cards Grid ──────────────────────────────────────────────────── */
+.cards {
+  display: grid;
+  gap: 1rem;
+  width: 100%;
+}
+.cards--2 { grid-template-columns: 1fr 1fr; }
+.cards--3 { grid-template-columns: 1fr 1fr 1fr; }
+.cards--4 { grid-template-columns: 1fr 1fr 1fr 1fr; }
+
+.card {
+  background: var(--color-surface);
+  border-radius: var(--radius);
+  padding: 1.25rem 1.5rem;
+  box-shadow: var(--shadow-md);
+  border-left: 4px solid var(--color-accent);
+}
+
+.card--navy {
+  background: var(--color-brand);
+  color: #fff;
+  border-left: 4px solid var(--color-accent-light);
+}
+
+.card--ghost {
+  background: rgba(255,255,255,.08);
+  border: 1px solid rgba(255,255,255,.15);
+  border-left: 4px solid var(--color-accent-light);
+  color: #fff;
+  border-radius: var(--radius);
+  padding: 1.25rem 1.5rem;
+}
+
+.card__num {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--color-accent-light);
+  line-height: 1;
+  margin-bottom: .35rem;
+}
+
+.card__label {
+  font-size: .7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  color: var(--color-muted);
+  margin-bottom: .25rem;
+}
+.card--ghost .card__label,
+.card--navy  .card__label { color: rgba(255,255,255,.6); }
+
+.card__title {
+  font-weight: 700;
+  font-size: .95rem;
+  margin-bottom: .35rem;
+  color: var(--color-text);
+}
+.card--ghost .card__title,
+.card--navy  .card__title { color: #fff; }
+
+.card__text {
+  font-size: .82rem;
+  color: var(--color-muted);
+  line-height: 1.55;
+}
+.card--ghost .card__text,
+.card--navy  .card__text { color: rgba(255,255,255,.7); }
+
+/* ── Tables ──────────────────────────────────────────────────────── */
+.tbl {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: .82rem;
+}
+.tbl th {
+  background: var(--color-brand);
+  color: #fff;
+  padding: .6rem 1rem;
+  text-align: left;
+  font-weight: 600;
+  font-size: .75rem;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+}
+.tbl td {
+  padding: .6rem 1rem;
+  border-bottom: 1px solid var(--color-border);
+  vertical-align: top;
+  line-height: 1.5;
+}
+.tbl tr:nth-child(even) td { background: #f0f4fb; }
+.tbl tr:last-child td { border-bottom: none; }
+
+.tbl--dark th { background: rgba(255,255,255,.15); }
+.tbl--dark td { color: rgba(255,255,255,.85); border-color: rgba(255,255,255,.1); }
+.tbl--dark tr:nth-child(even) td { background: rgba(255,255,255,.05); }
+
+/* ── Highlight Box ───────────────────────────────────────────────── */
+.box {
+  border-radius: var(--radius);
+  padding: 1rem 1.5rem;
+  margin: 1rem 0;
+  font-size: .9rem;
+  line-height: 1.6;
+}
+.box--gold {
+  background: rgba(196,144,42,.12);
+  border-left: 4px solid var(--color-accent);
+  color: var(--color-text);
+}
+.box--red {
+  background: rgba(220,38,38,.1);
+  border-left: 4px solid #dc2626;
+  color: var(--color-text);
+}
+.box--green {
+  background: rgba(22,163,74,.1);
+  border-left: 4px solid #16a34a;
+  color: var(--color-text);
+}
+.box--ghost {
+  background: rgba(255,255,255,.1);
+  border-left: 4px solid var(--color-accent-light);
+  color: #fff;
+}
+
+/* ── List Styles ─────────────────────────────────────────────────── */
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+.list li {
+  display: flex;
+  align-items: flex-start;
+  gap: .65rem;
+  font-size: .88rem;
+  line-height: 1.5;
+}
+.list li::before {
+  content: '▸';
+  color: var(--color-accent);
+  font-size: .85rem;
+  flex-shrink: 0;
+  margin-top: .05rem;
+}
+.list--light li { color: rgba(255,255,255,.85); }
+.list--light li::before { color: var(--color-accent-light); }
+.list--check li::before { content: '✓'; color: #16a34a; }
+.list--x     li::before { content: '✗'; color: #dc2626; }
+.list--num li { counter-increment: li; }
+.list--num { counter-reset: li; }
+.list--num li::before { content: counter(li) '.'; color: var(--color-accent); font-weight: 700; }
+
+/* ── Two-column layout ───────────────────────────────────────────── */
+.cols {
+  display: grid;
+  gap: 2rem;
+  width: 100%;
+  align-items: start;
+}
+.cols--2 { grid-template-columns: 1fr 1fr; }
+.cols--3-2 { grid-template-columns: 3fr 2fr; }
+.cols--2-3 { grid-template-columns: 2fr 3fr; }
+
+/* ── Risk Pyramid ────────────────────────────────────────────────── */
+.pyramid {
+  display: flex;
+  flex-direction: column;
+  gap: .4rem;
+  width: 100%;
+  max-width: 650px;
+  margin: 0 auto;
+}
+.pyramid__level {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: .65rem 1.25rem;
+  border-radius: .5rem;
+  font-weight: 600;
+  font-size: .88rem;
+}
+.pyramid__level--red    { background: rgba(220,38,38,.18);  border-left: 5px solid #dc2626; }
+.pyramid__level--orange { background: rgba(234,88,12,.15);  border-left: 5px solid #ea580c; }
+.pyramid__level--yellow { background: rgba(202,138,4,.15);  border-left: 5px solid #ca8a04; }
+.pyramid__level--green  { background: rgba(22,163,74,.12);  border-left: 5px solid #16a34a; }
+.pyramid__dot {
+  width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0;
+}
+.red    { background: #dc2626; }
+.orange { background: #ea580c; }
+.yellow { background: #ca8a04; }
+.green  { background: #16a34a; }
+
+.pyramid__label { flex: 1; }
+.pyramid__since {
+  font-size: .7rem;
+  font-weight: 500;
+  padding: .2rem .6rem;
+  border-radius: 999px;
+  background: rgba(255,255,255,.15);
+  color: var(--color-muted);
+  white-space: nowrap;
+}
+
+/* ── Timeline ────────────────────────────────────────────────────── */
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  position: relative;
+  width: 100%;
+}
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 1.1rem;
+  top: 0; bottom: 0;
+  width: 2px;
+  background: var(--color-border);
+}
+.timeline__item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+  padding: .6rem 0;
+  position: relative;
+}
+.timeline__dot {
+  width: 2.2rem; height: 2.2rem;
+  border-radius: 50%;
+  background: var(--color-surface);
+  border: 3px solid var(--color-border);
+  display: flex; align-items: center; justify-content: center;
+  font-size: .65rem; font-weight: 700;
+  flex-shrink: 0;
+  z-index: 1;
+  color: var(--color-muted);
+}
+.timeline__dot--active {
+  border-color: var(--color-accent);
+  background: var(--color-accent);
+  color: #fff;
+}
+.timeline__dot--done {
+  border-color: #16a34a;
+  background: #16a34a;
+  color: #fff;
+}
+.timeline__content { padding-top: .15rem; }
+.timeline__date { font-size: .72rem; font-weight: 700; color: var(--color-accent); }
+.timeline__desc { font-size: .85rem; color: var(--color-text); font-weight: 600; margin-bottom: .1rem; }
+.timeline__sub  { font-size: .75rem; color: var(--color-muted); }
+
+/* ── Checklist ───────────────────────────────────────────────────── */
+.checklist {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  width: 100%;
+}
+.check-item {
+  display: flex;
+  align-items: flex-start;
+  gap: .75rem;
+  padding: .6rem .9rem;
+  background: var(--color-surface);
+  border-radius: .5rem;
+  border: 1px solid var(--color-border);
+  font-size: .83rem;
+}
+.check-item__box {
+  width: 1.1rem; height: 1.1rem;
+  border: 2px solid var(--color-border);
+  border-radius: .25rem;
+  flex-shrink: 0;
+  margin-top: .1rem;
+}
+.check-item__text { line-height: 1.45; color: var(--color-text); }
+.check-item__text strong { color: var(--color-primary); }
+
+/* ── Number Stat ─────────────────────────────────────────────────── */
+.stats {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 1rem 0;
+}
+.stat { text-align: center; }
+.stat__val {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--color-accent-light);
+  line-height: 1;
+}
+.stat__label {
+  font-size: .75rem;
+  color: rgba(255,255,255,.7);
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  margin-top: .25rem;
+}
+
+/* ── Divider ─────────────────────────────────────────────────────── */
+.divider {
+  width: 3rem; height: 3px;
+  background: var(--color-accent);
+  border-radius: 2px;
+  margin: .75rem auto 1.5rem;
+}
+.divider--left { margin-left: 0; }
+
+/* ── Quote ───────────────────────────────────────────────────────── */
+.quote {
+  border-left: 4px solid var(--color-accent);
+  padding: .75rem 1.25rem;
+  font-size: 1rem;
+  font-style: italic;
+  color: var(--color-muted);
+  background: rgba(196,144,42,.06);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  line-height: 1.6;
+  margin: .75rem 0;
+}
+.quote--light {
+  border-color: var(--color-accent-light);
+  background: rgba(255,255,255,.08);
+  color: rgba(255,255,255,.9);
+}
+
+/* ── Navigation ──────────────────────────────────────────────────── */
+#nav {
+  position: fixed;
+  bottom: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+  background: rgba(24,33,69,.85);
+  backdrop-filter: blur(12px);
+  padding: .5rem 1rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,.12);
+  box-shadow: var(--shadow-lg);
+  z-index: 100;
+}
+
+.nav-btn {
+  background: none;
+  border: none;
+  color: rgba(255,255,255,.8);
+  cursor: pointer;
+  padding: .3rem .5rem;
+  border-radius: .35rem;
+  font-size: 1rem;
+  transition: background .2s, color .2s;
+  display: flex; align-items: center;
+}
+.nav-btn:hover { background: rgba(255,255,255,.12); color: #fff; }
+.nav-btn:disabled { opacity: .25; cursor: default; }
+
+#slide-counter {
+  font-size: .75rem;
+  color: rgba(255,255,255,.6);
+  font-family: var(--font-sans);
+  min-width: 4rem;
+  text-align: center;
+  font-weight: 500;
+}
+
+#progress-bar {
+  position: fixed;
+  top: 0; left: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--color-accent), var(--color-accent-light));
+  transition: width .35s ease;
+  z-index: 101;
+}
+
+/* Fullscreen button */
+#btn-fs {
+  position: fixed;
+  top: 1rem; right: 1rem;
+  background: rgba(24,33,69,.7);
+  border: 1px solid rgba(255,255,255,.15);
+  color: rgba(255,255,255,.7);
+  border-radius: .5rem;
+  padding: .4rem .7rem;
+  cursor: pointer;
+  font-size: .75rem;
+  font-family: var(--font-sans);
+  backdrop-filter: blur(8px);
+  transition: background .2s;
+  z-index: 100;
+}
+#btn-fs:hover { background: rgba(24,33,69,.95); color: #fff; }
+
+/* Slide number watermark */
+.slide__page {
+  position: absolute;
+  bottom: 4rem;
+  right: 2rem;
+  font-size: .65rem;
+  font-weight: 600;
+  color: rgba(0,0,0,.12);
+  letter-spacing: .1em;
+}
+.slide--dark  .slide__page,
+.slide--hero  .slide__page,
+.slide--accent .slide__page { color: rgba(255,255,255,.15); }
+
+/* ── Brand Logo ──────────────────────────────────────────────────── */
+.slide__brand {
+  position: absolute;
+  top: 1rem;
+  left: 1.5rem;
+  line-height: 0;
+  z-index: 10;
+}
+.brand-logo {
+  display: block;
+  height: 36px;
+  width: auto;
+  filter: brightness(0) invert(1);
+  opacity: .55;
+  transition: opacity .25s ease;
+}
+.slide__brand:hover .brand-logo { opacity: .92; }
+.slide--light .brand-logo,
+.slide--surface .brand-logo {
+  filter: brightness(0);
+  opacity: .22;
+}
+.slide--light .slide__brand:hover .brand-logo,
+.slide--surface .slide__brand:hover .brand-logo { opacity: .5; }
+
+/* ── Clickable Cards (hover lift + arrow) ────────────────────────── */
+a.card--ghost {
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+  position: relative;
+  background: rgba(255,255,255,.08);
+  border: 1px solid rgba(255,255,255,.15);
+  border-left: 4px solid var(--color-accent-light);
+  color: #fff;
+  border-radius: var(--radius);
+  padding: 1.25rem 1.5rem 1.25rem 1.25rem;
+  transition: transform .3s cubic-bezier(.22,.68,0,1.15),
+              box-shadow .3s ease,
+              background .25s ease,
+              border-color .25s ease;
+}
+a.card--ghost:hover {
+  transform: translateY(-5px) scale(1.02);
+  background: rgba(255,255,255,.14);
+  border-left-color: var(--color-accent);
+  box-shadow: 0 12px 32px rgba(0,0,0,.38);
+  text-decoration: none;
+}
+a.card--ghost .card__label { color: rgba(255,255,255,.55); font-size: .68rem; font-weight: 700; text-transform: uppercase; letter-spacing: .1em; margin-bottom: .25rem; }
+a.card--ghost .card__title { color: #fff; font-weight: 700; font-size: .95rem; margin-bottom: .35rem; }
+a.card--ghost .card__text  { color: rgba(255,255,255,.68); font-size: .8rem; line-height: 1.5; }
+a.card--ghost::after {
+  content: '↗';
+  position: absolute;
+  top: .85rem;
+  right: .9rem;
+  font-size: .8rem;
+  color: var(--color-accent-light);
+  opacity: 0;
+  transform: translate(-3px, 3px);
+  transition: opacity .22s ease, transform .22s ease;
+}
+a.card--ghost:hover::after { opacity: 1; transform: translate(0, 0); }
+
+/* ── Forbidden list  ─────────────────────────────────────────────── */
+.forbidden-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: .5rem;
+  width: 100%;
+}
+.forbidden-item {
+  display: flex;
+  align-items: flex-start;
+  gap: .6rem;
+  padding: .55rem .75rem;
+  background: rgba(220,38,38,.07);
+  border-radius: .45rem;
+  border-left: 3px solid #dc2626;
+  font-size: .78rem;
+  line-height: 1.4;
+}
+.forbidden-item__num {
+  font-weight: 800;
+  color: #dc2626;
+  flex-shrink: 0;
+  font-size: .85rem;
+}
+
+/* ── Flowchart ───────────────────────────────────────────────────── */
+.flow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .25rem;
+  width: 100%;
+}
+.flow__box {
+  background: var(--color-surface);
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: .6rem 1.5rem;
+  font-size: .82rem;
+  font-weight: 600;
+  color: var(--color-text);
+  text-align: center;
+  width: fit-content;
+  max-width: 360px;
+}
+.flow__box--navy { background: var(--color-brand); border-color: var(--color-brand); color: #fff; }
+.flow__box--gold { background: var(--color-accent); border-color: var(--color-accent); color: #fff; }
+.flow__box--green { background: #16a34a; border-color: #16a34a; color: #fff; }
+.flow__box--orange { background: #ea580c; border-color: #ea580c; color: #fff; }
+.flow__arrow { font-size: .9rem; color: var(--color-muted); }
+.flow__row {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* ── Utilities ───────────────────────────────────────────────────── */
+.text-center { text-align: center; }
+.text-left   { text-align: left; }
+.mb-0 { margin-bottom: 0; }
+.mb-1 { margin-bottom: .5rem; }
+.mb-2 { margin-bottom: 1rem; }
+.mb-3 { margin-bottom: 1.5rem; }
+.mt-1 { margin-top: .5rem; }
+.mt-2 { margin-top: 1rem; }
+.w-full { width: 100%; }
+.small { font-size: .78rem; }
+.muted { color: var(--color-muted); }
+.gold  { color: var(--color-accent); }
+.gold-light { color: var(--color-accent-light); }
+.white { color: #fff; }
+.semi  { font-weight: 600; }
+.bold  { font-weight: 700; }
+
+/* ── Keyboard hint ───────────────────────────────────────────────── */
+#hint {
+  position: fixed;
+  bottom: 4.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: .65rem;
+  color: rgba(255,255,255,.3);
+  font-family: var(--font-sans);
+  letter-spacing: .08em;
+  white-space: nowrap;
+}
+</style>
+</head>
+<body>
+
+<!-- Logo wird als Logo.svg eingebunden -->
+<svg style="display:none" xmlns="http://www.w3.org/2000/svg">
+  <symbol id="logo-unused">
+    <g transform="translate(0,3000) scale(0.1,-0.1)" fill="currentColor" stroke="none">
+<path d="M7010 17134 c-14 -2 -63 -9 -110 -15 -285 -38 -582 -189 -795 -404
+-165 -166 -284 -355 -359 -574 -65 -187 -80 -281 -80 -496 0 -157 4 -208 22
+-291 29 -135 65 -240 121 -354 89 -179 187 -305 364 -465 168 -152 287 -309
+353 -466 47 -113 51 -142 21 -158 -45 -24 -61 -67 -65 -179 l-4 -103 -29 -6
+c-37 -7 -53 -27 -45 -58 6 -24 19 -30 57 -27 13 1 18 -12 23 -57 5 -47 17 -75
+62 -147 107 -171 65 -158 539 -164 l390 -5 3 -25 c2 -15 -7 -41 -20 -60 -38
+-56 -70 -62 -340 -58 -227 3 -238 4 -267 26 -54 39 -104 19 -85 -35 14 -41 85
+-72 163 -73 57 0 68 -4 114 -37 42 -31 60 -38 97 -38 37 0 55 7 97 38 45 33
+57 37 109 37 35 0 75 8 99 19 72 32 124 112 125 191 0 19 10 29 41 44 33 15
+54 39 110 123 38 58 69 111 69 117 0 7 18 18 39 25 47 14 61 43 35 72 -13 15
+-25 18 -46 14 l-28 -7 0 150 c0 138 -2 151 -23 183 -39 59 -73 69 -239 69 -82
+0 -148 3 -148 8 0 4 22 77 49 162 52 166 53 193 8 198 -36 4 -46 -15 -103
+-205 l-49 -163 -146 0 -146 0 -53 173 c-29 94 -57 178 -62 185 -16 19 -56 14
+-68 -8 -8 -16 -1 -51 35 -167 25 -82 48 -156 51 -165 5 -16 -5 -18 -114 -18
+l-120 0 -22 73 c-30 99 -108 246 -187 350 -35 48 -134 152 -218 233 -165 156
+-238 243 -310 369 -62 110 -102 210 -138 345 -29 109 -30 125 -31 320 -1 163
+3 222 17 290 40 186 125 385 230 540 66 97 262 292 353 352 227 151 449 223
+719 234 289 13 539 -48 772 -188 338 -203 567 -532 655 -942 30 -139 32 -420
+4 -546 -40 -182 -106 -339 -207 -490 -59 -88 -143 -179 -331 -358 -99 -94
+-201 -226 -249 -320 l-32 -63 20 -21 c31 -30 57 -16 97 56 63 113 127 189 316
+376 146 144 201 207 253 286 225 341 295 722 206 1129 -55 253 -176 493 -349
+690 -208 237 -505 404 -817 460 -85 15 -352 28 -403 19z m680 -3304 c14 -14
+20 -33 20 -64 l0 -44 -87 -21 c-49 -11 -302 -72 -563 -135 -261 -63 -479 -111
+-483 -107 -5 5 -7 30 -5 57 l3 48 265 64 c146 35 271 69 278 74 19 16 14 56
+-8 68 -15 8 -73 -3 -262 -50 -134 -34 -251 -63 -260 -66 -16 -5 -18 3 -18 75
+0 132 -54 121 570 121 517 0 531 -1 550 -20z m18 -257 l-3 -57 -250 -61 c-137
+-33 -256 -64 -262 -68 -7 -5 -13 -19 -13 -32 0 -49 23 -49 267 9 125 30 229
+53 230 52 5 -5 -79 -131 -96 -143 -23 -18 -860 -18 -883 0 -21 16 -69 90 -63
+96 6 6 1034 259 1058 260 16 1 18 -6 15 -56z"/>
+<path d="M18459 17126 c-641 -82 -1123 -505 -1244 -1093 -56 -271 -34 -579 59
+-826 136 -358 431 -648 806 -792 502 -193 1175 -112 1637 198 l62 42 1 558 0
+557 -287 -2 -288 -3 -3 -400 -2 -401 -53 -26 c-175 -86 -468 -111 -684 -58
+-318 77 -548 316 -620 645 -18 86 -21 297 -4 380 31 150 75 252 158 362 90
+120 203 206 346 263 104 42 188 59 324 67 266 15 516 -75 704 -254 l55 -52
+200 184 c109 102 200 188 202 193 4 12 -107 115 -193 179 -188 141 -430 238
+-680 273 -130 18 -378 21 -496 6z"/>
+<path d="M10090 15726 l0 -1366 315 0 315 0 0 375 0 375 313 0 c171 0 363 5
+426 11 131 12 300 52 414 98 392 157 606 502 584 941 -13 249 -98 449 -258
+609 -145 145 -330 238 -588 294 -91 19 -132 21 -808 24 l-713 4 0 -1365z
+m1368 830 c136 -35 252 -116 305 -213 79 -147 74 -367 -12 -501 -46 -70 -96
+-113 -177 -152 -111 -52 -178 -61 -531 -67 l-323 -6 0 483 0 482 338 -5 c268
+-3 350 -8 400 -21z"/>
+<path d="M12910 15725 l0 -1365 315 0 315 0 0 1365 0 1365 -315 0 -315 0 0
+-1365z"/>
+<path d="M14190 15725 l0 -1365 315 0 315 0 2 826 3 826 678 -826 678 -826
+260 0 259 0 0 1365 0 1365 -310 0 -310 0 0 -827 -1 -828 -27 30 c-15 17 -321
+389 -680 828 l-653 797 -264 0 -265 0 0 -1365z"/>
+<path d="M20370 15725 l0 -1365 1060 0 1060 0 0 250 0 250 -745 0 -745 0 0
+320 0 320 635 0 635 0 0 245 0 245 -635 0 -635 0 0 300 0 300 720 0 720 0 0
+250 0 250 -1035 0 -1035 0 0 -1365z"/>
+<path d="M22990 15725 l0 -1365 1005 0 1005 0 0 255 0 255 -685 0 -685 0 0
+1110 0 1110 -320 0 -320 0 0 -1365z"/>
+<path d="M6865 16837 c-115 -44 -176 -132 -176 -252 0 -67 11 -105 45 -150
+l23 -30 -208 -225 c-133 -143 -215 -224 -226 -223 -10 1 -36 8 -58 17 -157 60
+-345 -72 -345 -242 0 -79 18 -128 67 -182 59 -66 126 -93 212 -88 36 3 73 8
+81 11 11 5 52 -49 158 -209 l143 -215 -25 -29 c-41 -49 -59 -112 -54 -183 6
+-70 23 -109 70 -162 60 -69 172 -101 264 -76 98 26 178 125 190 233 l7 58 66
+20 c36 11 203 61 371 111 l306 91 59 -59 c66 -65 108 -83 196 -83 98 0 197 66
+237 159 8 20 15 66 16 103 0 54 -5 77 -30 125 -34 66 -101 119 -165 129 -22 4
+-42 11 -45 15 -6 11 -54 438 -54 485 0 27 6 34 41 49 91 42 159 164 145 264
+-31 233 -315 319 -466 142 l-40 -46 -226 75 -226 75 -3 54 c-10 144 -122 249
+-265 249 -30 0 -69 -5 -85 -11z m142 -82 c48 -10 110 -82 118 -138 17 -112
+-62 -207 -172 -207 -128 1 -215 129 -165 242 21 49 70 95 110 104 15 3 32 7
+37 9 6 2 17 2 25 0 8 -2 29 -6 47 -10z m418 -368 l220 -73 6 -59 c6 -67 33
+-126 75 -169 36 -35 115 -76 149 -76 15 0 25 -6 25 -14 0 -8 11 -120 25 -248
+14 -128 25 -239 25 -246 0 -7 -10 -16 -22 -21 -13 -5 -40 -21 -61 -35 -21 -14
+-40 -26 -43 -26 -2 0 -70 44 -149 97 -110 72 -144 101 -140 112 4 9 9 40 12
+68 16 147 -93 274 -249 291 l-61 7 -32 96 c-18 52 -38 105 -44 117 -14 26 -53
+29 -72 6 -12 -14 -8 -33 27 -133 l40 -116 -53 -51 c-38 -38 -56 -64 -65 -98
+l-12 -46 -293 0 c-265 0 -293 2 -293 16 0 9 -10 36 -21 59 l-22 43 213 228
+c116 126 215 229 218 229 4 -1 33 -7 65 -14 46 -12 67 -12 111 -2 63 14 133
+57 161 101 11 16 25 30 30 29 6 0 109 -33 230 -72z m558 47 c45 -23 66 -44 88
+-86 36 -70 13 -172 -48 -216 -30 -21 -106 -43 -127 -37 -6 2 -23 6 -38 9 -34
+8 -84 50 -104 88 -24 47 -20 121 10 172 44 75 145 107 219 70z m-1725 -553
+c69 -36 102 -88 102 -162 0 -213 -327 -233 -348 -20 -6 66 2 93 40 137 57 64
+135 81 206 45z m1109 -2 c64 -31 97 -91 91 -169 -6 -78 -43 -128 -115 -152
+-156 -53 -288 105 -210 252 43 82 145 112 234 69z m-341 -216 c18 -54 31 -80
+57 -110 l29 -33 -124 -208 c-104 -172 -128 -206 -144 -202 -30 8 -147 6 -171
+-3 -19 -7 -35 12 -162 202 -78 116 -141 214 -141 219 0 5 8 16 19 26 16 15 40
+61 55 109 5 16 28 17 291 17 263 0 286 -1 291 -17z m605 -224 c120 -80 149
+-104 144 -117 -4 -9 -10 -42 -14 -72 l-6 -55 -374 -111 -374 -111 -34 44 -34
+44 123 203 122 204 76 -5 c63 -5 84 -2 127 17 28 12 59 30 69 41 9 10 19 19
+21 19 2 0 71 -45 154 -101z m467 -48 c96 -49 127 -142 81 -239 -56 -114 -209
+-131 -293 -32 -33 39 -40 67 -34 134 5 66 36 112 92 137 53 24 107 24 154 0z
+m-1242 -386 c114 -67 109 -239 -9 -306 -82 -46 -201 -9 -241 74 -24 52 -21
+136 7 178 52 78 161 102 243 54z"/>
+<path d="M5298 16285 c-11 -25 -7 -31 83 -121 75 -76 99 -94 119 -92 19 2 26
+10 28 32 3 25 -9 41 -84 117 -96 97 -125 109 -146 64z"/>
+<path d="M8832 16216 c-82 -83 -91 -96 -84 -117 6 -15 19 -25 33 -27 19 -2 44
+17 117 91 50 52 92 99 92 105 0 17 -30 42 -49 42 -9 0 -59 -42 -109 -94z"/>
+<path d="M5012 15688 c-19 -19 -14 -45 10 -62 18 -13 52 -16 168 -16 168 0
+188 4 196 36 13 49 -4 54 -190 54 -120 0 -176 -4 -184 -12z"/>
+<path d="M8900 15685 c-17 -21 -4 -61 22 -69 37 -10 308 -7 327 4 25 13 33 37
+21 61 -10 18 -23 19 -184 19 -141 0 -176 -3 -186 -15z"/>
+<path d="M8760 15230 c-11 -11 -20 -25 -20 -32 0 -18 184 -198 203 -198 25 0
+51 44 39 67 -15 26 -178 183 -191 183 -6 0 -20 -9 -31 -20z"/>
+<path d="M5377 15152 c-48 -49 -87 -97 -87 -105 0 -9 11 -24 24 -32 32 -21 42
+-15 139 83 67 67 78 83 75 108 -2 24 -8 30 -33 32 -27 3 -41 -8 -118 -86z"/>
+<path d="M15455 13808 c-32 -18 -44 -40 -45 -80 0 -47 44 -88 97 -88 68 0 119
+90 80 141 -28 37 -92 50 -132 27z"/>
+<path d="M13600 13325 l0 -455 75 0 75 0 0 455 0 455 -75 0 -75 0 0 -455z"/>
+<path d="M12177 13739 c-146 -21 -239 -105 -254 -227 -8 -67 11 -124 55 -167
+51 -50 71 -59 229 -103 196 -55 223 -72 223 -139 0 -116 -214 -147 -398 -57
+-41 20 -75 34 -77 32 -3 -2 -15 -29 -29 -59 l-24 -55 32 -21 c90 -62 274 -96
+394 -74 80 15 135 38 180 76 64 54 94 152 73 233 -25 91 -95 136 -300 192
+-123 33 -144 42 -178 73 -46 41 -23 115 44 148 63 30 199 24 293 -14 35 -15
+65 -25 65 -24 1 1 11 26 23 56 16 40 19 57 11 67 -18 21 -110 52 -193 63 -86
+12 -87 12 -169 0z"/>
+<path d="M10284 13309 c-104 -232 -191 -425 -192 -430 -3 -6 30 -9 79 -7 l83
+3 40 98 40 97 219 -2 218 -3 42 -95 43 -95 83 -3 c46 -2 81 1 79 6 -1 5 -88
+198 -193 430 l-190 422 -81 0 -81 0 -189 -421z m350 80 c42 -97 76 -179 76
+-183 0 -3 -72 -6 -159 -6 l-159 0 63 148 c35 81 70 165 79 187 9 21 18 36 20
+34 2 -2 38 -83 80 -180z"/>
+<path d="M11170 13300 l0 -430 80 0 80 0 0 430 0 430 -80 0 -80 0 0 -430z"/>
+<path d="M14890 13595 l0 -75 -55 0 -55 0 0 -60 0 -60 55 0 55 0 0 -177 c0
+-193 7 -236 47 -283 41 -49 92 -70 172 -70 68 0 151 22 151 40 0 5 -9 29 -20
+55 -15 35 -24 45 -36 41 -37 -14 -93 -17 -114 -6 -41 22 -50 67 -50 240 l0
+160 90 0 90 0 0 60 0 59 -87 3 -88 3 -3 73 -3 72 -74 0 -75 0 0 -75z"/>
+<path d="M12990 13530 c-116 -24 -211 -103 -251 -209 -17 -45 -20 -72 -17
+-136 7 -134 63 -224 174 -280 50 -25 72 -30 154 -33 117 -5 185 17 258 83 70
+63 104 142 103 243 0 150 -61 247 -193 307 -61 27 -162 38 -228 25z m155 -139
+c81 -36 121 -113 112 -213 -10 -111 -83 -179 -193 -179 -71 0 -127 31 -162 91
+-23 37 -27 57 -27 117 0 63 3 76 30 115 56 80 155 108 240 69z"/>
+<path d="M16043 13530 c-122 -25 -212 -99 -253 -206 -18 -48 -21 -73 -18 -139
+7 -134 66 -228 176 -282 47 -23 73 -28 152 -31 117 -5 185 17 258 83 70 63
+104 142 103 243 0 150 -61 247 -193 307 -60 27 -162 38 -225 25z m152 -139
+c81 -36 121 -113 112 -213 -10 -111 -83 -179 -193 -179 -80 0 -134 34 -170
+106 -23 48 -26 64 -21 117 13 142 147 226 272 169z"/>
+<path d="M16959 13530 c-52 -9 -103 -33 -136 -63 l-23 -20 0 41 0 42 -75 0
+-75 0 0 -330 0 -330 75 0 75 0 1 168 c0 242 10 282 82 336 41 31 151 34 195 6
+57 -35 65 -70 70 -302 l4 -208 75 0 75 0 -5 233 c-3 153 -9 245 -17 270 -40
+114 -178 182 -321 157z"/>
+<path d="M17680 13530 c-77 -16 -152 -61 -177 -105 -31 -55 -31 -139 0 -185
+33 -51 78 -71 220 -102 71 -15 136 -33 144 -39 8 -7 13 -25 11 -43 -2 -24 -11
+-35 -38 -49 -50 -26 -174 -18 -260 16 -35 15 -65 25 -66 24 -1 -1 -14 -26 -29
+-56 -30 -61 -32 -58 55 -92 41 -16 84 -23 170 -26 101 -4 122 -2 173 17 111
+42 155 105 144 203 -5 36 -14 59 -34 80 -41 43 -73 56 -200 82 -135 28 -163
+43 -163 85 0 68 133 93 261 50 34 -12 63 -20 64 -18 1 2 14 27 29 55 l26 52
+-27 14 c-64 33 -226 52 -303 37z"/>
+<path d="M13992 13293 c4 -257 8 -275 64 -342 40 -48 98 -73 181 -79 95 -6
+132 2 192 42 l50 34 3 -37 3 -36 73 -3 72 -3 0 331 0 330 -75 0 -75 0 0 -172
+c-1 -238 -11 -278 -83 -332 -38 -28 -131 -33 -177 -9 -68 35 -75 62 -78 301
+l-3 212 -76 0 -75 0 4 -237z"/>
+<path d="M15430 13200 l0 -330 75 0 75 0 0 330 0 330 -75 0 -75 0 0 -330z"/>
+    </g>
+  </symbol>
+</svg>
+
+<div id="progress-bar"></div>
+<button id="btn-fs" onclick="toggleFS()">⛶ Vollbild</button>
+<div id="hint">← → Pfeiltasten oder Klick zum Navigieren</div>
+
+<div class="deck" id="deck">
+
+<!-- ═══════════════════════════════════════════════════════════════
+     FOLIE 1 – TITELFOLIE
+═══════════════════════════════════════════════════════════════ -->
+<section class="slide slide--hero active" id="s1">
+  <div class="slide__brand"><img class="brand-logo" src="Logo.svg" alt="PINGEL AI Solutions"></div>
+  <div class="slide__inner text-center">
+    <span class="badge badge--light mb-2">Workshop</span>
+    <h1>EU AI Act<br>für KMU</h1>
+    <div class="divider"></div>
+    <p class="subtitle">Was gilt bereits? Was kommt? Was müssen kleine und mittlere<br>Unternehmen jetzt konkret tun.</p>
+    <div class="stats">
+      <div class="stat"><div class="stat__val">2024</div><div class="stat__label">In Kraft</div></div>
+      <div class="stat"><div class="stat__val">Feb '25</div><div class="stat__label">Erste Pflichten</div></div>
+      <div class="stat"><div class="stat__val">Aug '26</div><div class="stat__label">Sanktionen</div></div>
+    </div>
+    <p class="small" style="color:rgba(255,255,255,.4); margin-top:1.5rem;">Stand: März 2026 | Verordnung (EU) 2024/1689</p>
+  </div>
+  <div class="slide__page">1</div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     FOLIE 2 – AGENDA
+═══════════════════════════════════════════════════════════════ -->
+<section class="slide slide--light" id="s2">
+  <div class="slide__brand"><img class="brand-logo" src="Logo.svg" alt="PINGEL AI Solutions"></div>
+  <div class="slide__inner">
+    <span class="eyebrow eyebrow--dark">Agenda</span>
+    <h2>Was wir heute erarbeiten</h2>
+    <div class="divider divider--left"></div>
+    <div class="cards cards--4">
+      <div class="card">
+        <div class="card__num">01</div>
+        <div class="card__title">Was ist der AI Act?</div>
+        <div class="card__text">Grundlagen, Prinzipien, Zeitplan</div>
+      </div>
+      <div class="card">
+        <div class="card__num">02</div>
+        <div class="card__title">Bin ich betroffen?</div>
+        <div class="card__text">Rolle & Risikostufe bestimmen</div>
+      </div>
+      <div class="card">
+        <div class="card__num">03</div>
+        <div class="card__title">Was muss ich tun?</div>
+        <div class="card__text">Konkrete Pflichten je Rolle</div>
+      </div>
+      <div class="card">
+        <div class="card__num">04</div>
+        <div class="card__title">Sofort-Checkliste</div>
+        <div class="card__text">10 Punkte, priorisiert</div>
+      </div>
+    </div>
+    <div class="box box--gold mt-2">
+      <strong>Ziel dieses Workshops:</strong> Ihr wisst am Ende genau, welche Pflichten euch betreffen und habt einen konkreten Aktionsplan.
+    </div>
+  </div>
+  <div class="slide__page">2</div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     FOLIE 3 – EINSTIEG / ICEBREAKER
+═══════════════════════════════════════════════════════════════ -->
+<section class="slide slide--dark" id="s3">
+  <div class="slide__brand"><img class="brand-logo" src="Logo.svg" alt="PINGEL AI Solutions"></div>
+  <div class="slide__inner text-center">
+    <span class="eyebrow">Einstieg</span>
+    <h2 class="light">Kurze Bestandsaufnahme</h2>
+    <div class="divider"></div>
+    <div class="cards cards--2" style="max-width:700px; margin:0 auto; text-align:left;">
+      <div class="card--ghost">
+        <div class="card__label">Frage 1</div>
+        <div class="card__title">Wer nutzt privat KI-Tools?</div>
+        <div class="card__text">ChatGPT, Copilot, Gemini, …</div>
+      </div>
+      <div class="card--ghost">
+        <div class="card__label">Frage 2</div>
+        <div class="card__title">Wer nutzt KI beruflich?</div>
+        <div class="card__text">Intern oder im Kundenkontakt</div>
+      </div>
+      <div class="card--ghost">
+        <div class="card__label">Frage 3</div>
+        <div class="card__title">Wer kennt den AI Act?</div>
+        <div class="card__text">Schon mal gehört, gelesen?</div>
+      </div>
+      <div class="card--ghost">
+        <div class="card__label">Frage 4</div>
+        <div class="card__title">Anbieter oder Betreiber?</div>
+        <div class="card__text">Kennt ihr den Unterschied?</div>
+      </div>
+    </div>
+    <div class="box box--ghost mt-2" style="max-width:680px; margin:1rem auto 0; text-align:left;">
+      <strong>Kernbotschaft:</strong> Der AI Act gilt bereits – die ersten Pflichten sind seit Februar 2025 in Kraft. Ignorieren ist keine Option. Aber Panik auch nicht.
+    </div>
+  </div>
+  <div class="slide__page">3</div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     FOLIE 4 – WAS IST DER AI ACT (FAKTEN)
+═══════════════════════════════════════════════════════════════ -->
+<section class="slide slide--light" id="s4">
+  <div class="slide__brand"><img class="brand-logo" src="Logo.svg" alt="PINGEL AI Solutions"></div>
+  <div class="slide__inner">
+    <span class="eyebrow eyebrow--dark">Modul 1</span>
+    <h2>Der AI Act – die Fakten</h2>
+    <div class="divider divider--left"></div>
+    <div class="cols cols--2">
+      <div>
+        <table class="tbl">
+          <tr><th colspan="2">Eckdaten</th></tr>
+          <tr><td><strong>Vollname</strong></td><td>Verordnung (EU) 2024/1689</td></tr>
+          <tr><td><strong>Verabschiedet</strong></td><td>21. Mai 2024</td></tr>
+          <tr><td><strong>In Kraft</strong></td><td>1. August 2024</td></tr>
+          <tr><td><strong>Charakter</strong></td><td>Weltweit erstes KI-Regelwerk</td></tr>
+          <tr><td><strong>Ausnahmen</strong></td><td>Privat, Forschung, Militär</td></tr>
+        </table>
+      </div>
+      <div>
+        <div class="box box--gold mb-2">
+          <strong>Gilt nicht nach Firmensitz.</strong><br>
+          Sondern danach, ob das KI-System in der EU eingesetzt wird oder EU-Bürger betrifft.
+        </div>
+        <div class="box box--gold">
+          <strong>Keine Pauschalregelung.</strong><br>
+          Das Gesetz regelt nach dem Risiko der konkreten Anwendung – nicht nach der Technologie.
+        </div>
+      </div>
+    </div>
+    <div class="quote mt-2">
+      „Nicht das KI-Tool entscheidet die Risikostufe – sondern der <strong>Verwendungszweck</strong>."
+    </div>
+  </div>
+  <div class="slide__page">4</div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     FOLIE 5 – RISIKOPYRAMIDE
+═══════════════════════════════════════════════════════════════ -->
+<section class="slide slide--surface" id="s5">
+  <div class="slide__brand"><img class="brand-logo" src="Logo.svg" alt="PINGEL AI Solutions"></div>
+  <div class="slide__inner">
+    <span class="eyebrow eyebrow--dark">Das Kernprinzip</span>
+    <h2 class="text-center">Risikobasierter Ansatz</h2>
+    <div class="divider"></div>
+    <div class="pyramid">
+      <div class="pyramid__level pyramid__level--red">
+        <div class="pyramid__dot red"></div>
+        <div class="pyramid__label">
+          <strong>VERBOTEN</strong> – 8 verbotene Praktiken<br>
+          <span class="small muted">Manipulation, Social Scoring, Gesichtserkennung im Freien …</span>
+        </div>
+        <span class="badge badge--red">seit Feb 2025</span>
+      </div>
+      <div class="pyramid__level pyramid__level--orange">
+        <div class="pyramid__dot orange"></div>
+        <div class="pyramid__label">
+          <strong>HOHES RISIKO</strong> – Strenge Pflichten<br>
+          <span class="small muted">HR, Bildung, Kredit, Gesundheit, kritische Infrastruktur …</span>
+        </div>
+        <span class="badge badge--orange">ab Aug 2026</span>
+      </div>
+      <div class="pyramid__level pyramid__level--yellow">
+        <div class="pyramid__dot yellow"></div>
+        <div class="pyramid__label">
+          <strong>BEGRENZTES RISIKO</strong> – Transparenzpflichten<br>
+          <span class="small muted">Chatbots, Deepfakes, KI-generierte Inhalte …</span>
+        </div>
+        <span class="badge badge--gold">ab Aug 2026</span>
+      </div>
+      <div class="pyramid__level pyramid__level--green">
+        <div class="pyramid__dot green"></div>
+        <div class="pyramid__label">
+          <strong>MINIMALES RISIKO</strong> – Keine Pflichten<br>
+          <span class="small muted">Spam-Filter, Produktempfehlungen, Spiele-KI …</span>
+        </div>
+        <span class="badge badge--green">freiwillig</span>
+      </div>
+    </div>
+    <div class="box box--gold mt-2 text-center">
+      Je höher das Risiko der Anwendung, desto strenger die Anforderungen.
+    </div>
+  </div>
+  <div class="slide__page">5</div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     FOLIE 6 – ZEITPLAN
+═══════════════════════════════════════════════════════════════ -->
+<section class="slide slide--light" id="s6">
+  <div class="slide__brand"><img class="brand-logo" src="Logo.svg" alt="PINGEL AI Solutions"></div>
+  <div class="slide__inner">
+    <span class="eyebrow eyebrow--dark">Zeitplan</span>
+    <h2>Was gilt wann?</h2>
+    <div class="divider divider--left"></div>
+    <div class="timeline">
+      <div class="timeline__item">
+        <div class="timeline__dot timeline__dot--done">✓</div>
+        <div class="timeline__content">
+          <div class="timeline__date">1. August 2024</div>
+          <div class="timeline__desc">Verordnung tritt in Kraft</div>
+          <div class="timeline__sub">Startschuss – 24-monatige Übergangsfrist beginnt</div>
+        </div>
+      </div>
+      <div class="timeline__item">
+        <div class="timeline__dot timeline__dot--done">✓</div>
+        <div class="timeline__content">
+          <div class="timeline__date">2. Februar 2025 <span class="badge badge--red" style="font-size:.65rem;">JETZT AKTIV</span></div>
+          <div class="timeline__desc">Verbotene Praktiken + KI-Kompetenzpflicht</div>
+          <div class="timeline__sub">Artikel 4 & 5 vollständig durchsetzbar</div>
+        </div>
+      </div>
+      <div class="timeline__item">
+        <div class="timeline__dot timeline__dot--done">✓</div>
+        <div class="timeline__content">
+          <div class="timeline__date">2. August 2025</div>
+          <div class="timeline__desc">GPAI-Modell-Regeln + Nationale Behörden</div>
+          <div class="timeline__sub">Bundesnetzagentur als Marktüberwachungsbehörde</div>
+        </div>
+      </div>
+      <div class="timeline__item">
+        <div class="timeline__dot timeline__dot--active">⏰</div>
+        <div class="timeline__content">
+          <div class="timeline__date">2. August 2026 <span class="badge badge--orange" style="font-size:.65rem;">VORBEREITEN</span></div>
+          <div class="timeline__desc">Hochrisiko (Anhang III) + Transparenzpflichten + Bußgelder</div>
+          <div class="timeline__sub">Der wichtigste Termin für KMU – Sanktionen werden aktiv</div>
+        </div>
+      </div>
+      <div class="timeline__item">
+        <div class="timeline__dot">→</div>
+        <div class="timeline__content">
+          <div class="timeline__date">2. August 2027</div>
+          <div class="timeline__desc">Hochrisiko (Anhang I) + GPAI-Übergangsmodelle</div>
+          <div class="timeline__sub">Produkte mit KI als Sicherheitsbauteil</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="slide__page">6</div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     FOLIE 7 – TRENNFOLIE MODUL 2
+═══════════════════════════════════════════════════════════════ -->
+<section class="slide slide--dark" id="s7">
+  <div class="slide__brand"><img class="brand-logo" src="Logo.svg" alt="PINGEL AI Solutions"></div>
+  <div class="slide__inner text-center">
+    <span class="eyebrow">Modul 2</span>
+    <h2 class="light" style="font-size:clamp(2rem,4vw,3rem);">Bin ich<br>betroffen?</h2>
+    <div class="divider"></div>
+    <p class="subtitle" style="color:rgba(255,255,255,.6);">Zwei Fragen entscheiden alles:<br>Welche <strong style="color:#e8c97a;">Rolle</strong> habe ich? Welche <strong style="color:#e8c97a;">Risikostufe</strong> trifft mich?</p>
+  </div>
+  <div class="slide__page">7</div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     FOLIE 8 – ANBIETER VS. BETREIBER
+═══════════════════════════════════════════════════════════════ -->
+<section class="slide slide--light" id="s8">
+  <div class="slide__brand"><img class="brand-logo" src="Logo.svg" alt="PINGEL AI Solutions"></div>
+  <div class="slide__inner">
+    <span class="eyebrow eyebrow--dark">Schritt 1: Rolle klären</span>
+    <h2>Anbieter oder Betreiber?</h2>
+    <div class="divider divider--left"></div>
+    <table class="tbl mb-2">
+      <tr>
+        <th></th>
+        <th>Anbieter (Provider)</th>
+        <th>Betreiber (Operator)</th>
+      </tr>
+      <tr>
+        <td><strong>Wer?</strong></td>
+        <td>Entwickelt KI und vermarktet sie unter eigenem Namen</td>
+        <td>Nutzt fremde KI geschäftlich in eigener Verantwortung</td>
+      </tr>
+      <tr>
+        <td><strong>Pflichten</strong></td>
+        <td><span class="badge badge--red">sehr umfangreich</span></td>
+        <td><span class="badge badge--green">deutlich geringer</span></td>
+      </tr>
+      <tr>
+        <td><strong>Typisch</strong></td>
+        <td>SaaS-Startup, KI-Tool-Anbieter</td>
+        <td>Chatbot im Support, HR-Tool-Nutzer</td>
+      </tr>
+    </table>
+    <div class="box box--red">
+      <strong>⚠ White-Label-Falle:</strong> Wer fremde KI unter eigenem Namen vermarktet, gilt als <strong>Anbieter</strong> – mit allen umfangreichen Pflichten!
+    </div>
+    <div class="box box--gold mt-1">
+      <strong>Daumenregel:</strong> Kaufst du KI und nutzt sie intern? → Betreiber. Entwickelst oder vermarktest du KI? → Anbieter.
+    </div>
+  </div>
+  <div class="slide__page">8</div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     FOLIE 9 – VERBOTENE PRAKTIKEN
+═══════════════════════════════════════════════════════════════ -->
+<section class="slide slide--surface" id="s9">
+  <div class="slide__brand"><img class="brand-logo" src="Logo.svg" alt="PINGEL AI Solutions"></div>
+  <div class="slide__inner">
+    <span class="eyebrow eyebrow--dark">Risikostufe 1</span>
+    <h2>Verbotene Praktiken <span class="badge badge--red" style="font-size:.7rem; vertical-align:middle;">seit Feb 2025</span></h2>
+    <div class="divider divider--left"></div>
+    <div class="forbidden-grid">
+      <div class="forbidden-item">
+        <span class="forbidden-item__num">1</span>
+        <span><strong>Unterschwellige Manipulation</strong><br>Schädliche Verhaltensbeeinflussung ohne Bewusstsein der Person</span>
+      </div>
+      <div class="forbidden-item">
+        <span class="forbidden-item__num">2</span>
+        <span><strong>Ausnutzung von Schwäche</strong><br>Alter, Behinderung, wirtschaftliche Notlage ausnutzen</span>
+      </div>
+      <div class="forbidden-item">
+        <span class="forbidden-item__num">3</span>
+        <span><strong>Social Scoring</strong><br>Bewertung von Menschen nach Sozialverhalten</span>
+      </div>
+      <div class="forbidden-item">
+        <span class="forbidden-item__num">4</span>
+        <span><strong>Straftat-Vorhersage</strong><br>Risikobewertung nur via Profiling ohne objektive Fakten</span>
+      </div>
+      <div class="forbidden-item">
+        <span class="forbidden-item__num">5</span>
+        <span><strong>Gesichts-Scraping</strong><br>Massenhafte Gesichtsbilder aus dem Web für Datenbanken</span>
+      </div>
+      <div class="forbidden-item">
+        <span class="forbidden-item__num">6</span>
+        <span><strong>Emotionserkennung</strong> am Arbeitsplatz oder in Schulen</span>
+      </div>
+      <div class="forbidden-item">
+        <span class="forbidden-item__num">7</span>
+        <span><strong>Biometrische Kategorisierung</strong><br>nach Ethnie, Sexualität, Religion via Biometrie</span>
+      </div>
+      <div class="forbidden-item">
+        <span class="forbidden-item__num">8</span>
+        <span><strong>Echtzeit-Gesichtserkennung</strong><br>in öffentlichen Räumen zur Strafverfolgung</span>
+      </div>
+    </div>
+    <div class="box box--gold mt-1 small">
+      <strong>Wichtig:</strong> Alle Bedingungen eines Verbots müssen <em>gleichzeitig</em> erfüllt sein (Alles-oder-Nichts-Prinzip).
+    </div>
+  </div>
+  <div class="slide__page">9</div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     FOLIE 10 – HOHES RISIKO: BEREICHE
+═══════════════════════════════════════════════════════════════ -->
+<section class="slide slide--light" id="s10">
+  <div class="slide__brand"><img class="brand-logo" src="Logo.svg" alt="PINGEL AI Solutions"></div>
+  <div class="slide__inner">
+    <span class="eyebrow eyebrow--dark">Risikostufe 2</span>
+    <h2>Hohes Risiko – die 8 sensiblen Bereiche <span class="badge badge--orange" style="font-size:.65rem; vertical-align:middle;">ab Aug 2026</span></h2>
+    <div class="divider divider--left"></div>
+    <div class="cards cards--4" style="font-size:.8rem;">
+      <div class="card" style="border-left-color:#ea580c;">
+        <div class="card__title">Biometrie</div>
+        <div class="card__text">Identifizierung, Verifikation, Emotionserkennung</div>
+      </div>
+      <div class="card" style="border-left-color:#ea580c;">
+        <div class="card__title">Kritische Infra</div>
+        <div class="card__text">Strom, Wasser, Verkehr, digitale Infrastruktur</div>
+      </div>
+      <div class="card" style="border-left-color:#ea580c;">
+        <div class="card__title">Bildung</div>
+        <div class="card__text">Aufnahme, Prüfungen, Leistungsbewertung</div>
+      </div>
+      <div class="card" style="border-left-color:#dc2626; background:#fff0f0;">
+        <div class="card__title" style="color:#dc2626;">⚠ HR / Beschäftigung</div>
+        <div class="card__text">Bewerber-Screening, Leistungsranking, Kündigung</div>
+      </div>
+      <div class="card" style="border-left-color:#ea580c;">
+        <div class="card__title">Öffentl. Dienste</div>
+        <div class="card__text">Sozialleistungen, Kreditwürdigkeit, Notfall</div>
+      </div>
+      <div class="card" style="border-left-color:#ea580c;">
+        <div class="card__title">Strafverfolgung</div>
+        <div class="card__text">Tatortanalyse, Kriminalprognose</div>
+      </div>
+      <div class="card" style="border-left-color:#ea580c;">
+        <div class="card__title">Migration</div>
+        <div class="card__text">Visum, Asyl, Grenzkontrolle</div>
+      </div>
+      <div class="card" style="border-left-color:#ea580c;">
+        <div class="card__title">Rechtspflege</div>
+        <div class="card__text">Urteilsrecherche, Streitbeilegung</div>
+      </div>
+    </div>
+    <div class="box box--red mt-1">
+      <strong>KMU-Warnung:</strong> Viele KMU nutzen KI-gestützte <strong>HR-Tools</strong> (Bewerbungsscreening, Leistungsauswertung) – das fällt oft unter hohes Risiko!
+    </div>
+  </div>
+  <div class="slide__page">10</div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     FOLIE 11 – BEGRENZTES RISIKO / MINIMALES RISIKO
+═══════════════════════════════════════════════════════════════ -->
+<section class="slide slide--surface" id="s11">
+  <div class="slide__brand"><img class="brand-logo" src="Logo.svg" alt="PINGEL AI Solutions"></div>
+  <div class="slide__inner">
+    <div class="cols cols--2">
+      <div>
+        <span class="eyebrow eyebrow--dark">Risikostufe 3</span>
+        <h3>Begrenztes Risiko</h3>
+        <p class="small muted mb-2">Transparenzpflichten ab August 2026</p>
+        <table class="tbl">
+          <tr><th>Anwendung</th><th>Pflicht</th></tr>
+          <tr>
+            <td>Chatbot / Sprachassistent</td>
+            <td>"Sie sprechen mit einer KI" – klar kommunizieren</td>
+          </tr>
+          <tr>
+            <td>Deepfakes / KI-Bilder & Videos</td>
+            <td>Maschinenlesbare Kennzeichnung</td>
+          </tr>
+          <tr>
+            <td>KI-Texte zu öffentl. Themen</td>
+            <td>Offenlegung der KI-Erstellung</td>
+          </tr>
+          <tr>
+            <td>Emotionserkennung (erlaubt)</td>
+            <td>Betroffene vorab informieren</td>
+          </tr>
+        </table>
+        <div class="box box--gold mt-2 small">
+          <strong>Praxistipp:</strong> Chatbot-Hinweistexte jetzt vorbereiten – nicht auf Aug 2026 warten.
+        </div>
+      </div>
+      <div>
+        <span class="eyebrow eyebrow--dark">Risikostufe 4</span>
+        <h3>Minimales / kein Risiko</h3>
+        <p class="small muted mb-2">Keine gesetzlichen Pflichten aus dem AI Act</p>
+        <ul class="list list--check mb-2">
+          <li>Spam-Filter</li>
+          <li>Produktempfehlungen</li>
+          <li>KI in Videospielen</li>
+          <li>Einfache Bild-Optimierung</li>
+          <li>Suche / Sortierung</li>
+        </ul>
+        <div class="box box--green small">
+          Freiwillige Verhaltenskodizes empfohlen. DSGVO muss trotzdem eingehalten werden.
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="slide__page">11</div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     FOLIE 12 – SELBSTCHECK FLOWCHART
+═══════════════════════════════════════════════════════════════ -->
+<section class="slide slide--dark" id="s12">
+  <div class="slide__brand"><img class="brand-logo" src="Logo.svg" alt="PINGEL AI Solutions"></div>
+  <div class="slide__inner">
+    <span class="eyebrow">Quick-Check</span>
+    <h2 class="light text-center mb-2">Welche Stufe trifft mich?</h2>
+    <div class="flow">
+      <div class="flow__box flow__box--navy">Nutze ich KI geschäftlich?</div>
+      <div class="flow__row">
+        <span class="flow__arrow" style="color:rgba(255,255,255,.4);">NEIN ↙</span>
+        <span class="flow__arrow" style="color:rgba(255,255,255,.4);">JA ↘</span>
+      </div>
+      <div class="flow__row">
+        <div class="flow__box flow__box--green">Rein privat → kein AI Act</div>
+        <div class="flow__box flow__box--navy">Entwickle / vermarknte ich KI?</div>
+      </div>
+      <div class="flow__row" style="justify-content: flex-end; padding-right: 0;">
+        <span class="flow__arrow" style="color:rgba(255,255,255,.4);">JA ↙</span>
+        <span class="flow__arrow" style="color:rgba(255,255,255,.4);">NEIN ↘</span>
+      </div>
+      <div class="flow__row">
+        <div class="flow__box flow__box--gold">ANBIETER<br><span style="font-size:.72rem; font-weight:400;">umfangreiche Pflichten</span></div>
+        <div class="flow__box flow__box--navy">In HR, Bildung, Kredit?</div>
+      </div>
+      <div class="flow__row" style="margin-left: 4rem;">
+        <span class="flow__arrow" style="color:rgba(255,255,255,.4);">JA ↙</span>
+        <span class="flow__arrow" style="color:rgba(255,255,255,.4);">Chatbot/Deepfake? ↓</span>
+        <span class="flow__arrow" style="color:rgba(255,255,255,.4);">Spam/Empfehlung? ↘</span>
+      </div>
+      <div class="flow__row">
+        <div class="flow__box flow__box--orange">Hohes Risiko</div>
+        <div class="flow__box" style="background:rgba(202,138,4,.8); border-color:#ca8a04; color:#fff;">Begrenztes Risiko</div>
+        <div class="flow__box flow__box--green">Minimales Risiko</div>
+      </div>
+    </div>
+  </div>
+  <div class="slide__page">12</div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     FOLIE 13 – TRENNFOLIE MODUL 3
+═══════════════════════════════════════════════════════════════ -->
+<section class="slide slide--accent" id="s13">
+  <div class="slide__brand"><img class="brand-logo" src="Logo.svg" alt="PINGEL AI Solutions"></div>
+  <div class="slide__inner text-center">
+    <span class="eyebrow" style="color:rgba(255,255,255,.7);">Modul 3</span>
+    <h2 class="light" style="font-size:clamp(2rem,4vw,3rem);">Was muss ich<br>konkret tun?</h2>
+    <div class="divider"></div>
+    <p class="subtitle" style="color:rgba(255,255,255,.75);">Pflichten nach Rolle – priorisiert und praxisnah</p>
+  </div>
+  <div class="slide__page">13</div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     FOLIE 14 – KI-KOMPETENZPFLICHT
+═══════════════════════════════════════════════════════════════ -->
+<section class="slide slide--light" id="s14">
+  <div class="slide__brand"><img class="brand-logo" src="Logo.svg" alt="PINGEL AI Solutions"></div>
+  <div class="slide__inner">
+    <span class="eyebrow eyebrow--dark">Sofortpflicht</span>
+    <h2>KI-Kompetenz (Art. 4) <span class="badge badge--red" style="font-size:.65rem; vertical-align:middle;">seit Feb 2025</span></h2>
+    <div class="divider divider--left"></div>
+    <div class="cols cols--2">
+      <div>
+        <div class="box box--red mb-2">
+          Gilt für <strong>alle</strong> Anbieter und Betreiber –<br>jede Branche, jede Unternehmensgröße.
+        </div>
+        <h3>Was steht drin?</h3>
+        <p class="small mb-2">Personal und Beauftragte müssen <em>„über ein ausreichendes Maß an KI-Kompetenz verfügen."</em></p>
+        <h3>Was steht <u>nicht</u> drin:</h3>
+        <ul class="list list--x small">
+          <li>Keine Pflicht zu Zertifizierungen</li>
+          <li>Kein vorgeschriebenes Format</li>
+          <li>Kein KI-Beauftragter verpflichtend</li>
+          <li>Keine Behördenprüfung geplant</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Praktische Schritte:</h3>
+        <div class="checklist">
+          <div class="check-item"><div class="check-item__box"></div><div class="check-item__text"><strong>1. Bestandsaufnahme:</strong> Wer nutzt welche KI-Tools?</div></div>
+          <div class="check-item"><div class="check-item__box"></div><div class="check-item__text"><strong>2. Bedarfsanalyse:</strong> Welche Risiken gehen damit einher?</div></div>
+          <div class="check-item"><div class="check-item__box"></div><div class="check-item__text"><strong>3. Maßnahmen:</strong> Workshop, E-Learning, interne Schulung</div></div>
+          <div class="check-item"><div class="check-item__box"></div><div class="check-item__text"><strong>4. Dokumentation:</strong> Wer wurde wann geschult? (Pflicht!)</div></div>
+          <div class="check-item"><div class="check-item__box"></div><div class="check-item__text"><strong>5. Wiederholung:</strong> Regelmäßige Auffrischung</div></div>
+        </div>
+        <div class="box box--gold mt-1 small">
+          <strong>Bei Verstoß:</strong> Sorgfaltspflichtverletzung – besonders heikel bei Schadensfällen.
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="slide__page">14</div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     FOLIE 15 – KOSTENLOSE RESSOURCEN
+═══════════════════════════════════════════════════════════════ -->
+<section class="slide slide--dark" id="s15">
+  <div class="slide__brand"><img class="brand-logo" src="Logo.svg" alt="PINGEL AI Solutions"></div>
+  <div class="slide__inner">
+    <span class="eyebrow">Kostenlose Ressourcen</span>
+    <h2 class="light">Hilfe – alles kostenlos</h2>
+    <div class="divider divider--left"></div>
+    <div class="cards cards--3">
+      <a class="card--ghost" href="https://www.mittelstand-digital.de/" target="_blank" rel="noopener">
+        <div class="card__label">Beratung & Training</div>
+        <div class="card__title">Mittelstand-Digital</div>
+        <div class="card__text">~100 KI-Trainer bundesweit. Kostenlose Beratung, Workshops und Fördermittelinformationen für KMU.</div>
+      </a>
+      <a class="card--ghost" href="https://www.bundesnetzagentur.de/DE/Fachthemen/Digitales/KI/start.html" target="_blank" rel="noopener">
+        <div class="card__label">Behörde</div>
+        <div class="card__title">Bundesnetzagentur KoKIVO</div>
+        <div class="card__text">KI-Compliance-Kompass, FAQ, KI-Café (regelmäßig), Netzwerktreffen, direktes Kontaktformular.</div>
+      </a>
+      <a class="card--ghost" href="https://www.elementsofai.com/de" target="_blank" rel="noopener">
+        <div class="card__label">Online-Training</div>
+        <div class="card__title">Elements of AI</div>
+        <div class="card__text">Kostenloses Online-Kurs auf Deutsch. Ideal für Einstieg und Schulungsnachweis.</div>
+      </a>
+      <a class="card--ghost" href="https://ki-campus.org/" target="_blank" rel="noopener">
+        <div class="card__label">E-Learning</div>
+        <div class="card__title">KI-Campus</div>
+        <div class="card__text">Online-Lernplattform mit KI-Kursen verschiedener Niveaus, kostenlos nutzbar.</div>
+      </a>
+      <a class="card--ghost" href="https://european-digital-innovation-hubs.ec.europa.eu/" target="_blank" rel="noopener">
+        <div class="card__label">Innovation</div>
+        <div class="card__title">EDIH (EU)</div>
+        <div class="card__text">European Digital Innovation Hubs – regionale Anlaufstellen für digitale Transformation und KI.</div>
+      </a>
+      <a class="card--ghost" href="https://www.bundesnetzagentur.de/DE/Fachthemen/Digitales/KI/start.html" target="_blank" rel="noopener">
+        <div class="card__label">KI-Sandkasten</div>
+        <div class="card__title">KI-Reallabore</div>
+        <div class="card__text">Behördlich begleitete Entwicklung und Test von KI-Systemen. Startet flächendeckend August 2026.</div>
+      </a>
+    </div>
+  </div>
+  <div class="slide__page">15</div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     FOLIE 16 – PFLICHTEN BETREIBER
+═══════════════════════════════════════════════════════════════ -->
+<section class="slide slide--surface" id="s16">
+  <div class="slide__brand"><img class="brand-logo" src="Logo.svg" alt="PINGEL AI Solutions"></div>
+  <div class="slide__inner">
+    <span class="eyebrow eyebrow--dark">Als Betreiber von Hochrisiko-KI</span>
+    <h2>Eure konkreten Pflichten <span class="badge badge--orange" style="font-size:.65rem; vertical-align:middle;">ab Aug 2026</span></h2>
+    <div class="divider divider--left"></div>
+    <table class="tbl">
+      <tr><th>Pflicht</th><th>Was das in der Praxis bedeutet</th></tr>
+      <tr>
+        <td><strong>Nutzung nach Anweisung</strong></td>
+        <td>Nutzungsbedingungen des KI-Anbieters lesen, verstehen und einhalten</td>
+      </tr>
+      <tr>
+        <td><strong>Menschliche Aufsicht</strong></td>
+        <td>KI-Output IMMER von Mensch prüfen – keine Alleinentscheidung durch KI</td>
+      </tr>
+      <tr>
+        <td><strong>Betriebsaufzeichnungen</strong></td>
+        <td>Log-Dateien und Entscheidungsprotokolle aufbewahren</td>
+      </tr>
+      <tr>
+        <td><strong>Folgenabschätzung</strong></td>
+        <td>Schriftlich: Was passiert wenn die KI falsch liegt?</td>
+      </tr>
+      <tr>
+        <td><strong>Vorfallmeldung</strong></td>
+        <td>Bei schwerwiegenden Fehlern an Bundesnetzagentur melden</td>
+      </tr>
+      <tr>
+        <td><strong>DSGVO einhalten</strong></td>
+        <td>AV-Vertrag mit KI-Anbieter prüfen / abschließen</td>
+      </tr>
+    </table>
+    <div class="box box--gold mt-1 small">
+      <strong>Wichtig:</strong> Die Compliance des KI-Anbieters entbindet euch nicht von eigenen Betreiber-Pflichten!
+    </div>
+  </div>
+  <div class="slide__page">16</div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     FOLIE 17 – PFLICHTEN ANBIETER (HOCHRISIKO)
+═══════════════════════════════════════════════════════════════ -->
+<section class="slide slide--light" id="s17">
+  <div class="slide__brand"><img class="brand-logo" src="Logo.svg" alt="PINGEL AI Solutions"></div>
+  <div class="slide__inner">
+    <span class="eyebrow eyebrow--dark">Als Anbieter von Hochrisiko-KI</span>
+    <h2>Umfangreiche Pflichten (Auswahl)</h2>
+    <div class="divider divider--left"></div>
+    <div class="cols cols--2">
+      <table class="tbl">
+        <tr><th>Pflicht</th><th>Inhalt</th></tr>
+        <tr><td><strong>Risikomanagementsystem</strong></td><td>Kontinuierlich über gesamten Lebenszyklus</td></tr>
+        <tr><td><strong>Datenqualität</strong></td><td>Trainings-, Validierungs- und Testdaten nach Kriterien</td></tr>
+        <tr><td><strong>Technische Dokumentation</strong></td><td>Vor Inverkehrbringen vollständig erstellen</td></tr>
+        <tr><td><strong>Automatische Protokollierung</strong></td><td>Ereignisse aufzeichnen zur Rückverfolgbarkeit</td></tr>
+        <tr><td><strong>Menschliche Aufsicht</strong></td><td>Technische Maßnahmen zur Beaufsichtigung</td></tr>
+      </table>
+      <table class="tbl">
+        <tr><th>Pflicht</th><th>Inhalt</th></tr>
+        <tr><td><strong>EU-Datenbankregistrierung</strong></td><td>Vor Inverkehrbringen eintragen</td></tr>
+        <tr><td><strong>CE-Kennzeichnung</strong></td><td>Konformitätsbewertung + CE</td></tr>
+        <tr><td><strong>Post-Markt-Überwachung</strong></td><td>Gesamte Lebensdauer</td></tr>
+        <tr><td><strong>Vorfallmeldung</strong></td><td>An Marktüberwachungsbehörden</td></tr>
+        <tr><td><strong>Aufbewahrung</strong></td><td style="color:#dc2626; font-weight:700;">10 Jahre</td></tr>
+      </table>
+    </div>
+    <div class="box box--gold mt-1 small">
+      <strong>Tipp für KMU als Anbieter:</strong> KI-Reallabore nutzen – die Bundesnetzagentur bietet begleitete Compliance-Entwicklung.
+    </div>
+  </div>
+  <div class="slide__page">17</div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     FOLIE 18 – DSGVO + AI ACT
+═══════════════════════════════════════════════════════════════ -->
+<section class="slide slide--dark" id="s18">
+  <div class="slide__brand"><img class="brand-logo" src="Logo.svg" alt="PINGEL AI Solutions"></div>
+  <div class="slide__inner">
+    <span class="eyebrow">Wichtige Schnittstelle</span>
+    <h2 class="light">DSGVO + AI Act</h2>
+    <div class="divider divider--left"></div>
+    <div class="box box--ghost mb-2">
+      <strong>Beides gilt gleichzeitig</strong> – kein Entweder-oder. Die DSGVO regelt Personendaten, der AI Act das KI-System selbst.
+    </div>
+    <table class="tbl tbl--dark">
+      <tr><th>DSGVO</th><th>AI Act</th></tr>
+      <tr><td>Personenbezogene Daten schützen</td><td>KI-System regulieren</td></tr>
+      <tr><td>Auftragsverarbeitung (AV-Vertrag)</td><td>Rolle: Anbieter oder Betreiber</td></tr>
+      <tr><td>Betroffenenrechte sicherstellen</td><td>Menschliche Aufsicht gewährleisten</td></tr>
+      <tr><td>Privacy by Design</td><td>Technische Dokumentation</td></tr>
+      <tr><td>Datensparsamkeit</td><td>Datenqualität (Art. 10)</td></tr>
+    </table>
+    <div class="box box--ghost mt-2">
+      <strong>Sofortmaßnahme:</strong> AV-Vertrag mit eurem KI-Anbieter prüfen und ggf. abschließen – das ist DSGVO-Pflicht und bereitet gleichzeitig AI Act Compliance vor.
+    </div>
+  </div>
+  <div class="slide__page">18</div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     FOLIE 19 – BUSSGELDER
+═══════════════════════════════════════════════════════════════ -->
+<section class="slide slide--surface" id="s19">
+  <div class="slide__brand"><img class="brand-logo" src="Logo.svg" alt="PINGEL AI Solutions"></div>
+  <div class="slide__inner">
+    <span class="eyebrow eyebrow--dark">Sanktionen</span>
+    <h2>Was droht bei Verstößen?</h2>
+    <div class="divider divider--left"></div>
+    <table class="tbl mb-2">
+      <tr><th>Verstoßart</th><th>Max. Bußgeld</th><th>Alternativ</th></tr>
+      <tr>
+        <td><strong>Verbotene Praktiken</strong> (Art. 5)</td>
+        <td><span style="color:#dc2626; font-weight:700; font-size:1.05rem;">35 Mio. €</span></td>
+        <td><span style="color:#dc2626; font-weight:700;">7 % Jahresumsatz</span></td>
+      </tr>
+      <tr>
+        <td><strong>Hochrisiko-Anforderungen</strong></td>
+        <td><span style="color:#ea580c; font-weight:700;">15 Mio. €</span></td>
+        <td><span style="color:#ea580c; font-weight:700;">3 % Jahresumsatz</span></td>
+      </tr>
+      <tr>
+        <td><strong>Transparenz- / Dokumentationspflichten</strong></td>
+        <td>10 Mio. €</td>
+        <td>2 % Jahresumsatz</td>
+      </tr>
+      <tr>
+        <td><strong>Falsche Angaben gegenüber Behörden</strong></td>
+        <td>7,5 Mio. €</td>
+        <td>1 % Jahresumsatz</td>
+      </tr>
+    </table>
+    <div class="cols cols--2">
+      <div class="box box--red small">
+        <strong>Es gilt jeweils der höhere Betrag.</strong> Der Prozentsatz trifft KMU relativ hart.
+      </div>
+      <div class="box box--gold small">
+        <strong>Timing:</strong> Verbote + Schulungspflicht sind bereits durchsetzbar. Bußgeldregeln für Hochrisiko ab August 2026.
+      </div>
+    </div>
+  </div>
+  <div class="slide__page">19</div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     FOLIE 20 – TRENNFOLIE MODUL 4
+═══════════════════════════════════════════════════════════════ -->
+<section class="slide slide--dark" id="s20">
+  <div class="slide__brand"><img class="brand-logo" src="Logo.svg" alt="PINGEL AI Solutions"></div>
+  <div class="slide__inner text-center">
+    <span class="eyebrow">Modul 4</span>
+    <h2 class="light" style="font-size:clamp(2rem,4vw,3rem);">Eure<br>Sofort-Checkliste</h2>
+    <div class="divider"></div>
+    <p class="subtitle" style="color:rgba(255,255,255,.6);">10 Punkte. Priorisiert. Direkt umsetzbar.</p>
+    <div class="box box--ghost" style="max-width:500px; margin: 1rem auto 0;">
+      Gruppenarbeit: Füllt die Checkliste für euer Unternehmen aus.
+    </div>
+  </div>
+  <div class="slide__page">20</div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     FOLIE 21 – CHECKLISTE TEIL 1 (SOFORT)
+═══════════════════════════════════════════════════════════════ -->
+<section class="slide slide--light" id="s21">
+  <div class="slide__brand"><img class="brand-logo" src="Logo.svg" alt="PINGEL AI Solutions"></div>
+  <div class="slide__inner">
+    <span class="eyebrow eyebrow--dark">Checkliste – Teil 1</span>
+    <h2>Sofort umsetzen <span class="badge badge--red" style="font-size:.65rem; vertical-align:middle;">bereits geltendes Recht</span></h2>
+    <div class="divider divider--left"></div>
+    <div class="checklist">
+      <div class="check-item">
+        <div class="check-item__box"></div>
+        <div class="check-item__text"><strong>1. KI-Inventar erstellen</strong> – Alle KI-Tools auflisten (intern + extern). Für jedes: Zweck, Daten, Nutzer.</div>
+      </div>
+      <div class="check-item">
+        <div class="check-item__box"></div>
+        <div class="check-item__text"><strong>2. Rolle bestimmen</strong> – Anbieter oder Betreiber? White-Label-Falle prüfen!</div>
+      </div>
+      <div class="check-item">
+        <div class="check-item__box"></div>
+        <div class="check-item__text"><strong>3. KI-Kompetenz-Schulung</strong> – Schulungskonzept erstellen. Erste Maßnahme planen. Teilnahme dokumentieren.</div>
+      </div>
+      <div class="check-item">
+        <div class="check-item__box"></div>
+        <div class="check-item__text"><strong>4. Verbote prüfen</strong> – Die 8 verbotenen Praktiken durchgehen. Sicherstellen: Kein System verstößt dagegen.</div>
+      </div>
+      <div class="check-item">
+        <div class="check-item__box"></div>
+        <div class="check-item__text"><strong>5. Interne KI-Richtlinie</strong> – Schriftlich: Welche Tools sind erlaubt? Was ist verboten? (z.B. keine Kundendaten in öffentliche KI)</div>
+      </div>
+    </div>
+  </div>
+  <div class="slide__page">21</div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     FOLIE 22 – CHECKLISTE TEIL 2 (BIS AUG 2026)
+═══════════════════════════════════════════════════════════════ -->
+<section class="slide slide--surface" id="s22">
+  <div class="slide__brand"><img class="brand-logo" src="Logo.svg" alt="PINGEL AI Solutions"></div>
+  <div class="slide__inner">
+    <span class="eyebrow eyebrow--dark">Checkliste – Teil 2</span>
+    <h2>Bis August 2026 vorbereiten <span class="badge badge--orange" style="font-size:.65rem; vertical-align:middle;">Sanktionen ab dann aktiv</span></h2>
+    <div class="divider divider--left"></div>
+    <div class="checklist">
+      <div class="check-item">
+        <div class="check-item__box"></div>
+        <div class="check-item__text"><strong>6. Risikobewertung aller KI-Tools</strong> – Welche Risikostufe? Besonders: HR-Tools, Kredit-Tools, Kundenscoring.</div>
+      </div>
+      <div class="check-item">
+        <div class="check-item__box"></div>
+        <div class="check-item__text"><strong>7. Verträge mit KI-Anbietern prüfen</strong> – AGB lesen. AV-Vertrag vorhanden? Haftungsregelungen klären.</div>
+      </div>
+      <div class="check-item">
+        <div class="check-item__box"></div>
+        <div class="check-item__text"><strong>8. Menschliche Aufsicht sicherstellen</strong> – Kein KI-Output geht ungeprüft raus. Entscheidungsprotokoll einführen.</div>
+      </div>
+      <div class="check-item">
+        <div class="check-item__box"></div>
+        <div class="check-item__text"><strong>9. Transparenz vorbereiten</strong> – Chatbot-Hinweise formulieren. Deepfake-/KI-Content-Kennzeichnung planen.</div>
+      </div>
+      <div class="check-item">
+        <div class="check-item__box"></div>
+        <div class="check-item__text"><strong>10. Dokumentation aufbauen</strong> – Risikobewertungen, Schulungsmaßnahmen und Entscheidungsprozesse schriftlich festhalten.</div>
+      </div>
+    </div>
+  </div>
+  <div class="slide__page">22</div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     FOLIE 23 – PRIORISIERUNG
+═══════════════════════════════════════════════════════════════ -->
+<section class="slide slide--dark" id="s23">
+  <div class="slide__brand"><img class="brand-logo" src="Logo.svg" alt="PINGEL AI Solutions"></div>
+  <div class="slide__inner">
+    <span class="eyebrow">Priorisierung</span>
+    <h2 class="light">Was zuerst?</h2>
+    <div class="divider divider--left"></div>
+    <div class="cards cards--3">
+      <div class="card--ghost" style="border-left-color:#dc2626;">
+        <div class="card__label" style="color:#f87171;">Jetzt – niedrig Aufwand</div>
+        <div class="card__title">Sofort-Maßnahmen</div>
+        <ul class="list list--light small mt-1">
+          <li>KI-Inventar erstellen (~2h)</li>
+          <li>Verbote durchgehen (~1h)</li>
+          <li>Erste Schulung buchen (~1h Aufwand)</li>
+          <li>Interne Richtlinie (Entwurf)</li>
+        </ul>
+      </div>
+      <div class="card--ghost" style="border-left-color:#fb923c;">
+        <div class="card__label" style="color:#fdba74;">Bald – 1–3 Monate</div>
+        <div class="card__title">Mittelfristig</div>
+        <ul class="list list--light small mt-1">
+          <li>Interne KI-Richtlinie finalisieren</li>
+          <li>AV-Verträge prüfen/abschließen</li>
+          <li>Menschliche Aufsicht formalisieren</li>
+          <li>Schulungsdokumentation aufbauen</li>
+        </ul>
+      </div>
+      <div class="card--ghost" style="border-left-color:#fbbf24;">
+        <div class="card__label" style="color:#fde68a;">Vor August 2026</div>
+        <div class="card__title">Vor dem Stichtag</div>
+        <ul class="list list--light small mt-1">
+          <li>Vollständige Risikobewertung</li>
+          <li>Dokumentationssystem aufbauen</li>
+          <li>Hochrisiko-Compliance umsetzen</li>
+          <li>Chatbot-Hinweise live schalten</li>
+        </ul>
+      </div>
+    </div>
+    <div class="box box--ghost mt-2">
+      <strong>Empfehlung:</strong> Heute die ersten 3 Sofort-Maßnahmen anstoßen. Das kostet unter einem halben Tag – und schafft sofort Rechtssicherheit.
+    </div>
+  </div>
+  <div class="slide__page">23</div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     FOLIE 24 – FAQ
+═══════════════════════════════════════════════════════════════ -->
+<section class="slide slide--light" id="s24">
+  <div class="slide__brand"><img class="brand-logo" src="Logo.svg" alt="PINGEL AI Solutions"></div>
+  <div class="slide__inner">
+    <span class="eyebrow eyebrow--dark">Häufige Fragen</span>
+    <h2>FAQ</h2>
+    <div class="divider divider--left"></div>
+    <div class="cols cols--2">
+      <div>
+        <div class="box box--gold mb-1">
+          <strong>„US-Anbieter – gilt das trotzdem?"</strong><br>
+          <span class="small">Ja. Der AI Act gilt, sobald das System in der EU eingesetzt wird oder EU-Bürger betrifft.</span>
+        </div>
+        <div class="box box--gold mb-1">
+          <strong>„Nur ChatGPT intern – betrifft mich das?"</strong><br>
+          <span class="small">Minimales Risiko, aber: keine Kundendaten eingeben (DSGVO!), Schulungspflicht gilt trotzdem.</span>
+        </div>
+        <div class="box box--gold">
+          <strong>„Unser HR-Tool-Anbieter ist compliant – reicht das?"</strong><br>
+          <span class="small">Nein. Als Betreiber habt ihr eigene Pflichten: Aufsicht, Protokolle, Folgenabschätzung.</span>
+        </div>
+      </div>
+      <div>
+        <div class="box box--gold mb-1">
+          <strong>„Brauchen wir einen KI-Beauftragten?"</strong><br>
+          <span class="small">Nicht gesetzlich vorgeschrieben. Aber sinnvoll: eine verantwortliche Person benennen.</span>
+        </div>
+        <div class="box box--gold mb-1">
+          <strong>„KI mit eigenem Branding – was bin ich?"</strong><br>
+          <span class="small">Wahrscheinlich Anbieter – mit deutlich mehr Pflichten. White-Label-Falle beachten!</span>
+        </div>
+        <div class="box box--gold">
+          <strong>„Ab wann werden Bußgelder verhängt?"</strong><br>
+          <span class="small">Sanktionsregeln ab Aug 2026. Verbote + Schulungspflicht seit Feb 2025 durchsetzbar.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="slide__page">24</div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     FOLIE 25 – 5 KERNBOTSCHAFTEN
+═══════════════════════════════════════════════════════════════ -->
+<section class="slide slide--dark" id="s25">
+  <div class="slide__brand"><img class="brand-logo" src="Logo.svg" alt="PINGEL AI Solutions"></div>
+  <div class="slide__inner">
+    <span class="eyebrow">Zusammenfassung</span>
+    <h2 class="light">Die 5 Kernbotschaften</h2>
+    <div class="divider divider--left"></div>
+    <div class="cards cards--2" style="gap:.6rem;">
+      <div class="card--ghost">
+        <div class="card__num">01</div>
+        <div class="card__title">Nicht alle KI ist gleich</div>
+        <div class="card__text">Der AI Act regelt nach Risiko der Anwendung – nicht pauschal nach Technologie.</div>
+      </div>
+      <div class="card--ghost">
+        <div class="card__num">02</div>
+        <div class="card__title">Zwei Pflichten gelten jetzt</div>
+        <div class="card__text">Verbote (Feb 2025) + KI-Kompetenzpflicht (Feb 2025) – ohne Übergangsfrist.</div>
+      </div>
+      <div class="card--ghost">
+        <div class="card__num">03</div>
+        <div class="card__title">Rolle zuerst klären</div>
+        <div class="card__text">Anbieter oder Betreiber? Das entscheidet über den gesamten Pflichtumfang.</div>
+      </div>
+      <div class="card--ghost">
+        <div class="card__num">04</div>
+        <div class="card__title">HR-Tools oft Hochrisiko</div>
+        <div class="card__text">Bewerber-Screening via KI = häufig hohes Risiko. Besonders prüfen und dokumentieren.</div>
+      </div>
+    </div>
+    <div class="card--ghost mt-1" style="text-align:center;">
+      <div class="card__num" style="font-size:1.5rem;">05</div>
+      <div class="card__title">Kostenlose Hilfe nutzen</div>
+      <div class="card__text">Mittelstand-Digital, KoKIVO (BNetzA), Elements of AI – alles kostenlos für KMU.</div>
+    </div>
+  </div>
+  <div class="slide__page">25</div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     FOLIE 26 – ABSCHLUSS
+═══════════════════════════════════════════════════════════════ -->
+<section class="slide slide--hero" id="s26">
+  <div class="slide__brand"><img class="brand-logo" src="Logo.svg" alt="PINGEL AI Solutions"></div>
+  <div class="slide__inner text-center">
+    <span class="eyebrow">Danke</span>
+    <h1 style="font-size:clamp(1.8rem,3.5vw,3rem);">Fragen & Diskussion</h1>
+    <div class="divider"></div>
+    <p class="subtitle">Pragmatisch. Praxisnah. Ohne Hochglanz-Consulting.</p>
+    <div class="cards cards--3" style="max-width:800px; margin: 1.5rem auto 0; text-align:left;">
+      <a class="card--ghost" href="https://www.fabian-pingel.de/" target="_blank" rel="noopener">
+        <div class="card__label">Kontakt</div>
+        <div class="card__title">Fabian Pingel</div>
+        <div class="card__text">fabian-pingel.de</div>
+      </a>
+      <a class="card--ghost" href="https://www.bundesnetzagentur.de/DE/Fachthemen/Digitales/KI/start.html" target="_blank" rel="noopener">
+        <div class="card__label">Behörde</div>
+        <div class="card__title">BNetzA KoKIVO</div>
+        <div class="card__text">bundesnetzagentur.de/KI</div>
+      </a>
+      <a class="card--ghost" href="https://www.mittelstand-digital.de/" target="_blank" rel="noopener">
+        <div class="card__label">Training</div>
+        <div class="card__title">Mittelstand-Digital</div>
+        <div class="card__text">mittelstand-digital.de</div>
+      </a>
+    </div>
+    <p class="small" style="color:rgba(255,255,255,.35); margin-top:2rem;">
+      Stand: März 2026 | Verordnung (EU) 2024/1689 | Kein Rechtsrat – bitte Fachanwalt hinzuziehen.
+    </p>
+  </div>
+  <div class="slide__page">26</div>
+</section>
+
+</div><!-- /deck -->
+
+<!-- ── Navigation ──────────────────────────────────────────────── -->
+<nav id="nav">
+  <button class="nav-btn" id="btn-prev" onclick="go(-1)" title="Zurück (←)">&#8592;</button>
+  <span id="slide-counter">1 / 26</span>
+  <button class="nav-btn" id="btn-next" onclick="go(1)" title="Weiter (→)">&#8594;</button>
+</nav>
+
+<script>
+const slides = document.querySelectorAll('.slide');
+const total  = slides.length;
+let cur = 0;
+
+function show(n) {
+  slides[cur].classList.remove('active');
+  slides[cur].classList.add('exit');
+  setTimeout(() => slides[cur < n ? cur : n + (cur === n ? 0 : 0)].classList.remove('exit'), 400);
+
+  // Cleanup exits
+  document.querySelectorAll('.slide.exit').forEach(s => {
+    setTimeout(() => s.classList.remove('exit'), 450);
+  });
+
+  cur = n;
+  slides[cur].classList.add('active');
+
+  document.getElementById('slide-counter').textContent = (cur + 1) + ' / ' + total;
+  document.getElementById('btn-prev').disabled = cur === 0;
+  document.getElementById('btn-next').disabled = cur === total - 1;
+  document.getElementById('progress-bar').style.width = ((cur + 1) / total * 100) + '%';
+
+  // Update hint visibility
+  document.getElementById('hint').style.opacity = cur === 0 ? '1' : '0';
+}
+
+function go(delta) {
+  const next = Math.max(0, Math.min(total - 1, cur + delta));
+  if (next !== cur) show(next);
+}
+
+// Keyboard
+document.addEventListener('keydown', e => {
+  if (e.key === 'ArrowRight' || e.key === 'ArrowDown' || e.key === ' ')  { e.preventDefault(); go(1); }
+  if (e.key === 'ArrowLeft'  || e.key === 'ArrowUp')                     { e.preventDefault(); go(-1); }
+  if (e.key === 'Home') show(0);
+  if (e.key === 'End')  show(total - 1);
+});
+
+// Click on slide to advance (but not on links/buttons)
+document.getElementById('deck').addEventListener('click', e => {
+  if (!e.target.closest('button, a, input')) go(1);
+});
+
+// Touch swipe
+let tx = 0;
+document.addEventListener('touchstart', e => { tx = e.touches[0].clientX; }, { passive: true });
+document.addEventListener('touchend',   e => {
+  const dx = e.changedTouches[0].clientX - tx;
+  if (Math.abs(dx) > 50) go(dx < 0 ? 1 : -1);
+}, { passive: true });
+
+// Fullscreen
+function toggleFS() {
+  if (!document.fullscreenElement) {
+    document.documentElement.requestFullscreen().catch(() => {});
+    document.getElementById('btn-fs').textContent = '✕ Vollbild';
+  } else {
+    document.exitFullscreen();
+    document.getElementById('btn-fs').textContent = '⛶ Vollbild';
+  }
+}
+
+// Init
+show(0);
+document.getElementById('progress-bar').style.width = (1 / total * 100) + '%';
+
+// Hide hint after 4s
+setTimeout(() => { document.getElementById('hint').style.opacity = '0'; }, 4000);
+</script>
+</body>
+</html>

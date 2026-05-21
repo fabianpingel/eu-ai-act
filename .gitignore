@@ -1,0 +1,30 @@
+# Claude Code
+.claude/
+resume.md
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Editors / IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Office / Temp-Dateien
+~$*
+*.tmp
+*.bak
+
+# Logs
+*.log
