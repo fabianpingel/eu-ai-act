@@ -1,77 +1,89 @@
-# EU AI Act – Workshop für KMU
+# EU AI Act – Workshop für kleine Organisationen
 
-Workshop-Material zur EU-KI-Verordnung (Verordnung (EU) 2024/1689) für kleine und
-mittlere Unternehmen sowie Organisationen ohne eigene Rechtsabteilung.
+Workshop-Material zur EU-KI-Verordnung (Verordnung (EU) 2024/1689 in der Fassung des „Digital Omnibus"
+VO (EU) 2026/1744) für kleine und mittlere Unternehmen, Software-KMU, Vereine und Kommunen – ohne eigene
+Rechtsabteilung. Mit Hands-on-Vorlagen, damit die Pflichten nicht nur verstanden, sondern erledigt werden.
 
-**Stand:** März 2026
-**Format:** Halbtages-Workshop (4–5 Stunden) mit begleitender HTML-Präsentation
-**Autor:** PINGEL AI Solutions
+**Rechtsstand:** 9. September 2026
+**Format:** Halbtages-Workshop (ca. 4 Stunden) mit HTML-Präsentation (47 Folien) und 9 Vorlagen
+**Autor:** PINGEL AI Solutions · Lizenz CC BY 4.0
 
 ---
 
-## Inhalte des Repositorys
+## Inhalt des Repositorys
 
-| Datei | Inhalt |
-|-------|--------|
-| [`praesentation.html`](praesentation.html) | Interaktive HTML-Präsentation (~60 Folien) – im Browser öffnen |
-| [`workshop_rezept.md`](workshop_rezept.md) | Workshop-Konzept: Ablauf, Module, Übungen, Checklisten |
-| [`sprechtext.md`](sprechtext.md) | Sprechtext und Moderationsnotizen für den Workshop-Leiter |
-| [`eu_ai_act_recherche.md`](eu_ai_act_recherche.md) | Inhaltliche Recherche-Grundlage zum AI Act |
-| [`Logo.svg`](Logo.svg) / [`Original.svg`](Original.svg) | Logos / Grafik-Assets |
-| [`src.txt`](src.txt) | Quellenverzeichnis (Links zu offiziellen Stellen) |
+| Datei / Ordner | Inhalt |
+|---|---|
+| [`praesentation.html`](praesentation.html) | Interaktive Präsentation, 47 Folien (inkl. Einsteiger-Grundlagen, Glossar, Bewertungsmethode) – im Browser öffnen, keine Abhängigkeiten |
+| [`workshop_rezept.md`](workshop_rezept.md) | Ablauf, Module, Lernziele, Übungen, Zielgruppen-Varianten, FAQ, Handout |
+| [`sprechtext.md`](sprechtext.md) | Sprechtext und Moderationsnotizen je Folie, Antworten auf schwierige Fragen |
+| [`glossar.md`](glossar.md) | Glossar mit 35 Begriffen für Einsteiger (AI Act, Omnibus, KI-MIG, Anbieter/Betreiber, Anhang I/III, FRIA, Praxiskodex …), als Handout nutzbar |
+| [`eu_ai_act_recherche.md`](eu_ai_act_recherche.md) | Fachliche Referenz: Rechtsstand 09/2026, Omnibus, KI-MIG, alle Artikel mit Fundstellen, „Was das Gesetz NICHT fordert" |
+| [`vorlagen/`](vorlagen/README.md) | 9 Vorlagen als Markdown + generierte DOCX/XLSX (Inventar, Risiko-Check, Richtlinie, Schulungsnachweis, Transparenz-Texte, Anbieter-Fragebogen, Betriebsrat-Info, Vorfall-Protokoll, Fahrplan) |
+| [`tools/build_vorlagen.py`](tools/build_vorlagen.py) | Erzeugt DOCX/XLSX aus den Markdown-Vorlagen (python-docx, openpyxl) |
+| [`tools/check_links.py`](tools/check_links.py) | Prüft alle URLs in Quellen, Präsentation und Vorlagen |
+| [`src.txt`](src.txt) | Kategorisiertes Quellenverzeichnis (~100 URLs mit Stand-Angabe) |
+| [`AENDERUNGEN.md`](AENDERUNGEN.md) | Änderungsprotokoll: Rechtsänderungen, korrigierte Fehler, offene Punkte |
+| `Logo.svg`, `Original.svg` | Grafik-Assets |
 
 ---
 
 ## Präsentation starten
 
-Die Präsentation ist eine eigenständige HTML-Datei – kein Build, keine Abhängigkeiten:
-
 ```powershell
-# Im Standard-Browser öffnen
 Start-Process praesentation.html
 ```
 
-Empfohlen: Vollbild-Modus (F11) und Pfeiltasten zur Navigation.
+Navigation: Pfeiltasten, Klick, Wischen · `Home`/`End` · `F` = Vollbild · Deep-Link `praesentation.html#f22` springt zu Folie 22.
+
+## Vorlagen regenerieren
+
+```powershell
+pip install python-docx openpyxl
+python tools/build_vorlagen.py       # vorlagen/docx/*.docx, vorlagen/xlsx/*.xlsx
+python tools/check_links.py          # Link-Report
+```
+
+Die Markdown-Dateien in `vorlagen/` sind die einzige Quelle; die Office-Dateien sind generiert und werden mit committet.
 
 ---
 
-## Zielgruppe & Lernziele
+## Zielgruppen & Lernziele
 
-**Zielgruppe:** KMU, Organisationen ohne juristische Inhouse-Expertise
+Nach dem Workshop können Teilnehmende:
 
-Nach dem Workshop wissen die Teilnehmer:
+1. für jedes KI-System **Rolle** (Anbieter/Betreiber) und **Risikostufe** bestimmen,
+2. die **drei heute geltenden Pflichten** erfüllen – Verbote (Art. 5), KI-Kompetenz (Art. 4), Transparenz (Art. 50) – mit den Vorlagen,
+3. die **Hochrisiko-Pflichten ab 2. Dezember 2027** (Art. 26, ggf. Art. 27) planen,
+4. benennen, **was das Gesetz nicht fordert** (kein KI-Beauftragter, keine Zertifikate, keine Kennzeichnung aller KI-Texte, keine FRIA für normale KMU, keine Registrierung als Betreiber),
+5. kostenlose Hilfsangebote nutzen (Bundesnetzagentur KI-Service-Desk, eRecht24, Mittelstand-Digital, KI-Campus).
 
-1. **Klarheit** – Sind sie überhaupt vom AI Act betroffen?
-2. **Orientierung** – Welche Risikostufe trifft auf ihre KI-Anwendung zu?
-3. **Praxis** – Welche konkreten Pflichten gelten ab wann?
-4. **Ressourcen** – Wo finden sie kostenlose Hilfsangebote (KI-Service-Desk u.a.)?
+---
+
+## Rechtsstand in Kürze (09/2026)
+
+| Was | Seit / ab |
+|---|---|
+| Verbotene Praktiken (9), KI-Kompetenz | 2. Feb 2025 |
+| GPAI-Pflichten, Bußgeldvorschriften | 2. Aug 2025 |
+| Digital Omnibus (VO 2026/1744), KI-MIG | 27. / 29. Juli 2026 |
+| Transparenzpflichten Art. 50, Aufsicht durch Bundesnetzagentur | 2. Aug 2026 |
+| Hochrisiko Anhang III (HR, Bildung, Kredit …) | **2. Dez 2027** |
+| Hochrisiko Anhang I (Produkte) | 2. Aug 2028 |
 
 ---
 
 ## Quellen
 
-Die inhaltliche Grundlage stützt sich auf folgende Primärquellen
-(siehe auch [`src.txt`](src.txt)):
-
-- [artificialintelligenceact.eu](https://artificialintelligenceact.eu/) – Konsolidierter Verordnungstext
-- [bundesregierung.de – AI Act](https://www.bundesregierung.de/breg-de/aktuelles/ai-act-2285944)
-- [bundesregierung.de – Umsetzung KI-Verordnung](https://www.bundesregierung.de/breg-de/aktuelles/umsetzung-ki-verordnung-2406638)
-- [IHK Hannover – AI Act & Mitarbeitendenschulung](https://www.ihk.de/hannover/hauptnavigation/digitalisierung/aktuell-digitalisierung/ai-act-unternehmen-muessen-mitarbeitende-in-ki-schulen-6470624)
-- [e-recht24.de – KI-Anbieter](https://www.e-recht24.de/ki/13401-ki-anbieter.html)
-- [Bundesnetzagentur – KI-Kompass](https://www.bundesnetzagentur.de/DE/Fachthemen/Digitales/KI/2_Risiko/kompass/start.html)
-
----
+Bevorzugt deutschsprachige Primär- und Praxisquellen: Verordnungstext (EUR-Lex, ai-act-law.eu), Bundesnetzagentur
+KI-Service-Desk, e-recht24.de, EU-Kommission (Leitlinien, Praxiskodizes), gesetze-im-internet.de (KI-MIG),
+Datenschutzkonferenz, Bitkom, GDD. Vollständige Liste: [`src.txt`](src.txt).
 
 ## Lizenz
 
-Die Inhalte stehen unter **Creative Commons Attribution 4.0 International (CC BY 4.0)** –
-siehe [LICENSE](LICENSE). Weiternutzung und Anpassung sind erlaubt, sofern der Autor
-genannt wird.
-
----
+Creative Commons Attribution 4.0 International (CC BY 4.0) – siehe [LICENSE](LICENSE).
 
 ## Hinweis
 
-Dieses Material ersetzt **keine** individuelle Rechtsberatung. Es dient der
-Erstorientierung und Sensibilisierung. Bei konkreten Compliance-Fragen ist
-fachkundige juristische Beratung einzuholen.
+Dieses Material ersetzt **keine** individuelle Rechtsberatung. Es dient der Erstorientierung und Umsetzung
+der Grundpflichten. Bei Hochrisiko-Systemen oder Anbieterrolle ist fachkundige juristische Beratung einzuholen.

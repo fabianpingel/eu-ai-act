@@ -1,12 +1,122 @@
-https://artificialintelligenceact.eu/
+# Quellenverzeichnis – EU AI Act Workshop für kleine Organisationen
+# Stand: 9. September 2026 | Format: URL — Beschreibung (Stand/Datum)
+# Erreichbarkeit geprüft mit tools/check_links.py (Report siehe AENDERUNGEN.md).
+# Bevorzugte Quellen: Verordnungstext (DE), Bundesnetzagentur, e-recht24.de, EU-Kommission.
 
-https://www.bundesregierung.de/breg-de/aktuelles/ai-act-2285944
+## 1. Rechtstexte (Primärquellen)
+https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32024R1689 — Verordnung (EU) 2024/1689 (KI-Verordnung), deutsche Fassung auf EUR-Lex
+https://eur-lex.europa.eu/eli/reg/2026/1744/oj — Verordnung (EU) 2026/1744 „Digital Omnibus on AI", ABl. 24.07.2026, in Kraft 27.07.2026
+https://www.gesetze-im-internet.de/ki-mig/ — KI-Marktüberwachungs- und Innovationsförderungs-Gesetz (KI-MIG) vom 22.07.2026, BGBl. 2026 I Nr. 223, in Kraft 29.07.2026
+https://ai-act-law.eu/de/ — KI-VO artikelweise auf Deutsch mit Erwägungsgründen (gute Zitierhilfe)
+https://ai-act-law.eu/de/artikel/4/ — Art. 4 KI-Kompetenz
+https://ai-act-law.eu/de/artikel/5/ — Art. 5 Verbotene Praktiken
+https://ai-act-law.eu/de/artikel/6/ — Art. 6 Einstufung Hochrisiko (inkl. Abs. 3 Ausnahmen)
+https://ai-act-law.eu/de/artikel/25/ — Art. 25 Pflichten entlang der Wertschöpfungskette (Rollenwechsel)
+https://ai-act-law.eu/de/artikel/26/ — Art. 26 Pflichten der Betreiber von Hochrisiko-KI
+https://ai-act-law.eu/de/artikel/27/ — Art. 27 Grundrechte-Folgenabschätzung (Adressaten!)
+https://ai-act-law.eu/de/artikel/50/ — Art. 50 Transparenzpflichten
+https://ai-act-law.eu/de/artikel/99/ — Art. 99 Sanktionen (Abs. 6: KMU niedrigerer Betrag)
+https://ai-act-law.eu/de/artikel/113/ — Art. 113 Inkrafttreten und Geltungsbeginn
+https://artificialintelligenceact.eu/de/annex/3/ — Anhang III Hochrisiko-Anwendungsfälle (DE)
+https://artificialintelligenceact.eu/de/ — AI Act Explorer (Future of Life Institute), deutsche Oberfläche
+https://ai-act-service-desk.ec.europa.eu/en — AI Act Service Desk der EU-Kommission (Artikel-Explorer, Compliance-Checker)
 
-https://www.bundesregierung.de/breg-de/aktuelles/umsetzung-ki-verordnung-2406638
+## 2. EU-Kommission: Leitlinien, Praxiskodizes, FAQ
+https://digital-strategy.ec.europa.eu/de/policies/regulatory-framework-ai — Übersichtsseite KI-Verordnung (DE)
+https://digital-strategy.ec.europa.eu/en/library/commission-guidelines-definition-artificial-intelligence-system-established-regulation-eu-20241689-ai — Leitlinien zur Definition „KI-System" (06.02.2025): Excel/regelbasierte Software sind keine KI-Systeme
+https://digital-strategy.ec.europa.eu/en/library/commission-publishes-guidelines-prohibited-artificial-intelligence-ai-practices-defined-ai-act — Leitlinien zu verbotenen Praktiken Art. 5 (04.02.2025): kumulative Tatbestandsmerkmale
+https://digital-strategy.ec.europa.eu/de/faqs/ai-literacy-questions-answers — Q&A KI-Kompetenz Art. 4 (07.05.2025, aktualisiert): kein Zertifikat, kein Format vorgeschrieben
+https://digital-strategy.ec.europa.eu/de/library/living-repository-foster-learning-and-exchange-ai-literacy — Living Repository: Praxisbeispiele für KI-Kompetenz-Maßnahmen (AI Pact)
+https://digital-strategy.ec.europa.eu/en/library/draft-commission-guidelines-classification-high-risk-ai-systems — ENTWURF Leitlinien Hochrisiko-Einstufung Art. 6 (19./20.05.2026) – Stand 09/2026 nicht final
+https://digital-strategy.ec.europa.eu/en/policies/code-practice-ai-generated-content — Praxiskodex Kennzeichnung KI-generierter Inhalte (Art. 50), final 10.06.2026, ~190 Unterzeichner
+https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai — GPAI-Praxiskodex (10.07.2025)
+https://digital-strategy.ec.europa.eu/en/policies/guidelines-gpai-providers — Leitlinien für GPAI-Anbieter (18.07.2025): ⅓-Regel bei Fine-Tuning
+https://digital-strategy.ec.europa.eu/en/policies/ai-pact — AI Pact (freiwillige Selbstverpflichtungen)
+https://digital-strategy.ec.europa.eu/en/faqs/digital-package — FAQ der Kommission zum Digital Omnibus
+https://www.consilium.europa.eu/en/press/press-releases/2026/06/29/artificial-intelligence-council-gives-final-green-light-to-simplify-and-streamline-rules/ — Rat: endgültige Annahme Digital Omnibus on AI (29.06.2026)
+https://european-digital-innovation-hubs.ec.europa.eu/de/edih-catalogue/countries/germany — European Digital Innovation Hubs in Deutschland (kostenlose Beratung)
 
-https://www.ihk.de/hannover/hauptnavigation/digitalisierung/aktuell-digitalisierung/ai-act-unternehmen-muessen-mitarbeitende-in-ki-schulen-6470624
+## 3. Bundesnetzagentur – KI-Service-Desk / KoKIVO
+https://www.bundesnetzagentur.de/DE/Fachthemen/Digitales/KI/start_ki.html — Einstiegsseite KI-Service-Desk (alte URL …/KI/start.html ist tot)
+https://www.bundesnetzagentur.de/DE/Fachthemen/Digitales/KI/2_Risiko/kompass/start.html — KI-Compliance-Kompass: interaktive Relevanz-/Risikoprüfung
+https://www.bundesnetzagentur.de/DE/Fachthemen/Digitales/KI/1_Ziel/start_ziel.html — Ziele, Zielgruppe, Zeitplan
+https://www.bundesnetzagentur.de/DE/Fachthemen/Digitales/KI/2_Risiko/start_risiko.html — Risikostufen
+https://www.bundesnetzagentur.de/DE/Fachthemen/Digitales/KI/6_Definitionen/start.html — Definitionen (KI-System, Akteure)
+https://www.bundesnetzagentur.de/DE/Fachthemen/Digitales/KI/7_Kompetenz/start.html — KI-Kompetenz Art. 4: drei Grundsteine, Stufenmodell, Omnibus-Hinweis
+https://www.bundesnetzagentur.de/DE/Fachthemen/Digitales/KI/8_VerbotenePraktiken/start.html — Verbotene Praktiken
+https://www.bundesnetzagentur.de/DE/Fachthemen/Digitales/KI/9_Hochrisiko/start.html — Hochrisiko-KI-Systeme
+https://www.bundesnetzagentur.de/DE/Fachthemen/Digitales/KI/4_Transparenzpflichten/start.html — Transparenzpflichten Art. 50 (Anbieter vs. Betreiber)
+https://www.bundesnetzagentur.de/DE/Fachthemen/Digitales/KI/3_Modelle/start.html — GPAI-Modelle
+https://www.bundesnetzagentur.de/DE/Fachthemen/Digitales/KI/5_Innovationen/start.html — KI-Reallabore
+https://www.bundesnetzagentur.de/DE/Fachthemen/Digitales/KI/14_Marktueberwachung/start.html — Marktüberwachung
+https://www.bundesnetzagentur.de/DE/Fachthemen/Digitales/KI/15_Koordinierung/start.html — Koordinierungs- und Kompetenzzentrum (KoKIVO)
+https://www.bundesnetzagentur.de/DE/Fachthemen/Digitales/KI/_faq/start_faq.html — FAQ
+https://www.bundesnetzagentur.de/DE/Fachthemen/Digitales/KI/_functions/factsheet_KMU.pdf — Factsheet „KI-Verordnung – Fokus KMU und Start-ups" (PDF)
+https://www.bundesnetzagentur.de/DE/Fachthemen/Digitales/KI/_functions/factsheet.pdf — Factsheet KI-Verordnung und KI-Service-Desk (PDF)
+https://www.bundesnetzagentur.de/SharedDocs/Pressemitteilungen/DE/2025/20250703_KI_ServiceDesk.html — Pressemitteilung Start KI-Service-Desk (03.07.2025)
+https://www.bundesnetzagentur.de/SharedDocs/Pressemitteilungen/EN/2026/20260729_KI_VO.html — Pressemitteilung: BNetzA übernimmt Marktüberwachung nach KI-MIG (29.07.2026)
 
-https://www.e-recht24.de/ki/13401-ki-anbieter.html
+## 4. Bundesregierung / Ministerien
+https://bmds.bund.de/service/gesetzgebungsverfahren/gesetz-zur-durchfuehrung-der-ki-verordnung — BMDS: Gesetzgebungsverfahren zum Durchführungsgesetz (KI-MIG)
+https://www.bundestag.de/dokumente/textarchiv/2026/kw24-de-ki-1183820 — Bundestag: 2./3. Lesung KI-Durchführungsgesetz (11.06.2026) (Seite blockiert Skript-Zugriffe; im Browser erreichbar)
+https://www.bundesregierung.de/breg-de/aktuelles/ai-act-2285944 — Bundesregierung: Überblick AI Act (älter, Grundlagen)
+https://www.bundesregierung.de/breg-de/aktuelles/umsetzung-ki-verordnung-2406638 — Bundesregierung: Kabinettsbeschluss Umsetzung KI-Verordnung (11.02.2026)
+https://www.bundeswirtschaftsministerium.de/Redaktion/DE/Dossier/MittelstandDigital/foerderschwerpunkt-mittelstanddigital.html — BMWE: Förderschwerpunkt Mittelstand-Digital (Netzwerk läuft Ende 2026 aus, Neustart 2027)
+https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Informationen-und-Empfehlungen/Kuenstliche-Intelligenz/KI.html — BSI: Sicherer Einsatz von KI, Kriterienkataloge
 
-https://www.bundesnetzagentur.de/DE/Fachthemen/Digitales/KI/2_Risiko/kompass/start.html
+## 5. e-recht24.de (bevorzugte deutschsprachige Praxisquelle)
+https://www.e-recht24.de/ki/ — Rubrik „KI & Recht": alle Artikel zur KI-Verordnung
+https://www.e-recht24.de/ki/13243-ki-verordnung.html — KI-Verordnung: Was Unternehmen wissen müssen (Stand 04.09.2025 – noch ohne Omnibus, 7-Schritte-Anleitung)
+https://www.e-recht24.de/ki/13401-ki-anbieter.html — KI-Anbieter: Pflichten Anbieter vs. Betreiber, Checkliste (Stand 17.03.2025)
+https://www.e-recht24.de/ki/13432-ki-im-unternehmen.html — KI im Unternehmen: DSGVO, Urheberrecht, KI-VO, 6-Schritte-Leitfaden (Stand 03.07.2025)
+https://www.e-recht24.de/ki/13389-ki-erklaerung.html — KI-Policy für Mitarbeiter: Warum eine KI-Richtlinie (Stand 11.02.2025)
+https://www.e-recht24.de/ki/13336-ki-kennzeichnungspflicht-fuer-unternehmer.html — KI-Kennzeichnungspflicht: Anbieter/Betreiber, Deepfakes, Texte, 10-Punkte-Checkliste, Omnibus-Übergang (Stand 29.07.2026)
+https://www.e-recht24.de/ki/13528-ki-compliance.html — KI-Compliance: rechtskonformer Einsatz, Checkliste (Stand 19.05.2026)
+https://www.e-recht24.de/ki/13406-ki-datenschutz.html — KI & Datenschutz
+https://www.e-recht24.de/ki/13409-chatgpt-datenschutz.html — ChatGPT & Datenschutz
+https://www.e-recht24.de/ki/13422-copilot-datenschutz.html — Microsoft Copilot & Datenschutz
+https://www.e-recht24.de/ki/11416-chatbots-dsgvo-konform-einsetzen.html — Chatbots & DSGVO
+https://www.e-recht24.de/ki/13539-deepfakes.html — Deepfakes: rechtliche Einordnung
+https://www.e-recht24.de/ki/13288-ki-urheberrecht.html — KI & Urheberrecht
+https://www.e-recht24.de/ki/13503-ki-arbeitsrecht.html — KI im Arbeitsrecht
+https://www.e-recht24.de/ki/13405-ki-im-marketing.html — KI im Marketing
+https://www.e-recht24.de/ki-check.html — eRecht24 KI-Check: kostenloses Self-Assessment
 
+## 6. Datenschutzbehörden
+https://www.datenschutzkonferenz-online.de/orientierungshilfen.html — DSK: Übersicht aller Orientierungshilfen
+https://www.datenschutzkonferenz-online.de/media/oh/20240506_DSK_Orientierungshilfe_KI_und_Datenschutz.pdf — DSK-Orientierungshilfe „KI und Datenschutz" (06.05.2024, für Anwender)
+https://www.datenschutzkonferenz-online.de/media/oh/DSK-OH_KI-Systeme.pdf — DSK-Orientierungshilfe für Entwickler/Hersteller von KI-Systemen (17.06.2025)
+https://www.datenschutz.sachsen.de/dsk-veroeffentlicht-orientierungshilfe-zu-ki-systemen-mit-retrieval-augmented-generation-rag-7768.html — DSK-Orientierungshilfe RAG-Systeme (10/2025), Ankündigung SDTB
+https://www.baden-wuerttemberg.datenschutz.de/rechtsgrundlagen-datenschutz-ki/ — LfDI BW: Rechtsgrundlagen im Datenschutz beim Einsatz von KI (mit Checkliste)
+https://www.baden-wuerttemberg.datenschutz.de/beitrag-orientierungshilfen-navigator-ki-datenschutz/ — LfDI BW: Orientierungshilfen-Navigator KI & Datenschutz (ONKIDA)
+https://www.ldi.nrw.de/dsk-orientierungshilfe-ki-fuer-unternehmen-und-behoerden — LDI NRW: DSK-Orientierungshilfe KI für Unternehmen und Behörden
+
+## 7. Verbände, Muster, Leitfäden
+https://www.bitkom.org/Bitkom/Publikationen/Umsetzungsleitfaden-zur-KI-Verordnung — Bitkom: Umsetzungsleitfaden zur KI-Verordnung, Version 2.0 (2026)
+https://www.bitkom.org/Klick-Tool-Umsetzungsleitfaden-KI-Verordnung — Bitkom: interaktives Klick-Tool zum Umsetzungsleitfaden
+https://www.bitkom.org/Bitkom/Publikationen/KI-und-Mitbestimmung-Eckpfeiler-einer-Betriebsvereinbarung-fuer-den-KI-Einsatz-im-Unternehmen — Bitkom: KI und Mitbestimmung – Eckpfeiler einer Betriebsvereinbarung (02/2026)
+https://www.gdd.de/publikationen/gdd-musterrichtlinie-einsatz-von-kuenstliche-intelligenz/ — GDD: Musterrichtlinie „Betrieblicher Einsatz von KI" (30.05.2025)
+https://digitalzentrum-berlin.de/ki-richtlinie-fuer-unternehmen-in-7-schritten-mit-kostenfreien-vorlagen-und-praxistipps — Mittelstand-Digital Zentrum Berlin: KI-Richtlinie in 7 Schritten mit kostenfreien Vorlagen
+https://digitalzentrum-chemnitz.de/wissen/digitaler-omnibus-zu-ki-was-jetzt-auf-kmu-zukommt/ — Mittelstand-Digital Zentrum Chemnitz: Digitaler Omnibus – was auf KMU zukommt
+https://www.ihk.de/lippe-detmold/hauptnavigation/beraten-und-informieren/innovation-und-digitalisierung/aktuelles2/erleichterungen-bei-ki-verordnung-7130746 — IHK Lippe zu Detmold: Erleichterungen bei der KI-Verordnung (Omnibus) (IHK-Plattform blockiert Skript-Zugriffe, im Browser erreichbar)
+https://www.ihk.de/hannover/hauptnavigation/digitalisierung/aktuell-digitalisierung/ai-act-unternehmen-muessen-mitarbeitende-in-ki-schulen-6470624 — IHK Hannover: AI Act – Mitarbeitende in KI schulen (Art. 4) (IHK-Plattform blockiert Skript-Zugriffe, im Browser erreichbar)
+https://www.hwk-ulm.de/informationen-zur-schulungs-und-transparenzpflicht-nach-ki-verordnung-fuer-handwerksbetriebe/ — HWK Ulm: Schulungs- und Transparenzpflicht für Handwerksbetriebe
+
+## 8. Lernangebote (kostenlos)
+https://www.mittelstand-digital.de — Mittelstand-Digital Zentren: kostenlose, anbieterneutrale KI-Beratung und KI-Trainer (BMWE)
+https://ki-campus.org — KI-Campus: kostenlose Online-Kurse (u. a. „Elements of AI" deutsch, KI-Grundlagen)
+https://www.appliedai-institute.de/lernen/kostenlose-onlinekurse — appliedAI Institute: kostenlose Onlinekurse (Seite blockiert Skript-Zugriffe)
+https://www.elementsofai.de/ — Elements of AI, deutsche Version (Uni Helsinki / DIHK), kostenloser Grundlagenkurs
+https://digital-strategy.ec.europa.eu/en/events/third-ai-pact-webinar-ai-literacy — AI Pact Webinar KI-Kompetenz (Kommission)
+
+## 9. Fachmedien / Analysen zum Digital Omnibus und Stand 2026
+https://www.haufe.de/personal/arbeitsrecht/ki-verordnung-digitaler-omnibus-zum-eu-ai-act_76_683992.html — Haufe Personal: Digitaler Omnibus zum EU AI Act (Arbeitsrecht)
+https://www.haufe.de/finance/steuern-finanzen/digital-omnibus-was-aendert-sich-an-der-ki-verordnung_190_691870.html — Haufe Finance: Was ändert sich an der KI-Verordnung
+https://www.heise.de/news/Bruessel-ordnet-Algorithmen-EU-Kommission-konkretisiert-die-Hochrisiko-KI-11301376.html — heise: Kommission konkretisiert Hochrisiko-KI (Leitlinien-Entwurf 05/2026)
+https://consulting.tuv.com/aktuelles/ki-im-fokus/digital-omnibus-ki-verordnung-fristen — TÜV Rheinland: Digital Omnibus – neue Fristen
+https://consulting.tuv.com/aktuelles/ki-im-fokus/ki-kompetenz-art-4-eu-ai-act — TÜV Rheinland: KI-Kompetenz Art. 4
+https://ki-campus.org/blog/eu-ai-act-ki-omnibus-justiert-artikel-4-neu-ki-kompetenz-bleibt-pflicht — KI-Campus: Omnibus justiert Art. 4 – KI-Kompetenz bleibt Pflicht
+https://www.heuking.de/en/news-events/newsletter-articles/detail/ai-omnibus-2026-trilogue-agreement-on-amendments-to-the-ai-act-brings-longer-deadlines-and-less-bureaucracy.html — Heuking: AI Omnibus 2026 Trilog-Einigung
+https://www.freshfields.com/en/our-thinking/blogs/technology-quotient/eu-ai-act-unpacked-34-the-final-digital-omnibus-on-ai-key-amendments-to-the-a-102nber — Freshfields: The final Digital Omnibus on AI – key amendments
+https://fpf.org/blog/the-ai-act-implementation-timeline-what-changes-under-the-ai-omnibus/ — Future of Privacy Forum: AI Act Implementation Timeline nach Omnibus
+https://www.cencenelec.eu/areas-of-work/cen-cenelec-topics/artificial-intelligence/ — CEN-CENELEC JTC 21: Stand der harmonisierten Normen

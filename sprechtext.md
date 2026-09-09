@@ -1,35 +1,33 @@
-# EU AI Act – Sprechtext & Moderationsnotizen
-**Für Workshop-Leiter / Präsentator**
-**Zielgruppe:** KMU, Organisationen ohne eigene Rechtsabteilung
-**Tonalität:** Pragmatisch, direkt, auf Augenhöhe – kein Juristendeutsch
+# EU AI Act für kleine Organisationen – Sprechtext & Moderationsnotizen
+
+**Für Workshop-Leitung / Präsentator** · **Rechtsstand: 9. September 2026** · passend zu `praesentation.html` (47 Folien)
+**Tonalität:** pragmatisch, direkt, „ihr/wir" – kein Juristendeutsch. Entlasten, wo das Gesetz entlastet; klar sein, wo es Pflichten gibt.
 
 ---
 
 ## Hinweise zur Moderation
 
-- **Tempo:** Ca. 3–5 Minuten pro inhaltliche Folie, bei Übungsfolien 10–15 Minuten einplanen
-- **Sprache:** Aktiv, „ihr/wir" statt „man", konkrete Beispiele aus dem Alltag
-- **Pausen:** Nach jeder Kernaussage kurz pausieren – Publikum braucht Zeit zum Verarbeiten
-- **Fragen:** Immer ans Ende des Moduls verschieben, außer kurze Klärungsfragen
-- **Energie:** Gerade bei Folie 9 (Verbote) und 19 (Bußgelder) nicht übertreiben – sachlich bleiben
+- **Tempo:** 3–4 Minuten pro Inhaltsfolie, Hands-on-Folien 8–15 Minuten. Gesamt ca. 4,5 Stunden inkl. Pause.
+- **Roter Faden:** Drei Pflichten gelten heute (Verbote, KI-Kompetenz, Transparenz). Hochrisiko kommt im Dezember 2027. Alles andere ist Empfehlung.
+- **Einsteiger abholen:** Folien 4–7 (Warum, Funktionsweise, Begriffe) und 21–23 (Bewertungsmethode, Beispiel, Pflichten-Matrix) sind für Teilnehmende ohne Vorwissen gedacht. Bei erfahrenem Publikum kürzen, nie ganz weglassen – die Begriffe (Folie 7) braucht jeder.
+- **Entlastungs-Momente bewusst setzen:** Folie 19 (Was nicht gekennzeichnet werden muss), 25 (Was nicht in Art. 4 steht), 33 (KMU-Bußgeldregel), 34 (12 Mythen). Diese Folien erzeugen Erleichterung – das ist gewollt.
+- **Zielgruppen-Mix:** Bei überwiegend Betreibern Folie 30/31 kürzen. Bei Software-KMU Folie 15 und 31 vertiefen. Bei Kommunen/Vereinen Folie 29 ausführlich. Details im `workshop_rezept.md`.
+- **Glossar austeilen:** `glossar.md` (35 Begriffe) als Handout – Einsteiger schlagen während des Workshops nach.
+- **Fragen:** Klärungsfragen sofort, Diskussionen ans Modulende.
+- **Vorlagen offen haben:** Ordner `vorlagen/` mit DOCX/XLSX auf dem Präsentationsrechner, idealerweise Teilnehmer haben sie per Link/USB.
 
 ---
 
-## FOLIE 1 – Titelfolie
+## FOLIE 1 – Titel
 
 **Redezeit: ~3 Minuten**
 
-> „Willkommen! Heute reden wir über den EU AI Act – das erste umfassende KI-Gesetz der Welt. Klingt erstmal nach trockenem Juristenstoff, ich verspreche euch aber: In den nächsten vier Stunden wird das sehr konkret und sehr praxisnah."
+> „Willkommen. Heute geht es um den EU AI Act – die KI-Verordnung. Ich verspreche euch zwei Dinge: Erstens, ihr wisst am Ende genau, welche drei Pflichten heute für euch gelten und wie ihr sie in ein paar Tagen erledigt. Zweitens, ihr wisst, was das Gesetz von euch *nicht* verlangt – und das ist mehr, als die meisten Berater erzählen."
 
-**Einstieg mit Provokation:**
-> „Wer von euch nutzt ChatGPT, Copilot oder ähnliche Tools? Gut. Dann seid ihr alle bereits vom AI Act betroffen. Nicht irgendwann in der Zukunft – sondern seit Februar 2025. Also seit über einem Jahr."
+Auf die drei Zahlen zeigen:
+> „Februar 2025: Verbote und die Schulungspflicht. August 2026 – also vor fünf Wochen: die Transparenzpflichten, Chatbot-Hinweis und Kennzeichnung. Dezember 2027: die großen Hochrisiko-Pflichten, zum Beispiel für KI im Bewerbungsprozess. Das war ursprünglich August 2026 – wurde im Sommer verschoben. Dazu gleich mehr."
 
-**Tonsetzen:**
-> „Was ich heute NICHT machen werde: euch mit Paragraphen erschlagen oder sagen, ihr braucht sofort einen teuren Anwalt. Was ich werde: euch zeigen, was das konkret für euren Arbeitsalltag bedeutet und was ihr selbst tun könnt – heute noch."
-
-**Hinweis auf die drei Jahreszahlen:**
-Auf die Zahlen auf der Folie zeigen:
-> „2024 trat das Gesetz in Kraft. Februar 2025 – erste Pflichten sind aktiv. August 2026 – dann werden Bußgelder fällig. Diese drei Daten solltet ihr kennen."
+> „Der Rechtsstand ist der 9. September 2026. Das ist wichtig, weil sich im Juli 2026 einiges geändert hat. Wenn ihr Artikel von Anfang 2026 lest, stimmen die Daten nicht mehr."
 
 ---
 
@@ -37,542 +35,649 @@ Auf die Zahlen auf der Folie zeigen:
 
 **Redezeit: ~2 Minuten**
 
-> „Wir arbeiten heute in vier Modulen. Ich fange immer mit der wichtigsten Frage an: ‚Was hat das mit mir zu tun?' – das ist Modul 2. Davor schauen wir kurz, was das Gesetz überhaupt ist. Und am Ende – Modul 4 – verlasst ihr den Raum mit einer konkreten 10-Punkte-Liste, die ihr nächste Woche abhaken könnt."
+> „Vier Module. Eins: Was ist das Gesetz, was gilt wann, wer passt auf. Zwei: Bin ich betroffen – als was, mit welchem Risiko. Drei: Was muss ich tun – und was nicht. Vier: Hands-on. Da füllt ihr sechs Vorlagen aus, die ihr mitnehmt: Inventar, Risiko-Check, Richtlinie, Schulungsnachweis, Textbausteine, Anbieter-Fragebogen. Wenn ihr rausgeht, habt ihr die heute geltenden Pflichten im Grunde abgehakt."
 
-**Erwartungen abfragen:**
-> „Bevor wir starten: Was erwartet ihr heute? Was ist eure größte Sorge oder offene Frage zum Thema KI und Compliance? *(kurze Handzeichen oder 2-Satz-Runde)*"
-
-**Ziel klar machen:**
-> „Mein Ziel ist, dass ihr am Ende wisst: erstens, ob und wie ihr betroffen seid – und zweitens, was ihr als nächstes tun müsst. Nicht mehr, nicht weniger."
+Erwartungen abfragen: „Was ist eure größte Sorge zum Thema?" – zwei, drei Wortmeldungen, auf Flipchart notieren, am Ende abgleichen.
 
 ---
 
-## FOLIE 3 – Icebreaker / Einstieg
+## FOLIE 3 – Bestandsaufnahme
 
 **Redezeit: ~5 Minuten (interaktiv)**
 
-Fragen nacheinander stellen, wirklich auf Handzeichen warten:
+Frage 1 – berufliche Nutzung: „Fast alle. Damit seid ihr alle Betreiber von KI-Systemen im Sinne des Gesetzes. Klingt dramatisch, ist es nicht."
+Frage 2 – Chatbot/HR: „Das sind die beiden Fälle, bei denen es konkret wird: Chatbot heißt Transparenzpflicht heute, KI im Bewerbungsprozess heißt Hochrisiko ab Dezember 2027."
+Frage 3 – dokumentierte Schulungen: „Wenige Hände – normal. Heute Abend habt ihr eine."
+Frage 4 – Anbieter/Betreiber: „Das klären wir in Modul 2, es ist die wichtigste Weiche."
 
-**Frage 1 – Private KI-Nutzung:**
-> „Wer nutzt privat ChatGPT, Copilot, Gemini oder ähnliche Tools?" *(Hände hoch lassen)*
-> „Gut – schaut euch um. Fast alle. Das ist der Normalfall 2025."
-
-**Frage 2 – Berufliche KI-Nutzung:**
-> „Wer nutzt KI-Tools auch beruflich – egal ob offiziell eingeführt oder einfach mal ausprobiert?" *(Hände)*
-> „Auch hier – fast alle. Und genau das macht den AI Act relevant für uns alle hier im Raum."
-
-**Frage 3 – AI Act Kenntnis:**
-> „Wer hat den Begriff ‚AI Act' schon mal gehört, bevor wir uns heute getroffen haben?" *(Hände)*
-> „Gut – wer kann grob sagen, was drin steht?" *(Erwartet meist Schweigen oder sehr vage Antworten)*
-> „Genau. Das ist normal. Das Gesetz läuft oft unter dem Radar – bis das erste Bußgeld fällt."
-
-**Frage 4 – Anbieter/Betreiber:**
-> „Die letzte Frage – und die ist entscheidend: Wer weiß, ob er beim AI Act als ‚Anbieter' oder als ‚Betreiber' gilt?" *(Erwartet meist wenige oder gar keine Hände)*
-> „Super – das ist genau das Thema von Modul 2. Am Ende des Workshops weiß das jeder von euch."
-
-**Kernbotschaft:**
-> „Ich sage es gleich zu Beginn direkt: Der AI Act ist seit Februar 2025 in Kraft – nicht irgendwann, jetzt. Ignorieren ist keine Option. Aber ich möchte auch die Angst nehmen: Panik ist auch keine Option. Das hier ist lösbar."
+Kernbotschaft: „Drei Dinge gelten heute. Der Rest kommt Ende 2027. Wer jetzt anfängt, hat keinen Stress."
 
 ---
 
-## FOLIE 4 – Was ist der AI Act?
+## FOLIE 4 – Warum gibt es den AI Act?
+
+**Redezeit: ~6 Minuten – die Einsteiger-Folie, nicht hetzen**
+
+> „Bevor wir in Paragrafen einsteigen, die Frage, die sich jeder stellt: Warum überhaupt ein KI-Gesetz? Vier Gründe."
+
+Links durchgehen, mit den Fällen:
+> „Erstens: KI entscheidet über Menschen – wer zum Vorstellungsgespräch kommt, wer einen Kredit bekommt, wer von der Polizei kontrolliert wird. Oft merkt der Betroffene das nicht einmal."
+
+> „Zweitens: KI irrt systematisch. Amazon hat 2018 eine Bewerbungs-KI eingestellt, weil sie Frauen abwertete – sie hatte aus alten Einstellungsdaten gelernt, dass Männer eingestellt wurden. In den Niederlanden hat ein Algorithmus zur Betrugserkennung tausende Familien zu Unrecht des Kindergeldbetrugs beschuldigt, die Regierung ist 2021 darüber gestürzt. Clearview AI hat Milliarden Fotos aus dem Netz zu einer Gesichtsdatenbank gemacht."
+
+> „Drittens: KI täuscht. Deepfakes, Stimmen-Klone für den Enkeltrick, Chatbots, die sich als Menschen ausgeben."
+
+> „Viertens: Niemand war zuständig. Die DSGVO regelt Daten, das Produktsicherheitsrecht regelt Maschinen – für KI-Anwendungen gab es in 27 Ländern 27 Meinungen."
+
+Rechts – Ziele:
+> „Deshalb der AI Act. Ziel eins: Vertrauen. Nur wenn KI sicher und fair ist, nutzen Menschen sie. Ziel zwei: Grundrechte, Gesundheit, Sicherheit schützen – dort, wo KI Menschen wesentlich betrifft. Ziel drei: ein Markt, eine Regel – das ist für Anbieter ein Vorteil, nicht nur eine Last. Ziel vier: Innovation ermöglichen – Reallabore, Erleichterungen für kleine Unternehmen."
+
+Grundidee betonen:
+> „Die Grundidee ist einfach und die solltet ihr mitnehmen: Reguliert wird nicht die Technologie, sondern die riskante Anwendung. Das Vorbild ist das Produktsicherheitsrecht. Eine Bohrmaschine braucht ein CE-Zeichen, ein Kugelschreiber nicht. Genauso: Ein KI-System, das Bewerber bewertet, braucht eine Prüfung – ein Spam-Filter nicht."
+
+Grüne Box:
+> „Und was der AI Act nicht ist: kein Verbot von KI, kein Datenschutzgesetz, kein Haftungsgesetz, kein Gesetz nur für Google und OpenAI. Er gilt für alle, die KI beruflich nutzen – aber abgestuft. Für die meisten hier heißt das: wenig."
+
+---
+
+## FOLIE 5 – Der AI Act: Fakten
 
 **Redezeit: ~4 Minuten**
 
-**Einordnung:**
-> „Das hier ist kein deutsches Gesetz – es ist EU-Recht. Direkt anwendbar, ohne dass der Bundestag noch etwas beschließen muss. Verordnung (EU) 2024/1689 – die Zahl müsst ihr euch nicht merken, aber das Format schon: Es ist eine Verordnung, kein Richtlinie. Das heißt: Sie gilt eins zu eins in allen 27 EU-Staaten."
+> „Drei Rechtsakte solltet ihr dem Namen nach kennen. Die KI-Verordnung selbst – 2024/1689, seit August 2024 in Kraft, gilt direkt, kein Bundestag nötig. Der ‚Digital Omnibus' – 2026/1744, seit 27. Juli 2026 – hat sie geändert: Fristen verschoben, Schulungspflicht präzisiert, Kennzeichnung angepasst. Und das KI-MIG, das deutsche Durchführungsgesetz vom 29. Juli 2026 – das sagt nur, welche Behörde zuständig ist. Es legt euch keine neuen Pflichten auf."
 
-**Geltungsbereich mit Beispiel erklären:**
-> „Wichtig: Das Gesetz gilt nicht nach dem Firmensitz des Anbieters. Es gilt, wenn das Tool in der EU eingesetzt wird oder EU-Bürger betrifft. Konkret: Ihr nutzt ChatGPT von OpenAI – amerikanisches Unternehmen. Trotzdem gilt der AI Act für euch als Nutzer in Deutschland. Das ist der Clou."
+Geltung: „Es gilt nicht nach Firmensitz. Ihr nutzt ChatGPT von OpenAI aus den USA in Deutschland – ihr habt Betreiberpflichten, OpenAI hat Anbieterpflichten."
 
-**Ausnahmen:**
-> „Wer zuhause für sich selbst KI nutzt – Rezepte generieren, Urlaubsfotos bearbeiten – der ist nicht betroffen. Reine Forschung und militärische Systeme auch nicht. Alles andere: relevant."
+Ausnahmen: „Privat, Forschung vor Markteinführung, Militär. Nicht ausgenommen: Vereine, Kommunen, Ein-Personen-Betriebe. Aber es gibt Erleichterungen für KMU und seit dem Omnibus auch für ‚Small Mid-Caps' bis 750 Mitarbeitende."
 
-**Kernprinzip vorstellen:**
-> „Das Geniale und Pragmatische an diesem Gesetz ist das Grundprinzip: Nicht jede KI wird gleich reguliert. Es geht um das Risiko der konkreten Anwendung. Spam-Filter und Bewerbungsscreening sind beide KI – aber das Risiko ist komplett unterschiedlich. Das spiegelt das Gesetz."
-
-> „Merksatz: Nicht das Tool entscheidet die Risikostufe – sondern was ihr damit macht."
+Merksatz: „Nicht das Tool entscheidet, sondern wofür ihr es einsetzt."
 
 ---
 
-## FOLIE 5 – Risikopyramide
+## FOLIE 6 – Wie das Gesetz funktioniert
 
 **Redezeit: ~5 Minuten**
 
-**Pyramide von oben nach unten erklären:**
+> „Das ganze Gesetz lässt sich auf vier Fragen reduzieren. Wenn ihr die in dieser Reihenfolge stellt, findet ihr für jedes Tool die Antwort."
 
-**Verboten (Rot):**
-> „Ganz oben, ganz kurz: Es gibt 8 Anwendungen, die komplett verboten sind. Die schauen wir uns gleich im Detail an. Merkt euch: Die gelten seit Februar 2025."
+Vier Karten:
+> „Eins: Ist es überhaupt ein KI-System – steckt ein gelerntes Modell drin? Wenn nein, gilt das Gesetz nicht. Zwei: Welche Rolle habe ich – baue ich es oder nutze ich es? Der Anbieter trägt die meisten Pflichten. Drei: Welches Risiko hat die Anwendung – verboten, hoch, Transparenz oder minimal? Das entscheidet der Einsatzzweck. Vier: Aus Rolle mal Risiko ergibt sich die Pflichtenliste. Für die meisten kleinen Organisationen ist die kurz."
 
-**Hohes Risiko (Orange):**
-> „Der für die meisten KMU relevanteste Bereich. KI in sensiblen Bereichen wie HR, Bildung, Kredit, Gesundheit – da gelten strenge Auflagen. Wir schauen das genau an."
+Aufbau-Tabelle kurz:
+> „Damit ihr euch im Gesetz zurechtfindet: Kapitel I hat die Begriffe und Artikel 4, die Schulungspflicht. Kapitel II die Verbote. Kapitel III mit den Anhängen I und III ist der dicke Hochrisiko-Block – Artikel 26 sind eure Betreiberpflichten. Kapitel IV ist Artikel 50, Transparenz. Kapitel V betrifft die Modellanbieter. Der Rest ist Behördenorganisation, plus Artikel 99 mit den Bußgeldern. Alles, was wir heute besprechen, steht in vier Kapiteln."
 
-**Begrenztes Risiko (Gelb):**
-> „Chatbots, Deepfakes, KI-generierte Inhalte – hier geht es hauptsächlich um Transparenz. Ihr müsst sagen: ‚Das ist KI-generiert.' Das klingt trivial, ist aber ab August 2026 Pflicht."
+Drei Dinge für Einsteiger:
+> „Erstens: Es ist eine Verordnung, keine Richtlinie – sie gilt wörtlich in Deutschland, ohne Umsetzungsgesetz. Das KI-MIG sagt nur, welche Behörde zuständig ist. Zweitens: Die Kapitel starten gestuft – deshalb die vielen Daten, dazu Folie 10. Drittens, und das entlastet: Der Anbieter stuft sein System ein und dokumentiert das. Ihr als Betreiber müsst die Einstufung nicht erfinden, sondern abfragen und prüfen, ob sie plausibel ist."
 
-**Minimales Risiko (Grün):**
-> „Der Großteil aller KI-Anwendungen weltweit fällt hier rein. Spam-Filter, Produktempfehlungen – da fordert das Gesetz nichts Besonderes."
-
-**Interaktives Element:**
-> „Kurze Aufgabe für euch: Überlegt kurz – in welche Farbe fällt das KI-Tool, das ihr am häufigsten beruflich nutzt? *(30 Sekunden nachdenken lassen)* – Wer mag es kurz teilen?"
+Lesehilfe:
+> „Wenn ihr selbst nachlesen wollt: Artikel sind die Regeln, Anhänge sind Listen, Erwägungsgründe sind die Begründungen. Auf ai-act-law.eu gibt es alles auf Deutsch, artikelweise."
 
 ---
 
-## FOLIE 6 – Zeitplan
+## FOLIE 7 – Begriffe
+
+**Redezeit: ~5 Minuten – nicht alle vorlesen, die wichtigsten herausgreifen**
+
+> „Achtzehn Begriffe, die heute immer wieder fallen. Ihr müsst sie nicht auswendig lernen – das Glossar bekommt ihr als Handout mit 35 Begriffen. Fünf davon möchte ich kurz erklären, weil sie ständig verwechselt werden."
+
+> „**KI-VO, AI Act, KI-Verordnung** – drei Namen, ein Gesetz. **Digital Omnibus** – die Änderungsverordnung vom Sommer 2026, ein Sammelgesetz, das Fristen verschoben hat. **KI-MIG** – sperriger Name: KI-Marktüberwachungs- und Innovationsförderungs-Gesetz. Das deutsche Gesetz, das der Bundesnetzagentur den Hut aufsetzt. Merkt euch nur: Es macht euch keine neuen Pflichten."
+
+> „**Anbieter und Betreiber** – die wichtigste Unterscheidung des Tages. Anbieter baut und vertreibt unter eigenem Namen. Betreiber nutzt. Vorsicht bei englischen Texten: Betreiber heißt *deployer*, nicht *operator*."
+
+> „**Anhang I und Anhang III** – zwei Listen, die sagen, was Hochrisiko ist. Anhang I: KI in Produkten mit CE-Pflicht, Maschinen, Medizinprodukte. Anhang III: acht Einsatzbereiche – HR, Bildung, Kredit, Biometrie und so weiter. Wenn jemand ‚Anhang III' sagt, meint er die Liste der sensiblen Bereiche."
+
+Rechts kurz antippen: Transparenzpflicht, Deepfake, CE, EU-Datenbank, Marktüberwachung mit BNetzA und KoKIVO, FRIA, Praxiskodex, harmonisierte Norm, AVV.
+
+> „Der Praxiskodex ist interessant: Die Kommission moderiert, Unternehmen unterschreiben, wie sie eine Pflicht praktisch erfüllen – etwa die Kennzeichnung von KI-Bildern. Freiwillig, aber wer sich dranhält, ist auf der sicheren Seite. Und der AVV kommt gar nicht aus dem AI Act, sondern aus der DSGVO – ist aber bei jedem KI-Tool mit Personendaten dabei."
+
+Hinweis: „Wer einen Begriff nicht kennt: Glossar aufschlagen oder einfach fragen."
+
+---
+
+## FOLIE 8 – Was ist ein KI-System?
 
 **Redezeit: ~4 Minuten**
 
-**Chronologisch durchgehen:**
+> „Bevor wir über Pflichten reden: Was ist überhaupt ein KI-System? Die Kommission hat im Februar 2025 Leitlinien veröffentlicht. Kern: Ein System, das aus Eingaben *ableitet*, wie es Ausgaben erzeugt – also ein gelerntes Modell, nicht nur feste Regeln."
 
-**August 2024:**
-> „Das Gesetz trat in Kraft. Für die meisten von euch damals: ‚Okay, interessant' – und dann war es wieder vergessen."
+Links/rechts durchgehen: „ChatGPT, Chatbots, Bild-KI, Bewerber-Ranking – ja. Excel-Formeln, Makros, Wenn-dann-Regeln, klassische Sortierung – nein. Eure Buchhaltungssoftware, die Mahnungen nach Fälligkeit verschickt, ist kein KI-System. Sobald sie einen ‚KI-Assistenten' bekommt, der Buchungen vorschlägt, schon."
 
-**Februar 2025 – der erste wichtige Moment:**
-> „Das ist der Punkt, an dem es ernst wurde. Zwei Dinge galten ab sofort: Die 8 verbotenen Praktiken – und die KI-Kompetenzpflicht. Was das bedeutet, schauen wir gleich."
-
-> „Wichtig: Das sind keine Übergangsfristen, keine ‚in drei Jahren müssen wir...' – das ist jetzt. Heute. Wer die KI-Schulungspflicht ignoriert, riskiert bereits heute eine Sorgfaltspflichtverletzung."
-
-**August 2025:**
-> „GPAI – General Purpose AI. Das sind Modelle wie GPT-4, Claude, Gemini. Wer solche Modelle entwickelt oder integriert, hat seit Sommer 2025 eigene Pflichten. Für die meisten hier nicht direkt relevant – aber wichtig für SaaS-Anbieter unter euch."
-
-**August 2026 – der zentrale Termin:**
-> „Das ist das Datum, das ihr euch am dicksten im Kalender einkreisen sollt. Ab dann: Hochrisiko-KI-Pflichten vollständig aktiv. Transparenzpflichten für Chatbots und Deepfakes. Und – das Entscheidende – ab dann werden Bußgelder verhängt. Bis dahin haben wir noch Zeit, uns vorzubereiten. Aber nicht ewig."
-
-**August 2027:**
-> „Der zweite Hochrisiko-Termin, der vor allem Produkthersteller betrifft – KI in Maschinen, Fahrzeugen, Medizingeräten. Für reine Dienstleistungsunternehmen meist nicht direkt relevant."
+Praxis: „Fragt den Anbieter: ‚Steckt ein trainiertes Modell drin?' Das Inventar hat eine Spalte dafür."
 
 ---
 
-## FOLIE 7 – Trennfolie Modul 2
+## FOLIE 9 – Risikopyramide
+
+**Redezeit: ~5 Minuten**
+
+Von oben nach unten:
+- Rot: „Neun verbotene Praktiken – seit Februar 2025. Neun, nicht acht: Im Juli kam ein Verbot dazu, KI zur Erzeugung von Missbrauchs- und Intimbildern. Für die meisten von euch relevant ist Nummer sechs: Emotionserkennung von Beschäftigten."
+- Orange: „Hochrisiko – HR, Bildung, Kredit, Biometrie. Strenge Pflichten, aber erst ab Dezember 2027, für KI in Produkten August 2028."
+- Gelb: „Transparenz – Chatbots, Deepfakes, KI-Texte zu öffentlichen Themen. Gilt seit fünf Wochen."
+- Grün: „Minimal – der Großteil: Spam-Filter, Übersetzung, interne Textassistenz. Keine spezifischen Pflichten."
+
+Quer: „Über allem liegt Artikel 4, KI-Kompetenz – gilt für alle, die KI beruflich nutzen, auch bei minimalem Risiko. Und die DSGVO gilt sowieso."
+
+Interaktiv: „In welche Farbe fällt euer meistgenutztes Tool? 30 Sekunden."
+
+---
+
+## FOLIE 10 – Zeitplan
+
+**Redezeit: ~5 Minuten**
+
+Chronologisch, die drei grünen kurz, dann:
+> „2. August 2026 – gelb markiert, das ist der Punkt, an dem wir gerade stehen. Seit da gelten die Transparenzpflichten. Seit da überwacht die Bundesnetzagentur auch die Schulungspflicht. Und – wichtig – seit da gilt die Verordnung ‚allgemein', nur die Hochrisiko-Kapitel sind ausgenommen."
+
+> „2. Dezember 2026: Übergangsfristen enden – vor allem für Anbieter, die ihre Systeme technisch kennzeichnen müssen. Für euch als Nutzer ändert sich da nichts."
+
+> „2. Dezember 2027 – rot: Hochrisiko nach Anhang III. Das ist euer Planungshorizont, wenn ihr KI in HR, Bildung oder Kreditentscheidungen habt. 15 Monate."
+
+> „August 2028: KI in Produkten – Maschinen, Medizinprodukte. Für Hersteller."
+
+Merksatz wiederholen: „Drei Dinge gelten heute. Hochrisiko in 15 Monaten. Jetzt vorbereiten, nicht panisch umsetzen."
+
+---
+
+## FOLIE 11 – Was sich 2026 geändert hat
+
+**Redezeit: ~5 Minuten**
+
+> „Diese Folie ist wichtig, weil ihr draußen viel Veraltetes lesen werdet. Im November 2025 hat die Kommission den ‚Digital Omnibus' vorgeschlagen, im Mai 2026 gab es die Einigung, am 27. Juli 2026 trat er in Kraft – eine Woche vor dem ursprünglichen Hochrisiko-Stichtag."
+
+Tabelle durchgehen:
+- „Hochrisiko: August 2026 wird Dezember 2027; Produkte August 2027 wird August 2028."
+- „Artikel 4: Aus ‚sicherstellen' wurde ‚fördern'. Und explizit: Ihr müsst kein bestimmtes Kompetenzniveau einer einzelnen Person garantieren. Das nimmt die Angst, dass jemand nach dem Kurs einen Test bestehen muss."
+- „Artikel 50: Die maschinenlesbare Kennzeichnung – das ist Anbietersache, Wasserzeichen in Bildern – bekommt für Altsysteme eine Frist bis Dezember 2026. Der Kommissionsvorschlag hatte Februar 2027, das Parlament hat verkürzt. Alle anderen Transparenzpflichten gelten seit August."
+- „Neuntes Verbot, Small Mid-Caps, Inhalte der Hochrisiko-Pflichten unverändert."
+
+Unten links: „Wer euch heute noch ‚2. August 2026' als Hochrisiko-Termin nennt, hat seit Juli nicht nachgelesen." Unten rechts: „Das KI-MIG: Bundesnetzagentur zuständig, Beschwerdestelle, Reallabor, nationale Bußgelder bis 50.000 Euro für ein paar Spezialfälle. Keine neuen Pflichten für euch."
+
+---
+
+## FOLIE 12 – Zuständigkeiten in Deutschland
+
+**Redezeit: ~3 Minuten**
+
+> „Wer klopft an, wenn etwas schiefläuft? Die Bundesnetzagentur – für fast alles. Sie hat seit Juli 2025 einen KI-Service-Desk mit einem sehr brauchbaren Compliance-Kompass – Karte ist klickbar. Sektoral: BaFin für Banken und Versicherer, Produktbehörden für Maschinen und Medizinprodukte, Landesbehörden für Landes-Verwaltungen und Medien. Parallel die Datenschutzbehörden, und auf EU-Ebene das AI Office für die großen Modellanbieter."
+
+Einordnung: „Die Aufsicht hat im August 2026 begonnen. Erfahrung aus der DSGVO: erst Hinweise und Beratung, Bußgelder bei beharrlicher Verweigerung. Wer dokumentiert, steht gut da."
+
+---
+
+## FOLIE 13 – Trenner Modul 2
 
 **Redezeit: ~1 Minute**
 
-> „So – jetzt wird es konkret. Modul 2: Die wichtigste Frage überhaupt. Bin ich betroffen, und wenn ja: wie?"
-
-> „Zwei Dinge müssen wir klären: Erstens – welche Rolle spiele ich im AI-Act-System? Bin ich Anbieter oder Betreiber? Das klingt technisch, ist aber entscheidend. Und zweitens: Welche Risikostufe gilt für meine konkreten KI-Anwendungen?"
+> „Jetzt wird es konkret. Für jedes KI-System zwei Fragen: Welche Rolle habe ich – und welche Risikostufe hat es?"
 
 ---
 
-## FOLIE 8 – Anbieter vs. Betreiber
-
-**Redezeit: ~8 Minuten inkl. Übung**
-
-**Unterschied erklären mit Analogie:**
-> „Stellt euch einen Mietwagen vor. Der Anbieter – Hertz, Sixt – muss sicherstellen, dass das Auto sicher ist, TÜV hat, Airbags funktionieren. Der Betreiber – ihr als Fahrer – müsst sicherstellen, dass ihr einen Führerschein habt und die Verkehrsregeln kennt. Beide haben Pflichten, aber unterschiedliche."
-
-> „Beim AI Act ist es ähnlich: Der Anbieter baut und vermarktet die KI. Der Betreiber nutzt sie in seinem Unternehmen. Beide haben Pflichten – aber der Anbieter hat deutlich mehr."
-
-**Konkrete Beispiele:**
-
-*Betreiber (der häufigste Fall bei KMU):*
-> „Ihr kauft ein HR-Tool mit KI-Bewerbungsscreening von einem Anbieter und nutzt es. → Betreiber. Ihr integriert einen Chatbot von einem Drittanbieter auf eurer Website. → Betreiber. Ihr nutzt intern ChatGPT. → Betreiber."
-
-*Anbieter (eher für Tech-Unternehmen):*
-> „Ihr entwickelt eine eigene KI-App und verkauft sie. → Anbieter. Ihr baut ein KI-Modell für Kunden. → Anbieter."
-
-**Die White-Label-Falle – besonders betonen:**
-> „Jetzt kommt die Falle, in die überraschend viele KMU tappen: Ihr nehmt ein fertiges KI-Tool – sagen wir einen Chatbot-Dienst – und integriert ihn in eure eigene Software, die ihr dann unter eurem Namen verkauft. Was seid ihr jetzt?"
-
-*(Pause, Publikum antworten lassen)*
-
-> „Anbieter! Obwohl ihr die KI selbst gar nicht entwickelt habt. Ihr bringt sie unter eurem Namen in Verkehr – das macht euch zum Anbieter mit allen umfangreichen Pflichten. Das ist die Falle."
-
-**Gruppenübung (5 Minuten):**
-> „Jetzt nehmt ihr euch 3 Minuten: Schreibt auf, welche KI-Tools ihr in eurem Unternehmen nutzt. Und bestimmt für jedes: Anbieter oder Betreiber? *(Timer starten)* – Wer mag sein Ergebnis teilen?"
-
----
-
-## FOLIE 9 – Verbotene Praktiken
+## FOLIE 14 – Anbieter oder Betreiber
 
 **Redezeit: ~6 Minuten**
 
-**Einstieg:**
-> „Jetzt zu den 8 verbotenen Praktiken. Diese gelten seit Februar 2025 – vollständig, ohne Übergangsfrist. Ich gehe die schnell durch, aber ich möchte klarstellen: Die meisten von euch werden davon nicht direkt betroffen sein. Das sind Extremfälle."
+Mietwagen-Analogie: „Der Vermieter muss sicherstellen, dass das Auto TÜV hat und die Airbags funktionieren – das ist der Anbieter. Ihr als Fahrer braucht einen Führerschein und haltet euch an die Regeln – das ist der Betreiber."
 
-**Kurz zu jedem Verbot – mit Beispiel:**
+Tabelle: „Anbieter entwickelt oder lässt entwickeln *und* bringt unter eigenem Namen in Verkehr. Betreiber nutzt beruflich in eigener Verantwortung. Die meisten hier: Betreiber, bei allem. Wer eine eigene App mit KI baut und Kunden gibt: Anbieter dieser App – auch wenn GPT drinsteckt."
 
-**1. Unterschwellige Manipulation:**
-> „KI, die Menschen beeinflusst, ohne dass sie es merken – zum Beispiel ein System, das bei vulnerablen Menschen sucht und diese dann subtil zu schädlichen Entscheidungen drängt. Denkt an Manipulations-Chatbots in sozialen Netzwerken."
+Begriffsfalle: „In vielen Artikeln steht ‚Betreiber (Operator)'. Das ist falsch. Betreiber heißt auf Englisch *deployer*. *Operator* ist im Deutschen der ‚Akteur', der Oberbegriff für alle. Klingt kleinlich, hilft aber beim Lesen englischer Quellen."
 
-**2. Ausnutzung von Schwäche:**
-> „KI-Systeme, die gezielt Kinder, ältere Menschen oder wirtschaftlich schwache Personen durch ihre Vulnerabilität manipulieren. Beispiel: KI-gestütztes Glücksspiel, das Spielsucht ausnutzt."
-
-**3. Social Scoring:**
-> „Das ist das chinesische Social-Credit-System als Beispiel. Menschen werden nach ihrem Sozialverhalten bewertet und dann bei Behörden oder im Leben benachteiligt. In Europa verboten."
-
-**6. Emotionserkennung am Arbeitsplatz – das KMU-Relevante:**
-> „Das ist der für viele von euch relevanteste Punkt. Systeme, die über Webcam die Stimmung von Mitarbeitenden analysieren, sind verboten – egal ob zur Produktivitätsmessung oder zur ‚Mitarbeiterzufriedenheit'. Da gibt es inzwischen Anbieter, die solche Tools vermarkten. Finger weg."
-
-**Alles-oder-Nichts-Prinzip erklären:**
-> „Wichtig – und das ist juristisch entscheidend: Alle Bedingungen eines Verbots müssen gleichzeitig erfüllt sein. Es geht nicht darum, dass ihr irgendwie in die Nähe kommt. Ihr müsst alle Tatbestandsmerkmale erfüllen, damit das Verbot greift. Das gibt etwas Spielraum bei Randfällen – aber im Zweifel: Finger weg."
+Daumenregel vorlesen.
 
 ---
 
-## FOLIE 10 – Hohes Risiko: 8 Bereiche
-
-**Redezeit: ~6 Minuten**
-
-**Einstieg:**
-> „Jetzt der wichtigste Teil für die meisten KMU: Hohes Risiko. Das sind 8 Bereiche, in denen KI besonders sensibel ist, weil sie starken Einfluss auf das Leben von Menschen hat."
-
-**Die 8 Bereiche kurz ansprechen, aber bei HR verweilen:**
-
-> „Biometrie, kritische Infrastruktur, Bildung – für die meisten hier wohl nicht so relevant. Strafverfolgung, Migration, Rechtspflege – auch eher Behörden."
-
-**HR/Beschäftigung – Fokus setzen:**
-> „Aber Beschäftigung und HR – das trifft viele von euch direkt. Bewerbungsscreening-Tools, die KI nutzen, um Lebensläufe zu ranken? Hohes Risiko. Systeme, die Mitarbeiterleistung automatisch bewerten? Hohes Risiko. Ein Tool, das eure Personalentscheidungen automatisch unterstützt oder beeinflusst? Wahrscheinlich hohes Risiko."
-
-**Praxisbeispiel:**
-> „Beispiel aus der Praxis: Ein Handwerksbetrieb mit 30 Mitarbeitenden nutzt eine HR-Software, die eingehende Bewerbungen automatisch nach Schlüsselwörtern filtert und eine Rangliste erstellt. Klingt harmlos. Ist aber wahrscheinlich hohes Risiko nach dem AI Act – weil es eine Entscheidung über Beschäftigung automatisiert."
-
-**Ausnahme erklären:**
-> „Es gibt eine wichtige Ausnahme: Wenn das System nur eine reine Hilfsfunktion hat und keine eigenständigen Entscheidungen trifft, kann es aus der Hochrisiko-Kategorie rausfallen. Aber – und das ist entscheidend – Profiling von Personen bleibt immer hochriskant, egal wie man es verpackt."
-
----
-
-## FOLIE 11 – Begrenztes & Minimales Risiko
-
-**Redezeit: ~4 Minuten**
-
-**Begrenztes Risiko – Transparenz als Kernthema:**
-> „Für viele von euch, die einen Chatbot auf der Website haben oder KI-generierte Newsletter verschicken, ist das hier relevant."
-
-> „Die Regel ist simpel: Wenn ihr KI einsetzt, die mit Menschen interagiert – sagt es. Wenn ihr Inhalte KI-generiert habt – kennzeichnet es. Das klingt banal, ist aber ab August 2026 gesetzlich vorgeschrieben."
-
-**Praxisbeispiele:**
-> „Chatbot auf eurer Website: Ganz am Anfang des Gesprächs muss klar sein: ‚Ich bin ein KI-Assistent.' Das kann ein einfacher Hinweistext sein. Keine große Hürde – aber macht es jetzt schon, damit es zur Gewohnheit wird."
-
-> „KI-generierte Social-Media-Beiträge oder Werbetexte: Hier kommt die Pflicht zur Kennzeichnung. Wie genau das aussehen muss, wird gerade noch konkretisiert – aber ‚erstellt mit KI-Unterstützung' in einem kleinen Hinweis dürfte reichen."
-
-**Minimales Risiko – beruhigen:**
-> „Und dann gibt es noch den größten Teil aller KI-Anwendungen: minimales Risiko. Spam-Filter, Produktempfehlungen, Spielealgorithmen. Da verlangt der AI Act nichts. Trotzdem gilt: DSGVO natürlich einhalten – das ist unabhängig vom AI Act."
-
----
-
-## FOLIE 12 – Selbstcheck Flowchart
-
-**Redezeit: ~4 Minuten**
-
-> „Ich zeige euch jetzt eine Art Entscheidungsbaum – den kann man auch ausdrucken und selbst durchlaufen."
-
-**Den Baum Schritt für Schritt durchgehen:**
-
-> „Erste Frage: Nutze ich KI überhaupt geschäftlich? Wenn nein – entspannt zurücklehnen. Wenn ja – weiter."
-
-> „Zweite Frage: Entwickle oder vermarkte ich die KI? Wenn ja – Anbieter, mit allen Konsequenzen. Wenn nein – Betreiber."
-
-> „Als Betreiber: Nutze ich KI in HR, Bildung, Kreditvergabe oder anderen sensiblen Bereichen? Wenn ja – hohes Risiko prüfen. Chatbot oder KI-generierte Inhalte? Begrenztes Risiko. Spam-Filter, Empfehlungen? Minimales Risiko."
-
-**Interaktiv:**
-> „Wer mag, kann das jetzt kurz für sich durchlaufen. *(30 Sekunden)* Welche Stufe trifft euch? Keine Überraschungen?"
-
----
-
-## FOLIE 13 – Trennfolie Modul 3
-
-**Redezeit: ~30 Sekunden**
-
-> „Modul 3: Was müsst ihr jetzt konkret tun? Ich fange mit der Pflicht an, die heute schon gilt – und die wirklich jeder hier im Raum betrifft."
-
----
-
-## FOLIE 14 – KI-Kompetenzpflicht
-
-**Redezeit: ~7 Minuten**
-
-**Einstieg mit einer Frage:**
-> „Wer hat in seinem Unternehmen schon eine strukturierte KI-Schulung gemacht? *(Hände)* – Gut. Wer hat das dokumentiert? *(meist weniger Hände)* – Das ist das Problem."
-
-**Was Artikel 4 bedeutet:**
-> „Artikel 4 des AI Acts sagt: Anbieter und Betreiber müssen sicherstellen, dass ihr Personal über ausreichende KI-Kompetenz verfügt. Das gilt seit Februar 2025. Für jeden. Egal ob 5 oder 500 Mitarbeitende."
-
-**Was es NICHT bedeutet – Erleichterung:**
-> „Jetzt die gute Nachricht: Es gibt kein vorgeschriebenes Format. Keinen Pflichtkurs. Keine Behörde, die morgen vorbeischaut und nach einem Zertifikat fragt. Was zählt: Ihr habt euch ernsthaft damit beschäftigt – und ihr habt es dokumentiert."
-
-**Konkrete Umsetzung erklären:**
-> „In der Praxis heißt das: Schritt 1 – ihr schreibt auf, wer in eurem Unternehmen welche KI-Tools nutzt. Schritt 2 – ihr bewertet: Welche Risiken gehen damit einher? Schritt 3 – ihr macht eine Maßnahme. Das kann dieser Workshop hier sein! Schritt 4 – ihr dokumentiert es. Datum, Teilnehmer, Inhalt."
-
-**Warum Dokumentation entscheidend ist:**
-> „Zur Dokumentation sage ich kurz: Wenn jemals etwas schiefgeht und ein KI-System Schaden anrichtet, wird als erstes gefragt: Hat das Unternehmen seine Mitarbeitenden vorbereitet? Wenn ihr dann nichts vorweisen könnt – das wird als Sorgfaltspflichtverletzung gewertet. Das kann teuer werden, auch wenn der eigentliche Vorfall nichts mit dem AI Act zu tun hat."
-
-**Praxisbeispiel:**
-> „Praxisbeispiel: Ein Vertriebsmitarbeiter nutzt ChatGPT und gibt dabei Kundendaten ein – ohne zu wissen, dass das ein Problem ist. Wenn ihr vorher eine Schulung gemacht und dokumentiert hättet, ist euer Haftungsrisiko deutlich geringer als wenn ihr gar nichts getan habt."
-
----
-
-## FOLIE 15 – Kostenlose Ressourcen
-
-**Redezeit: ~4 Minuten**
-
-> „Ich höre oft: ‚Klingt alles aufwendig und teuer.' Stimmt nicht. Es gibt hervorragende kostenlose Ressourcen."
-
-**Jede Kachel kurz kommentieren:**
-
-**Mittelstand-Digital:**
-> „Das ist mein persönlicher Geheimtipp. Bundesweit gibt es über 100 sogenannte Mittelstand-Digital Zentren – die sind vom BMWK gefördert und bieten kostenlose Beratung und Workshops für KMU. Ihr könnt dort auch KI-Förderprojekte anfragen."
-
-**Bundesnetzagentur KoKIVO:**
-> „Das ist die offizielle Anlaufstelle. Die Bundesnetzagentur ist in Deutschland die Marktüberwachungsbehörde für den AI Act. KoKIVO – das Koordinierungs- und Kompetenzzentrum – hat einen sehr praktischen Compliance-Kompass online: Ihr gebt eure Situation ein und bekommt eine Einschätzung. Außerdem gibt es regelmäßige kostenlose KI-Cafés."
-
-**Elements of AI:**
-> „Ein Kurs von der Uni Helsinki, mittlerweile auf Deutsch verfügbar, komplett kostenlos. Dauert ein paar Stunden. Ideal als Schulungsgrundlage – und ihr habt am Ende einen Nachweis, den ihr für eure Dokumentation nutzen könnt."
-
-**KI-Campus:**
-> „Deutsche Lernplattform mit kurzen, praxisnahen Kursen. Gut für Mitarbeitende, die sich selbst weiterbilden wollen."
-
-> „Alle diese Links sind klickbar direkt auf der Folie – einfach anklicken und es öffnet sich die Seite."
-
----
-
-## FOLIE 16 – Pflichten Betreiber
-
-**Redezeit: ~6 Minuten**
-
-**Einordnung:**
-> „Wenn ihr Betreiber von Hochrisiko-KI seid – also zum Beispiel ein HR-Tool mit Bewerberscreening nutzt – dann habt ihr ab August 2026 diese Pflichten. Ich gehe die kurz durch und erkläre was das in der Praxis bedeutet."
-
-**Nutzung nach Anweisung:**
-> „Das klingt banal, ist es aber nicht. Heißt konkret: Lest die Nutzungsbedingungen und die technische Dokumentation des KI-Anbieters. Wenn ihr ein Tool für Zweck A kauft und es für Zweck B nutzt – haftet ihr. Beispiel: Ein Chatbot ist für Kundenservice lizenziert. Ihr nutzt ihn für interne HR-Fragen, ohne das zu prüfen. Risiko."
-
-**Menschliche Aufsicht – das Kernprinzip:**
-> „Das ist der wichtigste Punkt und er ist eigentlich gesunder Menschenverstand: KI allein entscheidet nichts. Ein Mensch prüft das Ergebnis. Immer. Besonders bei Hochrisiko-Anwendungen."
-
-> „Praxisbeispiel: Euer HR-Tool sagt ‚Bewerber A ist ungeeignet'. Ein Mensch muss diese Einschätzung prüfen, hinterfragen und die finale Entscheidung treffen. Die KI ist ein Werkzeug – kein Entscheider."
-
-**Folgenabschätzung:**
-> „Das ist neu für viele: Ihr müsst schriftlich festhalten, was passiert wenn die KI falsch liegt. Was ist der Worst Case? Wie wird das erkannt? Wer ist verantwortlich? Das ist keine Raketenwissenschaft – ein einseitiges Dokument reicht oft aus."
-
-**DSGVO-Verknüpfung:**
-> „Und noch ein praktischer Tipp: Wenn ihr Kundendaten oder Mitarbeiterdaten in KI-Systeme einspielt, braucht ihr einen Auftragsverarbeitungsvertrag mit dem KI-Anbieter. Das ist DSGVO-Pflicht – und bereitet gleichzeitig AI-Act-Compliance vor. Zwei Fliegen mit einer Klappe."
-
----
-
-## FOLIE 17 – Pflichten Anbieter
+## FOLIE 15 – Rollenwechsel und Grenzfälle
 
 **Redezeit: ~5 Minuten**
 
-**Einordnung:**
-> „Für diejenigen unter euch, die eigene KI-Systeme entwickeln und vermarkten – das ist der anspruchsvollere Teil. Ich gehe das kurz durch, ohne euch zu erschlagen."
+Zeile für Zeile:
+> „ChatGPT intern, eigene Wissensdatenbank dran, Systemprompt – Betreiber. Chatbot vom Anbieter auf der Website – Betreiber; ihr sorgt nur dafür, dass der KI-Hinweis sichtbar bleibt. Eigene Kunden-App mit GPT-Schnittstelle unter eurem Namen – Anbieter dieses Systems. Das ist nicht Hochrisiko, also überschaubar: Artikel 4, KI-Hinweis, maschinenlesbare Kennzeichnung der Ausgaben."
 
-**Risikomanagementsystem:**
-> „Das bedeutet: Ihr dokumentiert fortlaufend, welche Risiken euer System hat. Nicht einmalig, sondern über den gesamten Lebenszyklus. Wenn ihr das System updatet, neues Training macht, neue Features baut – dann müsst ihr das Risikomanagement aktualisieren."
+> „White Label eines *Hochrisiko*-Tools unter eurer Marke – Anbieter mit allen Pflichten, Artikel 25. Fine-Tuning eines Basismodells – ihr werdet nicht zum Modellanbieter, solange ihr nicht mehr als ein Drittel der ursprünglichen Trainingsrechenleistung einsetzt. Das schafft kein KMU."
 
-**Technische Dokumentation und 10 Jahre Aufbewahrung:**
-> „Das ist der Punkt, der viele überrascht: 10 Jahre. Alles was ihr über euer KI-System dokumentiert – Trainingsdaten, Testprotokolle, Risikoabschätzungen – muss 10 Jahre aufbewahrt werden. Fangt früh damit an, eine vernünftige Dokumentationsstruktur aufzubauen."
-
-**EU-Datenbankregistrierung:**
-> „Hochrisiko-KI muss vor dem Inverkehrbringen in eine EU-Datenbank eingetragen werden. Diese Datenbank ist öffentlich – Kunden und Behörden können nachschauen, ob euer System registriert ist. Das schafft Vertrauen."
-
-**Empfehlung für KMU:**
-> „Wenn ihr als KMU eine eigene KI entwickelt, die in Hochrisiko-Bereiche fällt: Nutzt die KI-Reallabore. Das ist ein Pilotprogramm, bei dem die Bundesnetzagentur euch begleitend durch den Compliance-Prozess führt. Ihr seid nicht allein."
+Merke-Box: „Der ‚Rollenwechsel' nach Artikel 25 gilt nur für Hochrisiko. Aber wer irgendein KI-System unter eigenem Namen weitergibt, ist von Anfang an Anbieter – mit den Pflichten der jeweiligen Stufe."
 
 ---
 
-## FOLIE 18 – DSGVO + AI Act
+## FOLIE 16 – Verbotene Praktiken
+
+**Redezeit: ~6 Minuten**
+
+> „Neun Verbote, seit Februar 2025, ohne Übergang. Die meisten betreffen euch nicht: Manipulation, Social Scoring, Straftat-Prognose, Gesichts-Scraping, Kategorisierung nach Ethnie oder Religion. Zwei Punkte sind für euch relevant."
+
+Nr. 6: „Emotionserkennung am Arbeitsplatz und in Bildungseinrichtungen. Tools, die per Webcam oder Stimme Stimmung, Aufmerksamkeit, Stress von Mitarbeitenden oder Schülern messen – verboten. Ausnahme nur aus medizinischen oder Sicherheitsgründen, etwa Müdigkeitserkennung bei Berufskraftfahrern. Es gibt Anbieter, die so etwas als ‚Mitarbeiterzufriedenheit' verkaufen. Finger weg."
+
+Nr. 8: „Echtzeit-Gesichtserkennung im öffentlichen Raum ist nur für Strafverfolgung verboten. Wenn ein Einkaufszentrum Gesichtserkennung einsetzt, ist das nicht verboten – sondern Hochrisiko. Das wird oft verwechselt."
+
+Nr. 9: „Neu seit Juli: KI zur Erzeugung von Missbrauchsdarstellungen und nicht-einvernehmlichen Intimbildern. Betrifft Anbieter generativer Bild-KI, die bis Dezember Schutzmaßnahmen einbauen müssen."
+
+Alles-oder-nichts: „Jedes Verbot ist ein Bündel von Merkmalen, die alle vorliegen müssen. Das sagt die Kommission in ihren Leitlinien. Grenzfälle trotzdem prüfen lassen."
+
+---
+
+## FOLIE 17 – Hochrisiko: Anhang III
+
+**Redezeit: ~6 Minuten**
+
+> „Acht Bereiche. Biometrie, kritische Infrastruktur, Strafverfolgung, Migration, Justiz – Behörden und Spezialfälle. Für euch zählen drei: Bildung, Beschäftigung, grundlegende Dienste."
+
+Beschäftigung mit Wortlaut: „Bewerbungen sichten, filtern, bewerten. Gezielte Stellenanzeigen. Beförderung, Kündigung, Aufgabenzuweisung nach Verhalten. Leistungs- und Verhaltensbewertung. Wenn euer Bewerbermanagement einen ‚Match-Score' ausrechnet – Hochrisiko."
+
+Bildung: „Zulassung, Bewertung von Lernergebnissen, Prüfungsaufsicht. Bildungsträger, Vereine mit Kursangebot, Schulen."
+
+Dienste: „Kreditwürdigkeit natürlicher Personen – Betrugserkennung ausgenommen. Lebens- und Krankenversicherung. Sozialleistungen bei Behörden."
+
+Praxisbeispiel: „Handwerksbetrieb, 30 Leute, Bewerbersoftware mit KI-Vorsortierung. Ist Hochrisiko. Nicht verboten! Ab Dezember 2027 mit Betreiberpflichten – Folie 28. Bis dahin: Anbieter befragen."
+
+Anhang I kurz: „Maschinen, Medizinprodukte – für Hersteller, August 2028."
+
+---
+
+## FOLIE 18 – Ausnahme Art. 6 Abs. 3
 
 **Redezeit: ~4 Minuten**
 
-**Wichtige Klarstellung:**
-> „Ich bekomme oft die Frage: ‚Wir haben doch schon DSGVO – ist das nicht dasselbe?' Nein. Beides gilt gleichzeitig und ergänzt sich."
+> „Nicht jedes Tool im HR-Bereich ist automatisch Hochrisiko. Wenn es nur eine enge Verfahrensaufgabe erledigt, nur ein menschliches Ergebnis verbessert, nur Muster erkennt ohne die menschliche Bewertung zu ersetzen oder nur vorbereitet – fällt es raus."
 
-**Analogie:**
-> „Stellt euch vor: DSGVO schützt eure Haustür – welche Daten dürfen gesammelt, gespeichert, genutzt werden. Der AI Act schützt das Werkzeug in eurer Hand – wie darf die KI mit diesen Daten arbeiten? Beides ist nötig."
+Beispiele rechts durchgehen. „Lebensläufe in Formularfelder übertragen – Ausnahme. Rangliste oder Score – Profiling, immer Hochrisiko. Vorfiltern, Mensch sieht nur Top 20 – ersetzt die Bewertung, Hochrisiko. Videointerview auf ‚Persönlichkeit' – Hochrisiko, und wenn Emotionen ausgewertet werden, verboten."
 
-**Gemeinsame Schnittmenge:**
-> „Wo sich beides überschneidet: Wenn ihr Personendaten in KI-Systeme eingebt – was fast immer der Fall ist – gelten DSGVO und AI Act gleichzeitig. Das bedeutet: AV-Vertrag mit dem KI-Anbieter ist Pflicht. Privacy by Design bei der Entwicklung. Datensparsamkeit beim Einsatz."
-
-**Sofortmaßnahme:**
-> „Konkrete Hausaufgabe für heute noch: Prüft, ob ihr für die KI-Tools, die ihr nutzt, einen Auftragsverarbeitungsvertrag habt. Das ist oft ein Klick in den Einstellungen des Anbieters – Microsoft 365, Google Workspace, die meisten großen Anbieter haben das fertig. Wenn nicht: anfordern."
+> „Die Einstufung trifft und dokumentiert der Anbieter und registriert sie in der EU-Datenbank. Ihr fragt sie ab – Vorlage 06. Die Kommissions-Leitlinien dazu sind Stand heute nur ein Entwurf vom Mai 2026, also im Zweifel konservativ einstufen."
 
 ---
 
-## FOLIE 19 – Bußgelder
+## FOLIE 19 – Transparenz Art. 50
+
+**Redezeit: ~7 Minuten – wichtige Entlastungsfolie**
+
+> „Das ist die Pflicht, die seit fünf Wochen gilt und über die am meisten Unsinn erzählt wird. Schauen wir genau hin, wer was muss."
+
+Tabelle: „Absatz 1 und 2: Anbieter. Der Chatbot-Anbieter muss dafür sorgen, dass Nutzer merken, dass sie mit KI reden. Der Bildgenerator-Anbieter muss Wasserzeichen und Metadaten einbauen. Absatz 3 und 4: Betreiber – also ihr. Emotionserkennung nur in erlaubten Fällen mit Info. Deepfakes offenlegen. Und KI-Texte zu Themen von öffentlichem Interesse offenlegen – es sei denn, ein Mensch hat sie redaktionell geprüft und verantwortet."
+
+Grüne Box betonen: „Was ihr *nicht* kennzeichnen müsst: Werbetexte. Produktbeschreibungen. Newsletter. Social-Media-Posts. Interne Texte. Der redigierte Blogartikel. Das retuschierte Foto. Das KI-Symbolbild vom Büro. Und – wichtig – ein pauschaler Disclaimer ‚Wir nutzen KI' im Impressum ist weder vorgeschrieben noch ausreichend. eRecht24 sagt das seit Juli 2026 sehr deutlich."
+
+Gold-Box: „Was ihr tun müsst: Chatbot-Hinweis sichtbar halten – prüft eure Einbindung. Deepfake-Prüfung im Bild-Workflow: Ist das täuschend echt und zeigt reale Personen oder Orte? Redaktionsfreigabe für öffentliche Texte dokumentieren. Formulierungen in Vorlage 05."
+
+Deepfake-Definition: „Täuschend echte Nachahmung realer Personen, Orte, Ereignisse. Der KI-generierte Geschäftsführer, der ein Statement spricht, das er nie gesagt hat – ja. Das Stockfoto-ähnliche KI-Bild vom Team-Meeting mit erfundenen Menschen – nein, aber in der Werbung wettbewerbsrechtlich heikel."
+
+---
+
+## FOLIE 20 – Quick-Check
 
 **Redezeit: ~4 Minuten**
 
-**Einstieg – sachlich, nicht alarmistisch:**
-> „Jetzt kurz zu den Zahlen, die in jedem Artikel über den AI Act vorkommen. Ich sage es direkt: Ja, die Bußgelder sind hoch. Nein, morgen fällt deswegen niemand um."
+Baum durchgehen: „KI-System? Nein – fertig. Ja – gebe ich es unter eigenem Namen an Dritte? Ja – Anbieter. Nein – Betreiber: Einsatzbereich? Verbot – stoppen. HR, Bildung, Kredit, Biometrie – Hochrisiko ab Dezember 2027, Ausnahme prüfen. Chatbot, Deepfake, öffentlicher Text – Transparenz, seit August. Sonst minimal – nur Artikel 4 und DSGVO."
 
-**Die Zahlen:**
-> „35 Millionen oder 7 Prozent des weltweiten Jahresumsatzes – das ist für verbotene Praktiken. Das klingt astronomisch. Aber: Diese Summen sind für Großkonzerne konzipiert. 7 Prozent von einem KMU-Umsatz von 2 Millionen Euro sind 140.000 Euro. Das ist nicht nichts, aber auch keine Existenzbedrohung – wenn man es vorher weiß."
+Unten: „Öffentliche Stelle, öffentliche Dienste, Kredit, Versicherung – bei Hochrisiko kommen Folgenabschätzung und Registrierung dazu, Folie 29."
 
-**Wichtige Differenzierung:**
-> „Entscheidend ist: Die Bußgeldregeln für Hochrisiko-KI greifen erst ab August 2026. Aber die Verbote und die Schulungspflicht – die gelten bereits jetzt. Da könnte theoretisch schon heute etwas passieren."
-
-**Verhältnismäßigkeit:**
-> „Erfahrungen aus der DSGVO zeigen: Behörden schauen zuerst auf Großkonzerne und systematische Verstöße. KMU, die erkennbar versuchen compliant zu sein und dokumentieren was sie tun, sind deutlich besser geschützt. Es geht nicht um Perfektion – es geht um nachweisbare Bemühung."
-
-**Abschluss dieser Folie:**
-> „Merksatz: Compliance lohnt sich – nicht aus Angst, sondern weil es das Richtige ist. Und weil die Alternative teurer werden kann."
+Interaktiv: „30 Sekunden: Wo landet euer wichtigstes Tool?"
 
 ---
 
-## FOLIE 20 – Trennfolie Modul 4
+## FOLIE 21 – Risikostufe bewerten: die Methode
+
+**Redezeit: ~6 Minuten**
+
+> „Der Quick-Check war die Kurzfassung. Jetzt die Methode, mit der ihr jedes Tool sauber einstuft – sechs Schritte, immer in dieser Reihenfolge, weil die Reihenfolge das Ergebnis bestimmt."
+
+Schritte:
+> „Schritt eins: Beschreiben. Was tut das System genau, für wen, mit welchen Daten? Und – wichtig – was sagt der Anbieter in seiner Zweckbestimmung? Das ist der Steckbrief, den ihr im Inventar anlegt."
+
+> „Schritt zwei: Verbot? Passt eine der neun Praktiken aus Artikel 5 – und zwar mit allen Merkmalen? Wenn ja: stoppen. Ende der Prüfung."
+
+> „Schritt drei: Produkt? Ist die KI Sicherheitsbauteil eines CE-pflichtigen Produkts – Maschine, Medizinprodukt? Dann Anhang I, Hochrisiko ab August 2028. Für Dienstleister und Verwaltung praktisch nie."
+
+> „Schritt vier: Bereich? Einsatz in einem der acht Bereiche von Anhang III? Wenn ja, die Gegenfrage: Greift eine Ausnahme nach Artikel 6 Absatz 3 – enge Hilfsaufgabe, nur vorbereitend? Und die Rückfrage: Erstellt es Profile von Menschen, Scores, Rankings? Dann gibt es keine Ausnahme. Ergebnis: Hochrisiko ab Dezember 2027 – oder eben nicht."
+
+> „Schritt fünf: Transparenz? Redet es mit Menschen, erzeugt es Inhalte, Deepfakes, öffentliche Texte, Emotionserkennung? Dann Artikel 50, seit August."
+
+> „Schritt sechs: Nichts davon? Minimal. Es bleiben Artikel 4 und DSGVO."
+
+Faustregeln:
+> „Drei Faustregeln, die euch 90 Prozent der Fälle sofort einordnen lassen: Bewertet oder entscheidet es über Menschen – Hochrisiko-Verdacht. Redet es oder erzeugt es Inhalte – Transparenz. Hilft es nur mir intern beim Arbeiten – meist minimal."
+
+Zwei Hinweise:
+> „Ein System kann mehrere Stufen treffen. Der HR-Chatbot, der Bewerber vorsortiert, ist Hochrisiko und transparenzpflichtig. Immer die höchste Stufe nehmen und Artikel 50 zusätzlich prüfen. Und: Dokumentiert das Ergebnis mit Begründung – Vorlage 02 – und holt die Einstufung des Anbieters ein. Wenn die beiden nicht übereinstimmen, fragt nach."
+
+---
+
+## FOLIE 22 – Beispiel Elektro Müller GmbH
+
+**Redezeit: ~6 Minuten**
+
+> „Jetzt rechnen wir das einmal durch. Elektro Müller, 30 Beschäftigte, vier KI-Tools – ein völlig normaler Handwerksbetrieb 2026."
+
+Zeile 1:
+> „ChatGPT Team für Angebotstexte und E-Mails. Schritt zwei, Verbot? Nein. Drei, vier – Produkt, Anhang III? Nein. Fünf, Transparenz? Angebote werden vom Meister geprüft und sind keine Texte von öffentlichem Interesse – nein. Ergebnis: minimal. Pflichten: Schulung nach Artikel 4, Richtlinie, AVV über den Team-Tarif, Training mit Firmendaten ausschalten. Das war's."
+
+Zeile 2:
+> „Website-Chatbot vom Anbieter X für Öffnungszeiten und Termine. Verbot nein, Anhang nein. Transparenz? Ja – er redet mit Kunden. Ergebnis: Transparenzpflicht. Die Müller GmbH sorgt dafür, dass der KI-Hinweis sichtbar ist, ergänzt die Datenschutzerklärung, hat einen AVV. Fertig."
+
+Zeile 3:
+> „Bewerberportal mit Ranking-Funktion – die Software sortiert Bewerbungen nach Passung und vergibt einen Score pro Person. Verbot nein. Anhang III Nummer 4, Beschäftigung – ja. Ausnahme nach Artikel 6 Absatz 3? Der Score ist ein Profil – also nein. Ergebnis: Hochrisiko, Betreiberpflichten ab Dezember 2027. Was jetzt zu tun ist: Fragebogen an den Anbieter, Betriebsrat einbinden. Ab Dezember 2027: Aufsichtsperson, Logs, Information der Beschäftigten und Bewerber, Vorfallprozess. Nicht verboten – weiter nutzbar, mit Vorbereitung."
+
+Zeile 4:
+> „Und das ‚Stimmungsbarometer' – eine Werkstattkamera, die Frust und Müdigkeit im Gesicht der Monteure erkennt. Der Vertrieb nannte es Arbeitsschutz. Schritt zwei: Artikel 5 Absatz 1 f, Emotionserkennung am Arbeitsplatz. Sicherheitszweck? Nicht ernsthaft – es ging um Stimmung, nicht um Gefahr. Ergebnis: verboten. Sofort abschalten, Anbieter informieren, dokumentieren."
+
+Bilanz:
+> „Gesamtaufwand heute: rund ein Arbeitstag. Und was die Müller GmbH nicht tun muss: keinen Beauftragten, keine Zertifikate, keine Kennzeichnung der Angebote, keine Folgenabschätzung, keine Registrierung."
+
+---
+
+## FOLIE 23 – Pflichten je Stufe: Gesamtübersicht
+
+**Redezeit: ~4 Minuten**
+
+> „Diese Tabelle ist das Herzstück zum Nachschlagen. Vier Stufen plus die Zeile ‚alle Stufen', jeweils: Was muss der Anbieter, was muss der Betreiber, ab wann."
+
+> „Lest sie so: Ihr seid Betreiber – also die dritte Spalte. Zeile Transparenz und Zeile ‚alle Stufen' – das ist eure Liste für heute: KI-Hinweis sichtbar, Deepfakes offenlegen, öffentliche Texte redaktionell verantworten, Schulung, AVV. Die Zeile ‚hoch' wird erst 2027 relevant und nur, wenn ihr ein Anhang-III-System nutzt."
+
+> „Die Anbieter-Spalte bei ‚hoch' ist lang – Risikomanagement, Dokumentation, Konformitätsbewertung, CE, Registrierung. Das ist der Grund, warum die Rolle so wichtig ist. Wer eigene Hochrisiko-KI baut, hat richtig Arbeit. Wer sie nur nutzt, hat Artikel 26."
+
+> „Diese Übersicht steht als Kapitel in der Recherche-Datei und im Glossar-Handout. In Modul 3 gehen wir jede Zeile für Betreiber im Detail durch."
+
+---
+
+## FOLIE 24 – Trenner Modul 3
 
 **Redezeit: ~30 Sekunden**
 
-> „Modul 4 – das Wichtigste: Was macht ihr jetzt? Nicht nächstes Jahr, nicht wenn jemand fragt – sondern in den nächsten Tagen. Ich habe 10 Punkte vorbereitet, priorisiert und in konkreten Schritten. Jetzt kommt die Gruppenarbeit."
+> „Modul 3: Was tun? Heute: KI-Kompetenz und Transparenz. Ab Dezember 2027: Betreiberpflichten. Und eine ganze Folie darüber, was ihr *nicht* tun müsst."
 
 ---
 
-## FOLIE 21 – Checkliste Teil 1 (Sofort)
-
-**Redezeit: ~8 Minuten inkl. Gruppenarbeit**
-
-**Einführung:**
-> „Die erste Hälfte der Checkliste – das sind die fünf Dinge, die ihr diese Woche angehen solltet. Nicht weil morgen das Gesetz kommt, sondern weil es einfach ist und ihr sofort Rechtssicherheit gewinnt."
-
-**Zu jedem Punkt:**
-
-**1. KI-Inventar:**
-> „Das ist der erste Schritt und er dauert maximal zwei Stunden. Nehmt ein einfaches Spreadsheet: Spalten – Tool-Name, Anbieter, Verwendungszweck, welche Daten, wer nutzt es. Ihr werdet überrascht sein, wie viele Tools da zusammenkommen. Mitarbeitende nutzen oft Tools, von denen die Geschäftsführung gar nichts weiß."
-
-**2. Rolle bestimmen:**
-> „Für jedes Tool auf eurer Liste: Bin ich Anbieter oder Betreiber? Die meisten von euch werden bei fast allem Betreiber sein. Wenn ein Fragezeichen bleibt – White-Label prüfen."
-
-**3. Schulungskonzept:**
-> „Nicht perfekt, nicht groß. Konkret: Wer nutzt KI bei euch? Was müssen die wissen? Plant eine erste Maßnahme – das könnte dieser Workshop sein! Und dokumentiert es: Datum, Teilnehmerliste, grober Inhalt."
-
-**4. Verbote prüfen:**
-> „Geht die Liste der 8 verbotenen Praktiken durch und fragt für jede: Tun wir das? Bei ehrlicher Antwort sollte das meistens schnell klar sein."
-
-**5. Interne KI-Richtlinie:**
-> „Das muss kein Juristendokument sein. Eine halbe Seite reicht: Welche Tools sind erlaubt? Was ist verboten? Zum Beispiel: Keine Kundendaten in ChatGPT. Keine biometrischen Daten ohne Prüfung. Dann unterschreiben lassen und fertig."
-
-**Gruppenarbeit (5 Minuten):**
-> „Nehmt jetzt 5 Minuten: Füllt für euer Unternehmen die ersten 3 Punkte aus. Nicht vollständig – nur ein erster Entwurf. *(Timer starten)*"
-
----
-
-## FOLIE 22 – Checkliste Teil 2 (Bis Aug 2026)
+## FOLIE 25 – KI-Kompetenz Art. 4
 
 **Redezeit: ~6 Minuten**
 
-**Einführung:**
-> „Die zweite Hälfte der Checkliste sind die Punkte, die etwas mehr Zeit brauchen – aber vor August 2026 fertig sein müssen. Ihr habt also noch etwas Luft, aber fangt an."
+Einstieg: „Wer hat Schulungen zu KI gemacht? Wer hat sie dokumentiert? – Das ist die Lücke, die wir heute schließen."
 
-**Zu den Punkten:**
+Wortlaut: „Seit dem Omnibus heißt es: Maßnahmen ergreifen, um KI-Kompetenz zu *fördern* – nach Vorkenntnissen, Rolle, Kontext. Und ausdrücklich: Kein bestimmtes Kompetenzniveau einzelner Personen muss garantiert werden. Niemand muss einen Test bestehen."
 
-**6. Risikobewertung:**
-> „Für jedes Tool aus eurem KI-Inventar: Welche Risikostufe? Das kann eine einfache Tabelle sein. Fokus auf: HR-Tools, Kredit-bezogene Tools, alles was Entscheidungen über Menschen beeinflusst."
+Wer: „Jede Organisation, die KI beruflich nutzt. Auch der Verein. Auch die Kommune. Auch wenn es nur ChatGPT ist. Und auch für Freelancer, die in eurem Auftrag KI nutzen."
 
-**7. Verträge prüfen:**
-> „Ich empfehle, das mal wirklich zu tun – AGB und Nutzungsbedingungen eurer KI-Anbieter lesen. Ihr werdet überrascht sein, was da drinsteht. Viele Anbieter schließen Haftung für KI-Fehler aus. Ihr müsst wissen, was ihr habt."
+Was nicht drin steht – langsam: „Kein Zertifikat. Keine Prüfung. Kein Format. Keine Mindeststunden. Kein KI-Beauftragter. Kein garantiertes Niveau. Und – das überrascht viele – kein eigener Bußgeldtatbestand. Artikel 4 steht nicht in Artikel 99, dem Bußgeldkatalog."
 
-**8. Menschliche Aufsicht:**
-> „Das ist eine organisatorische Frage: Wer prüft KI-Output bei euch, bevor er nach außen geht oder eine Entscheidung beeinflusst? Das muss nicht aufwendig sein – aber es muss jemanden geben und es muss klar sein."
-
-**9. Transparenz:**
-> „Fangt jetzt an, Chatbot-Texte und KI-Content-Kennzeichnungen zu formulieren. Wenn August 2026 kommt, sind das fertige Bausteine die ihr einfach aktiviert."
-
-**10. Dokumentation:**
-> „Nicht für die Behörde – für euch. Eine einfache Ablagestruktur: Risikobewertungen, Schulungsnachweise, AV-Verträge. Wenn mal etwas passiert, wisst ihr wo was ist."
+Warum trotzdem: „Weil im Schadensfall gefragt wird: Habt ihr eure Leute vorbereitet? Weil die Bundesnetzagentur Anordnungen erlassen kann. Weil der Betriebsrat fragt. Und weil ungeschulte Mitarbeitende teure Fehler machen – Kundendaten in ein Gratis-Tool, erfundene Zitate im Angebot. Das kostet real Geld, ganz ohne Bußgeld."
 
 ---
 
-## FOLIE 23 – Priorisierung
+## FOLIE 26 – Art. 4 umsetzen
 
 **Redezeit: ~4 Minuten**
 
-**Einführung:**
-> „Ich weiß, das klingt nach viel. Deswegen habe ich die 10 Punkte in drei Prioritätsstufen aufgeteilt."
+> „Die Bundesnetzagentur beschreibt drei Grundsteine. Bedarf ermitteln – wer nutzt was mit welchem Risiko? Das fällt aus dem Inventar raus. Maßnahmen gestalten – Formate frei: Workshop, E-Learning, Leitfaden, Kollege erklärt Kollegin. Stufe 1 Grundlagen für alle, Stufe 2 Rolle und Recht für Führung, Marketing, HR, Stufe 3 fachspezifisch für die HR-Leute mit dem Hochrisiko-Tool. Dokumentieren und auffrischen – Datum, Inhalt, Teilnehmende, Referent."
 
-**Rotes Feld – Jetzt:**
-> „Diese vier Dinge kosten zusammen unter einem halben Tag – und schaffen sofort Rechtssicherheit. Das KI-Inventar ist buchstäblich ein Spreadsheet. Die Verbote checken dauert 30 Minuten. Die erste Schulung – ihr seid schon hier, das zählt. Dokumentiert heute noch, dass ihr hier wart."
+> „Dieser Workshop ist eine Maßnahme der Stufen 1 und 2. Teilnehmerliste liegt aus – heute unterschreiben, ablegen, erster Nachweis fertig."
 
-**Oranges Feld – Bald:**
-> „Das sind Sachen für die nächsten ein bis drei Monate. Die KI-Richtlinie schreiben lässt sich gut an einem Nachmittag erledigen. AV-Verträge sind oft ein Formular beim Anbieter."
-
-**Gelbes Feld – Vor August 2026:**
-> „Das ist die strategische Compliance-Arbeit. Für die meisten KMU ist das eine Aufgabe von ein bis zwei Tagen insgesamt – verteilt auf mehrere Monate."
-
-**Abschluss:**
-> „Wenn ihr heute aus diesem Workshop drei Dinge mitnehmt und umsetzt, habt ihr schon mehr getan als 80 Prozent der deutschen KMU. Nicht übertreiben – aber auch nicht warten."
+Kostenlose Quellen aufzählen.
 
 ---
 
-## FOLIE 24 – FAQ
-
-**Redezeit: ~6 Minuten**
-
-> „Ich beantworte jetzt die Fragen, die ich am häufigsten höre. Falls eure Frage dabei ist – gut. Falls nicht – wir haben am Ende noch Zeit."
-
-**US-Anbieter:**
-> „Das ist die häufigste Frage. Die kurze Antwort: Ja, gilt trotzdem. Der AI Act knüpft daran an, wo das System eingesetzt wird – nicht wo der Anbieter sitzt. Wenn ihr in Deutschland mit US-Software arbeitet, seid ihr als Betreiber verpflichtet. Der US-Anbieter ist es auch – aber das können Sie weniger kontrollieren."
-
-**Nur ChatGPT intern:**
-> „Das ist minimales Risiko – solange ihr es nur intern für einfache Aufgaben nutzt. Aber: Keine Kundendaten eingeben – das ist DSGVO, nicht AI Act. Schulungspflicht gilt trotzdem. Und ich empfehle eine kurze interne Richtlinie, damit alle Mitarbeitenden wissen was erlaubt ist."
-
-**Anbieter ist compliant – reicht das?**
-> „Nein. Das ist eine häufige Fehleinschätzung. Der Anbieter ist für sein System verantwortlich. Ihr als Betreiber seid für die Art der Nutzung verantwortlich. Das eine ersetzt das andere nicht."
-
-**KI-Beauftragter:**
-> „Nicht gesetzlich vorgeschrieben – aber sinnvoll. Empfehlung: Benennt eine Person, die das Thema im Auge behält. Muss keine Vollzeitstelle sein – kann jemand aus IT, Recht oder Geschäftsführung sein. Die wichtigste Aufgabe: das KI-Inventar aktuell halten."
-
----
-
-## FOLIE 25 – 5 Kernbotschaften
+## FOLIE 27 – Transparenz umsetzen
 
 **Redezeit: ~4 Minuten**
 
-> „Wir kommen zum Abschluss. Wenn ihr heute nur fünf Dinge mitnehmt, dann diese:"
+Vier Karten: „Chatbot – Begrüßungssatz. Deepfake – Label im Bild, zu Videobeginn, als Ansage; nur bei täuschend echten Inhalten realer Personen und Orte. Öffentlicher KI-Text – redaktionell prüfen und den Freigabevermerk dokumentieren, dann keine Kennzeichnung nötig. Anbieter eigener Systeme – maschinenlesbare Kennzeichnung über die Funktionen des Modellanbieters, Altsysteme bis Dezember."
 
-**1 – Nicht alle KI ist gleich:**
-> „Der AI Act ist kein Pauschalhammer. Er ist intelligent differenziert. Das ist gut für euch – weil er nicht jeden Spam-Filter reguliert wie ein Hochrisikosystem."
-
-**2 – Zwei Pflichten gelten jetzt:**
-> „Verbote und Schulungspflicht – das ist heute. Nicht August 2026. Wer nichts tut, ist bereits im Rückstand."
-
-**3 – Rolle klären:**
-> „Anbieter oder Betreiber – das ist die grundlegende Weiche. Wenn ihr das wisst, könnt ihr alles andere ableiten."
-
-**4 – HR-Tools oft Hochrisiko:**
-> „Das überrascht die meisten. Schaut euch eure HR-Software genau an. Das ist der häufigste Compliance-Blindfleck bei KMU."
-
-**5 – Kostenlose Hilfe nutzen:**
-> „Ihr müsst das nicht alleine machen und ihr müsst dafür kein Geld ausgeben. Mittelstand-Digital, KoKIVO, Elements of AI – alles kostenlos. Nutzt es."
+> „Vorlage 05 hat alle Texte. Bußgeldrahmen bei Verstoß: 15 Millionen oder 3 Prozent – für KMU der niedrigere Wert. Dazu gleich."
 
 ---
 
-## FOLIE 26 – Abschluss
+## FOLIE 28 – Betreiberpflichten Hochrisiko
 
-**Redezeit: ~3 Minuten + offene Diskussion**
+**Redezeit: ~7 Minuten**
 
-**Persönliches Schlussstatement:**
-> „Ich möchte mit einem Gedanken abschließen, der mir wichtig ist: Der AI Act ist kein Bürokratiemonster, das KMU schaden soll. Er ist eine Chance – eine Chance, KI verantwortungsvoll einzusetzen, Vertrauen bei Kunden und Mitarbeitenden aufzubauen und sich von Wettbewerbern zu unterscheiden, die das Thema ignorieren."
+> „Wer ab Dezember 2027 ein Hochrisiko-System betreibt – typisch das HR-Tool – hat diese Pflichten. Vollständig, nicht die halbe Liste aus den meisten Vorträgen."
 
-> „Compliance ist kein Selbstzweck. Es geht darum, dass KI in unserem Alltag sicher, fair und transparent ist. Das ist ein Ziel, hinter dem wir alle stehen können."
+Zeilen durchgehen; betonen:
+- Abs. 2: „Aufsicht durch Menschen mit Kompetenz, Ausbildung, Befugnis und Zeit. Ein Name, eine Schulung, ein Prozess zum Übersteuern."
+- Abs. 5: „Bei Risiko Nutzung aussetzen und Anbieter *und* Bundesnetzagentur informieren – unverzüglich."
+- Abs. 6: „Logs mindestens sechs Monate. Nicht zehn Jahre – das gilt für Anbieter."
+- Abs. 7: „Beschäftigte *und* Betriebsrat vor Inbetriebnahme informieren. Das steht in fast keinem Vortrag, ist aber Gesetz. Vorlage 07."
+- Abs. 9: „Keine neue ‚KI-DSFA'. Die normale DSGVO-Folgenabschätzung, mit den Infos des Anbieters."
+- Art. 86: „Bewerber können fragen: Welche Rolle hat die KI bei der Absage gespielt? Ihr müsst das erklären können."
 
-**Aufruf zur Aktion:**
-> „Was ist eure nächste konkrete Aufgabe nach diesem Workshop? Ich würde gerne hören: Was macht jeder von euch in den nächsten 48 Stunden? *(kurze Runde)*"
+Grüne Box: „Was ihr *nicht* müsst: Registrieren – nur Behörden. Grundrechte-Folgenabschätzung – nur öffentliche Stellen, öffentliche Dienste, Kredit, Versicherung. CE, technische Doku – Anbieter."
 
-**Hinweis auf Handout:**
-> „Ihr bekommt ein einseitiges Handout mit – der Selbstcheck und die Top-10-Checkliste als Arbeitsblatt. Das ist eure Hausaufgabe."
+Gold-Box: „Jetzt sinnvoll: Fragebogen an den Anbieter, Aufsichtsperson festlegen, Betriebsrat früh einbinden."
 
-**Kontakt und Ressourcen:**
-> „Die drei Kacheln auf dieser Folie sind alle klickbar – meine Website, die Bundesnetzagentur und Mittelstand-Digital. Schaut vorbei, nutzt die kostenlosen Angebote."
+---
 
-**Offene Fragerunde:**
-> „Jetzt habt ihr das Wort. Welche Fragen sind noch offen?"
+## FOLIE 29 – Öffentliche Stellen und Sonderfälle
+
+**Redezeit: ~5 Minuten (bei Kommunen/Vereinen im Raum: 8)**
+
+Links: „Die Grundrechte-Folgenabschätzung nach Artikel 27 trifft Einrichtungen des öffentlichen Rechts, private Erbringer öffentlicher Dienste – Bildung, Gesundheit, Soziales, Wohnen – und Betreiber von Kredit- und Lebens-/Krankenversicherungs-Systemen. Inhalt: Prozesse, betroffene Gruppen, Risiken, Aufsicht, Abhilfe. Ergebnis an die Marktüberwachung, vor der ersten Nutzung, ab Dezember 2027. Öffentliche Stellen registrieren sich zusätzlich in der EU-Datenbank. Bußgelder gegen Behörden gibt es nach dem KI-MIG nicht – Aufsicht und Haftung schon."
+
+Rechts: „Vereine und Bildungsträger sind voll im Anwendungsbereich – ehrenamtlich zählt als beruflich. Wer KI zur Bewertung von Lernenden oder Prüfungsaufsicht einsetzt: Hochrisiko, und als Bildungsanbieter womöglich ‚öffentlicher Dienst' mit Folgenabschätzung. Emotionserkennung im Bildungskontext: verboten. Der kleine Sportverein mit Mitglieder-Chatbot: nur Artikel 4, 50, DSGVO."
+
+---
+
+## FOLIE 30 – Anbieterpflichten Hochrisiko
+
+**Redezeit: ~4 Minuten (bei reinen Betreibern: 2)**
+
+> „Für die, die selbst Hochrisiko-KI bauen: Risikomanagement, Daten-Governance, technische Dokumentation, Protokollierung, Aufsicht, Robustheit, Qualitätsmanagement, Konformitätsbewertung, CE, Registrierung, Marktbeobachtung, zehn Jahre Aufbewahrung. Ab Dezember 2027, Produkte August 2028."
+
+Erleichterungen: „Vereinfachtes Doku-Formular, das notifizierte Stellen akzeptieren müssen. Proportionales QM. Vorrang im Reallabor der Bundesnetzagentur – Verfahren kommt 2027. Niedrigere Bußgeldobergrenze."
+
+Realität: „Stand heute keine harmonisierten Normen im Amtsblatt, Leitlinien zu Artikel 6 nur Entwurf. Wer 2027 liefern will, orientiert sich an den Normentwürfen und ISO/IEC 42001 – und holt sich Rechtsrat. Das ist der eine Fall, wo ich einen Anwalt empfehle."
+
+---
+
+## FOLIE 31 – GPAI und Software-KMU
+
+**Redezeit: ~5 Minuten (bei reinen Betreibern: 2)**
+
+> „Für Agenturen und Start-ups, die mit GPT, Gemini oder Claude bauen. Was nicht auf euch zukommt: Die Modellpflichten aus Kapitel V – Trainingsdaten, Urheberrecht, Modelldoku – liegen bei OpenAI und Co. Durch API, Prompting, RAG, kleines Fine-Tuning werdet ihr nicht zum Modellanbieter. Hochrisiko nur, wenn euer Use Case in Anhang III fällt."
+
+> „Was auf euch zukommt – als Anbieter eures Systems: KI-Hinweis, maschinenlesbare Kennzeichnung generierter Inhalte, geschultes Team, dokumentierte Risikoprüfung."
+
+Tabelle: „Kundenservice-Chatbot – Transparenz. Texttool – Kennzeichnung. Buchhaltungs-Dokumentenanalyse – minimal. Bewerber-Matching, Prüfungsbewertung, Bonitäts-Score – Hochrisiko, dann seid ihr Hochrisiko-Anbieter mit allem aus Folie 30."
+
+Vertragstipp vorlesen.
+
+---
+
+## FOLIE 32 – DSGVO und Arbeitsrecht
+
+**Redezeit: ~5 Minuten**
+
+> „Zwei Rechtsgebiete, die unabhängig von der Risikostufe immer mitlaufen."
+
+DSGVO: „AVV mit jedem KI-Anbieter, der Personendaten sieht. Drittland USA: Data Privacy Framework oder Standardvertragsklauseln. Datenschutzhinweise ergänzen. DSFA bei hohem Risiko – die KI-Verordnung verweist darauf, es gibt keine zweite. Die Datenschutzkonferenz hat drei Orientierungshilfen: für Anwender 2024, für Entwickler 2025, für RAG-Systeme 2025."
+
+Arbeitsrecht: „Artikel 26 Absatz 7 ist eine Informationspflicht bei Hochrisiko – kein Vetorecht. Aber Paragraph 87 Betriebsverfassungsgesetz: Mitbestimmung bei technischen Einrichtungen zur Leistungs- und Verhaltenskontrolle. Das trifft viel mehr Tools – auch Copilot-Auswertungen, wenn sie Nutzungsdaten pro Person zeigen. Eine Betriebsvereinbarung verlangt die KI-VO nicht, sie ist aber oft der pragmatische Weg. Bitkom hat im Februar 2026 Eckpfeiler veröffentlicht."
+
+Hausaufgabe: „AVV-Check für jedes Tool im Inventar. Bei Microsoft 365, Google Workspace, ChatGPT Team ist das ein Häkchen. Bei Gratis-Privatkonten gibt es keinen – deshalb sind die tabu."
+
+---
+
+## FOLIE 33 – Bußgelder
+
+**Redezeit: ~5 Minuten – sachlich**
+
+> „Die Zahlen, die in jeder Schlagzeile stehen – und drei Dinge, die dort meist fehlen."
+
+Tabelle: „Drei Stufen: 35 Millionen oder 7 Prozent für Verbote. 15 Millionen oder 3 Prozent für Anbieter-, Betreiber- und Transparenzpflichten. 7,5 Millionen oder 1 Prozent für Falschangaben. Bei Konzernen gilt der höhere Wert."
+
+Erstens: „Für KMU, Start-ups und Small Mid-Caps gilt der *niedrigere* Wert – Artikel 99 Absatz 6. In vielen Vorträgen steht das Gegenteil. Beispiel: 2 Millionen Umsatz, Chatbot ohne KI-Hinweis – 3 Prozent sind 60.000 Euro, das ist die Obergrenze. Die tatsächliche Bemessung liegt nach Schwere, Dauer, Kooperation, Erstverstoß weit darunter."
+
+Zweitens: „Die Bußgeldregeln gelten seit August 2025, nicht erst ab 2026. In Deutschland praktisch durchsetzbar seit dem KI-MIG im Juli."
+
+Drittens: „Artikel 4 hat keinen eigenen Bußgeldtatbestand. Und die Stufe ‚10 Millionen oder 2 Prozent', die kursiert, existiert nicht."
+
+National: „KI-MIG: bis 50.000 Euro für fehlende Folgenabschätzung, fehlende Erläuterung, Nichtmitwirkung. Behörden zahlen nichts."
+
+Realistische Risiken: „Ehrlich gesagt sind DSGVO-Bußgelder, UWG-Abmahnungen wegen irreführender KI-Bilder, Haftung für falsche Chatbot-Auskünfte und AGG-Klagen bei HR-Tools die wahrscheinlicheren Kosten."
+
+---
+
+## FOLIE 34 – Was das Gesetz nicht fordert
+
+**Redezeit: ~6 Minuten – die Entlastungsfolie**
+
+> „Ich habe zwölf Aussagen gesammelt, die ich regelmäßig höre. Alle falsch."
+
+Zügig durchgehen, bei jedem Punkt kurz die Fundstelle nennen. Besonders betonen: KI-Beauftragter, Zertifikate, Kennzeichnung aller Texte, FRIA für KMU, Registrierung, Genehmigung, Hochrisiko seit August, ChatGPT verboten, höherer Bußgeldbetrag, Betriebsvereinbarung, zehn Jahre Logs.
+
+Grüne Box: „Was bleibt – und das ist die ganze Liste für die meisten hier: Verbote einhalten. Team schulen und dokumentieren. Chatbot-Hinweis, Deepfake-Label, Redaktionsfreigabe. AVV. Bei Hochrisiko ab 2027 Artikel 26. Fertig."
+
+---
+
+## FOLIE 35 – Trenner Hands-on
+
+**Redezeit: ~2 Minuten**
+
+> „Jetzt ihr. Sechs Übungen, neun Vorlagen – als Word, Excel und Markdown. Ihr bekommt sie mit. Wir machen 01 bis 06 gemeinsam, 07 bis 09 sind für 2027 und den Fahrplan."
+
+Vorlagen öffnen lassen (USB/Link).
+
+---
+
+## FOLIE 36 – Hands-on 1: KI-Inventar
+
+**Redezeit: ~12 Minuten inkl. Übung**
+
+Spalten erklären, dann: „Zehn Minuten. Alles, was euch einfällt – auch das Browser-Tool der Kollegin, der KI-Assistent im CRM, Copilot in Office. Ziel: fünf Zeilen. Rolle und Risiko erst grob."
+
+Nach der Übung: „Wer hat mehr gefunden als gedacht?" – meist die Mehrheit. „Das ist Schatten-KI. Die Lücken bei AVV und Schulung sind eure To-dos."
+
+Einordnung: „Das Inventar ist keine gesetzliche Pflicht. Ohne geht aber nichts – und es ist gleich Zuarbeit fürs Verarbeitungsverzeichnis."
+
+---
+
+## FOLIE 37 – Hands-on 2: Rollen- und Risiko-Check
+
+**Redezeit: ~15 Minuten inkl. Übung**
+
+Fünf Teile erklären. „Nehmt das Tool mit dem meisten Personenbezug – Chatbot, HR, Kundenanalyse. Teil A bis E, Ergebnisfeld, zwei Sätze Begründung. Wer will, klickt parallel den Compliance-Kompass der Bundesnetzagentur durch – der Link steht auf der Folie."
+
+Nach der Übung zwei, drei Ergebnisse hören. Typische Erkenntnis: „Unser HR-Tool ist Hochrisiko, aber erst ab Dezember 2027 – und wir wissen nicht, ob der Anbieter die Ausnahme nutzt." → Fragebogen.
+
+---
+
+## FOLIE 38 – Hands-on 3: Richtlinie
+
+**Redezeit: ~12 Minuten inkl. Übung**
+
+Acht Abschnitte kurz, dann: „Abschnitt 3 freigegebene Tools aus eurem Inventar, Abschnitt 4 Tabu-Daten mit euren Beispielen. Rest streichen oder stehen lassen. Ziel: Entwurf für die Geschäftsführung nächste Woche."
+
+Einordnen: „Die Richtlinie ist keine Pflicht. Sie ist der einfachste Nachweis für Artikel 4 und verhindert DSGVO-Fehler. Mit Betriebsrat: Ordnungsverhalten, Paragraph 87 Nummer 1 – einbeziehen."
+
+---
+
+## FOLIE 39 – Hands-on 4: Schulungskonzept
+
+**Redezeit: ~10 Minuten inkl. Übung**
+
+Beispieltabelle zeigen, dann: „Teil A für euch: Gruppen, Tools, Stufe. Dann Teil C: heutigen Workshop eintragen. Teilnehmerliste unterschreiben."
+
+> „Das ist der Nachweis. Datum, Inhalt, Referent, Teilnehmende. Nächster Termin in zwölf Monaten oder beim nächsten neuen Tool."
+
+---
+
+## FOLIE 40 – Hands-on 5: Transparenz-Texte
+
+**Redezeit: ~8 Minuten inkl. Übung**
+
+Drei Bausteine vorlesen. „Wer einen Chatbot hat: Baustein A an euren Ton anpassen. Alle anderen: Baustein E – den Freigabevermerk – als Absatz in euren Redaktionsprozess. Wer Bilder generiert: Label-Vorlage in Canva anlegen."
+
+Nochmal entlasten: „Kein Impressums-Disclaimer. Keine Kennzeichnung von Werbetexten oder retuschierten Fotos."
+
+---
+
+## FOLIE 41 – Hands-on 6: Anbieter-Fragebogen
+
+**Redezeit: ~8 Minuten inkl. Übung**
+
+Zwölf Fragen zügig. „Nehmt das Tool mit dem größten Fragezeichen. Markiert fünf Fragen, die ihr diese Woche schickt."
+
+> „‚Wir sind compliant' ist keine Antwort. Wer euch 2026 keine belastbare Einstufung gibt, liefert 2027 kaum Hochrisiko-Konformität. Das gehört in die Entscheidung über Vertragsverlängerungen."
+
+---
+
+## FOLIE 42 – Fahrplan
+
+**Redezeit: ~5 Minuten**
+
+Drei Spalten: „Jetzt – das, was heute gilt, plus Inventar und Richtlinie. Bis Ende 2026 – Anbieter befragen, Hochrisiko-Kandidaten identifizieren, Stufe-2-Schulung, Betriebsrat. 2027 – je Hochrisiko-System die Artikel-26-Punkte, öffentliche Stellen die Folgenabschätzung, Anbieter die Konformität."
+
+Aufwand: „Typisches KMU ohne Hochrisiko: ein Arbeitstag verteilt auf zwei Wochen, dann eine Stunde pro Quartal. Mit HR-Tool zwei bis drei Tage mehr in 2027. Das ist machbar."
+
+---
+
+## FOLIE 43 – Checkliste
+
+**Redezeit: ~4 Minuten**
+
+„Links fünf Pflichten, die heute gelten. Rechts fünf Dinge, die euch das Leben leichter machen und 2027 vorbereiten. Die Badges sagen euch, was Gesetz und was Empfehlung ist."
+
+---
+
+## FOLIE 44 – Ressourcen
+
+**Redezeit: ~4 Minuten**
+
+Karten kurz: Bundesnetzagentur mit Kompass und Factsheet KMU, eRecht24 mit dem Kennzeichnungsartikel vom Juli 2026 und dem kostenlosen KI-Check, Gesetzestext artikelweise auf Deutsch, Mittelstand-Digital – „das Netzwerk wird 2027 neu aufgesetzt, die Angebote laufen weiter", KI-Campus/appliedAI/Elements of AI für Stufe 1, DSK-Orientierungshilfen, Bitkom-Leitfaden 2.0 und Mitbestimmung, GDD-Musterrichtlinie, EU-Kommission.
+
+„Alle Links sind klickbar, alle stehen in der Quellenliste im Material."
+
+---
+
+## FOLIE 45 – FAQ
+
+**Redezeit: ~5 Minuten**
+
+Sechs Fragen kurz beantworten; die Antworten stehen auf der Folie. Bei „Warten wir auf Normen?" klar: „Für Hochrisiko-Anbieter verständlich. Für Betreiber gibt es nichts zu warten."
+
+---
+
+## FOLIE 46 – Kernbotschaften
+
+**Redezeit: ~3 Minuten**
+
+> „Wenn ihr fünf Dinge mitnehmt: Rolle zuerst. Drei Pflichten gelten heute. Hochrisiko kommt Dezember 2027 – jetzt vorbereiten. Nicht mehr tun als nötig. Und: Dokumentieren schlägt Perfektion."
+
+---
+
+## FOLIE 47 – Danke
+
+**Redezeit: ~3 Minuten + offene Runde**
+
+> „Der AI Act ist für kleine Organisationen kein Monster. Drei Pflichten heute, die ihr mit den Vorlagen in Tagen erledigt. Ein Planungshorizont bis Ende 2027 für die wenigen mit Hochrisiko. Und eine lange Liste an Dingen, die ihr euch sparen könnt."
+
+Aufruf: „Was macht jeder von euch in den nächsten 48 Stunden? Eine Runde."
+
+Erwartungen vom Flipchart abgleichen. Offene Fragen.
 
 ---
 
 ## Anhang: Antworten auf schwierige Fragen
 
-### „Das ist alles sehr abstrakt – wir sind ein Bäcker/Handwerker/kleines Dienstleistungsunternehmen."
-> „Stimmt, der AI Act ist für euch weniger relevant als für ein Tech-Unternehmen. Aber: Wenn ihr ein Buchungssystem mit KI-Komponente nutzt, einen Chatbot auf der Website habt oder eine HR-Software mit automatisierter Bewerbungsfilterung – dann seid ihr dabei. Mein Rat: Inventar erstellen, dann sehen wir wo ihr steht."
+### „Das ist alles sehr abstrakt – wir sind ein Bäcker / ein Verein / ein Drei-Personen-Büro."
+> „Dann ist eure Liste kurz: Verbote – habt ihr nicht. Schulung – heute erledigt, dokumentieren. Chatbot? Wenn ja, Hinweis. AVV für die Tools mit Kundendaten. Fertig. Das Inventar dauert bei euch eine halbe Stunde."
 
-### „Wir warten einfach bis es konkrete Urteile gibt."
-> „Das ist verständlich, aber riskant. Die Schulungspflicht gilt jetzt – und bei einem Schadensfall wird sofort gefragt, was ihr präventiv getan habt. ‚Wir haben gewartet' ist keine gute Antwort vor Gericht."
+### „Der Omnibus hat doch alles verschoben – können wir nicht bis 2027 warten?"
+> „Verschoben wurde nur Hochrisiko. Verbote, Schulung und Transparenz gelten. Und die Bundesnetzagentur schaut seit August hin. Was ihr bis 2027 schieben könnt, sind die Artikel-26-Pflichten – aber Anbieter befragen und Betriebsrat einbinden solltet ihr jetzt, sonst wird 2027 hektisch."
 
-### „Das kann doch wieder alles kippen wie bei DSGVO – erst Panik, dann nichts."
-> „Die DSGVO ist nach wie vor voll in Kraft und wird zunehmend durchgesetzt. Millionenstrafen gegen Meta, Deutsche Wohnen, Österreichische Post – das ist passiert. Beim AI Act erwarte ich dasselbe Muster: erst wenige große Fälle, dann mehr. Wer früh anfängt, ist auf der sicheren Seite."
+### „Unser Anbieter sagt, Hochrisiko gilt nicht mehr für sein Tool."
+> „Fragt nach der schriftlichen Begründung: Nutzt er die Ausnahme nach Artikel 6 Absatz 3? Ist das dokumentiert und registriert? Erstellt das Tool Profile – Scores, Rankings? Dann ist es Hochrisiko, egal was der Vertrieb sagt. Vorlage 06, Fragen 2 und 3."
 
-### „Wir haben kein Budget dafür."
-> „Für die Grundlagen braucht ihr kein Budget. KI-Inventar: kostet Zeit, kein Geld. Elements of AI: kostenlos. Mittelstand-Digital: kostenlos. KoKIVO: kostenlos. Was kostet ist, wenn ihr mit einem Rechtsanwalt oder Berater die Feinheiten klärt – und das lohnt sich, wenn ihr Hochrisiko-Anwendungen habt."
+### „Wir warten auf die Normen und finalen Leitlinien."
+> „Für Hochrisiko-Anbieter nachvollziehbar – aber auch die sollten jetzt mit den Normentwürfen arbeiten, sonst fehlen 2027 fünfzehn Monate. Für Betreiber sind die Pflichten heute klar genug, da helfen keine Normen weiter."
+
+### „Der Betriebsrat blockiert jedes KI-Tool."
+> „Meist aus Informationsmangel. Die KI-VO gibt ihm bei Hochrisiko ein Informationsrecht, das Betriebsverfassungsgesetz bei Kontroll-Tools echte Mitbestimmung. Bindet ihn früh ein – Vorlage 07 – und nutzt die Bitkom-Eckpfeiler für eine Betriebsvereinbarung. Ein transparenter Prozess ist schneller als ein Konflikt."
+
+### „Wir haben kein Budget."
+> „Für die heutigen Pflichten braucht ihr keins: Inventar, Richtlinie, Schulung – alles mit den Vorlagen. Kostenlose Kurse von KI-Campus, appliedAI, Elements of AI. Beratung bei Mittelstand-Digital. Geld kostet nur Rechtsrat bei Hochrisiko-Anbieterrolle – und das lohnt sich dann."
+
+### „Das kippt doch wieder wie bei der DSGVO."
+> „Die DSGVO ist voll in Kraft und wird durchgesetzt. Der AI Act wurde 2026 vereinfacht, nicht abgeschafft – die Verschiebungen zeigen eher, dass der Gesetzgeber ihn realistisch machen will. Wer die heutigen Pflichten erledigt, hat nichts zu befürchten."
 
 ---
 
-*Diese Notizen sind als Leitfaden gedacht – sprecht frei, nicht vom Blatt. Authentizität schlägt Perfektion.*
-
-*Stand: März 2026 | Verordnung (EU) 2024/1689*
+*Diese Notizen sind ein Leitfaden – frei sprechen, nicht ablesen.*
+*Rechtsstand 9. September 2026 · VO (EU) 2024/1689 i. d. F. VO (EU) 2026/1744 · KI-MIG · Kein Rechtsrat.*
