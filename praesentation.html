@@ -5,15 +5,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>EU AI Act für kleine Organisationen – Workshop | PINGEL AI Solutions</title>
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+/* Schriften lokal eingebunden (kein Google-Fonts-Abruf, DSGVO) – wie auf fabian-pingel.de */
+@font-face { font-family: 'Red Hat Display'; src: url('fonts/RedHatDisplay-latin.woff2') format('woff2'); font-weight: 300 900; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Red Hat Text'; src: url('fonts/RedHatText-latin.woff2') format('woff2'); font-weight: 300 700; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Red Hat Text'; src: url('fonts/RedHatText-Italic-latin.woff2') format('woff2'); font-weight: 300 700; font-style: italic; font-display: swap; }
 
 /* ── Design Tokens (fabian-pingel.de) ───────────────────────────── */
 :root {
   --color-brand:       #182145;
   --color-primary:     #182145;
-  --color-accent:      #c4902a;
-  --color-accent-dark: #a87820;
-  --color-accent-light:#e8c97a;
+  --color-accent:      #2b5fe8;
+  --color-accent-dark: #1f4bc2;
+  --color-accent-light:#8fb0ff;
   --color-bg:          #f5f7fb;
   --color-surface:     #ffffff;
   --color-text:        #1a2340;
@@ -22,7 +25,8 @@
   --color-hero-from:   #182145;
   --color-hero-to:     #243668;
   --color-subtle:      #cbd5e1;
-  --font-sans:         'Montserrat', system-ui, -apple-system, sans-serif;
+  --font-sans:         'Red Hat Text', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-display:      'Red Hat Display', 'Red Hat Text', system-ui, -apple-system, 'Segoe UI', sans-serif;
   --radius:            0.75rem;
   --shadow-md:         0 4px 16px rgba(0,0,0,.10);
   --shadow-lg:         0 8px 32px rgba(0,0,0,.18);
@@ -47,7 +51,7 @@ html, body { width: 100%; height: 100%; font-family: var(--font-sans); backgroun
 .slide--light   { background: var(--color-bg); color: var(--color-text); }
 .slide--surface { background: var(--color-surface); color: var(--color-text); }
 .slide--accent  { background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-accent-dark) 100%); color: #fff; text-align: center; }
-.slide--handson { background: linear-gradient(180deg, #fbf6ea 0%, var(--color-bg) 22%); color: var(--color-text); }
+.slide--handson { background: linear-gradient(180deg, #eef3ff 0%, var(--color-bg) 22%); color: var(--color-text); }
 .slide--handson::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 6px; background: linear-gradient(90deg, var(--color-accent), var(--color-accent-light)); }
 
 .slide__inner { width: 100%; max-width: 1100px; margin: 0 auto; }
@@ -55,6 +59,7 @@ html, body { width: 100%; height: 100%; font-family: var(--font-sans); backgroun
 /* ── Typography ──────────────────────────────────────────────────── */
 .eyebrow { font-size: .72rem; font-weight: 700; letter-spacing: .15em; text-transform: uppercase; color: var(--color-accent-light); margin-bottom: .6rem; display: block; }
 .eyebrow--dark { color: var(--color-accent); }
+h1, h2, h3 { font-family: var(--font-display); }
 h1 { font-size: clamp(2rem, 4vw, 3.5rem); font-weight: 800; line-height: 1.1; margin-bottom: 1rem; }
 h2 { font-size: clamp(1.4rem, 2.3vw, 2.1rem); font-weight: 700; line-height: 1.15; margin-bottom: .75rem; color: var(--color-primary); }
 h2.light { color: #fff; }
@@ -103,7 +108,7 @@ p { line-height: 1.6; color: var(--color-muted); }
 
 /* ── Boxes ───────────────────────────────────────────────────────── */
 .box { border-radius: var(--radius); padding: .85rem 1.25rem; margin: .8rem 0; font-size: .86rem; line-height: 1.55; }
-.box--gold  { background: rgba(196,144,42,.12); border-left: 4px solid var(--color-accent); color: var(--color-text); }
+.box--gold  { background: rgba(43,95,232,.12); border-left: 4px solid var(--color-accent); color: var(--color-text); }
 .box--red   { background: rgba(220,38,38,.09);  border-left: 4px solid #dc2626; color: var(--color-text); }
 .box--green { background: rgba(22,163,74,.1);   border-left: 4px solid #16a34a; color: var(--color-text); }
 .box--ghost { background: rgba(255,255,255,.1); border-left: 4px solid var(--color-accent-light); color: #fff; }
@@ -141,7 +146,7 @@ p { line-height: 1.6; color: var(--color-muted); }
 .tl { display: grid; grid-template-columns: repeat(3, 1fr); gap: .7rem; width: 100%; }
 .tl__item { background: var(--color-surface); border-radius: .6rem; padding: .7rem .9rem; border-top: 4px solid var(--color-border); box-shadow: var(--shadow-md); }
 .tl__item--done { border-top-color: #16a34a; }
-.tl__item--now  { border-top-color: var(--color-accent); background: #fff8e8; }
+.tl__item--now  { border-top-color: var(--color-accent); background: #e6edff; }
 .tl__item--next { border-top-color: #ea580c; }
 .tl__date { font-size: .7rem; font-weight: 700; color: var(--color-accent); letter-spacing: .04em; }
 .tl__item--done .tl__date { color: #16a34a; }
@@ -165,7 +170,7 @@ p { line-height: 1.6; color: var(--color-muted); }
 /* ── Divider / Quote ─────────────────────────────────────────────── */
 .divider { width: 3rem; height: 3px; background: var(--color-accent); border-radius: 2px; margin: .6rem auto 1.2rem; }
 .divider--left { margin-left: 0; }
-.quote { border-left: 4px solid var(--color-accent); padding: .7rem 1.2rem; font-size: .98rem; font-style: italic; color: var(--color-muted); background: rgba(196,144,42,.06); border-radius: 0 var(--radius) var(--radius) 0; line-height: 1.55; margin: .7rem 0; }
+.quote { border-left: 4px solid var(--color-accent); padding: .7rem 1.2rem; font-size: .98rem; font-style: italic; color: var(--color-muted); background: rgba(43,95,232,.06); border-radius: 0 var(--radius) var(--radius) 0; line-height: 1.55; margin: .7rem 0; }
 
 /* ── Navigation ──────────────────────────────────────────────────── */
 #nav { position: fixed; bottom: 1.2rem; left: 50%; transform: translateX(-50%); display: flex; align-items: center; gap: .75rem; background: rgba(24,33,69,.85); backdrop-filter: blur(12px); padding: .45rem 1rem; border-radius: 999px; border: 1px solid rgba(255,255,255,.12); box-shadow: var(--shadow-lg); z-index: 100; }
@@ -198,7 +203,7 @@ a.card:hover { transform: translateY(-3px); box-shadow: var(--shadow-lg); }
 /* ── Forbidden grid ──────────────────────────────────────────────── */
 .forbidden-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: .45rem; width: 100%; }
 .forbidden-item { display: flex; align-items: flex-start; gap: .55rem; padding: .5rem .7rem; background: rgba(220,38,38,.07); border-radius: .45rem; border-left: 3px solid #dc2626; font-size: .74rem; line-height: 1.38; }
-.forbidden-item--new { background: rgba(196,144,42,.12); border-left-color: var(--color-accent); }
+.forbidden-item--new { background: rgba(43,95,232,.12); border-left-color: var(--color-accent); }
 .forbidden-item__num { font-weight: 800; color: #dc2626; flex-shrink: 0; font-size: .85rem; }
 .forbidden-item--new .forbidden-item__num { color: var(--color-accent-dark); }
 
@@ -250,7 +255,7 @@ a.card:hover { transform: translateY(-3px); box-shadow: var(--shadow-lg); }
     <span class="badge badge--light mb-2">Workshop · Halbtag</span>
     <h1>EU AI Act<br>für kleine Organisationen</h1>
     <div class="divider"></div>
-    <p class="subtitle">Was gilt heute, was kommt 2027 – und was das Gesetz von euch <strong style="color:#e8c97a;">nicht</strong> verlangt.<br>Mit Vorlagen, die ihr direkt einsetzen könnt.</p>
+    <p class="subtitle">Was gilt heute, was kommt 2027 – und was das Gesetz von euch <strong style="color:#8fb0ff;">nicht</strong> verlangt.<br>Mit Vorlagen, die ihr direkt einsetzen könnt.</p>
     <div class="stats">
       <div class="stat"><div class="stat__val">Feb '25</div><div class="stat__label">Verbote + KI-Kompetenz</div></div>
       <div class="stat"><div class="stat__val">Aug '26</div><div class="stat__label">Transparenzpflichten</div></div>
@@ -566,7 +571,7 @@ a.card:hover { transform: translateY(-3px); box-shadow: var(--shadow-lg); }
     <span class="eyebrow">Modul 2</span>
     <h2 class="light" style="font-size:clamp(2rem,4vw,3rem);">Bin ich<br>betroffen?</h2>
     <div class="divider"></div>
-    <p class="subtitle" style="color:rgba(255,255,255,.6);">Zwei Fragen pro KI-System:<br>Welche <strong style="color:#e8c97a;">Rolle</strong> habe ich? Welche <strong style="color:#e8c97a;">Risikostufe</strong> trifft zu?</p>
+    <p class="subtitle" style="color:rgba(255,255,255,.6);">Zwei Fragen pro KI-System:<br>Welche <strong style="color:#8fb0ff;">Rolle</strong> habe ich? Welche <strong style="color:#8fb0ff;">Risikostufe</strong> trifft zu?</p>
   </div>
   <div class="slide__page"></div>
 </section>
@@ -1137,7 +1142,7 @@ a.card:hover { transform: translateY(-3px); box-shadow: var(--shadow-lg); }
     <span class="eyebrow">Modul 4 · Hands-on</span>
     <h2 class="light" style="font-size:clamp(2rem,4vw,3rem);">Jetzt macht<br>ihr es selbst</h2>
     <div class="divider"></div>
-    <p class="subtitle" style="color:rgba(255,255,255,.6);">Sechs Übungen, neun Vorlagen – als Markdown, Word und Excel im Ordner <code style="color:#e8c97a;">vorlagen/</code></p>
+    <p class="subtitle" style="color:rgba(255,255,255,.6);">Sechs Übungen, neun Vorlagen – als Markdown, Word und Excel im Ordner <code style="color:#8fb0ff;">vorlagen/</code></p>
     <div class="cards cards--3" style="max-width:960px; margin:0 auto; text-align:left; gap:.6rem;">
       <div class="card--ghost" style="padding:.7rem .9rem;"><div class="card__label">01 · XLSX</div><div class="card__title">KI-Inventar</div></div>
       <div class="card--ghost" style="padding:.7rem .9rem;"><div class="card__label">02 · DOCX</div><div class="card__title">Rollen- &amp; Risiko-Check</div></div>
