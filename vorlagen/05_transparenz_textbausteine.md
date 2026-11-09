@@ -101,5 +101,5 @@ Wer eine eigene Anwendung mit generativem Modell in Verkehr bringt, ist Anbieter
 - ☐ Anbieterrolle geprüft (Baustein G)
 
 ---
-*Vorlage aus dem Workshop „EU AI Act für kleine Organisationen" (PINGEL AI Solutions), Stand 09/2026, CC BY 4.0.
+*Vorlage aus dem Workshop „EU AI Act für kleine Organisationen" (PINGEL AI Solutions), Stand 11/2026, CC BY 4.0.
 Formulierungsbeispiele in Anlehnung an e-recht24.de (KI-Kennzeichnungspflicht, Stand 29.07.2026) und Bundesnetzagentur. Kein Rechtsrat.*

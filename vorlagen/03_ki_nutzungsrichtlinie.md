@@ -116,5 +116,5 @@ Ich habe die KI-Nutzungsrichtlinie von [Organisation] (Version 1.0) gelesen und 
 Name: ____________________ Abteilung: ____________________ Datum/Unterschrift: ____________________
 
 ---
-*Vorlage aus dem Workshop „EU AI Act für kleine Organisationen" (PINGEL AI Solutions), Stand 09/2026, CC BY 4.0.
+*Vorlage aus dem Workshop „EU AI Act für kleine Organisationen" (PINGEL AI Solutions), Stand 11/2026, CC BY 4.0.
 Kein Rechtsrat. Bei Betriebsrat: Mitbestimmung nach § 87 Abs. 1 Nr. 1 und 6 BetrVG prüfen.*

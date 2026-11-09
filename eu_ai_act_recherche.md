@@ -1,6 +1,6 @@
 # EU AI Act – Recherche-Grundlage für den KMU-Workshop
 
-**Rechtsstand: 9. September 2026**
+**Rechtsstand: 9. November 2026**
 **Vorgängerversion:** März 2026 (vor Digital Omnibus und KI-MIG – inhaltlich überholt, siehe `AENDERUNGEN.md`)
 
 Dieses Dokument ist die fachliche Referenz für Foliensatz, Sprechtext, Rezept und Vorlagen. Alle Aussagen
@@ -116,7 +116,7 @@ Deutschland eingesetzt wird, fällt darunter; der deutsche Betreiber hat eigene 
 
 ---
 
-## 2. Zeitplan – Stand 9. September 2026
+## 2. Zeitplan – Stand 9. November 2026
 
 | Datum | Was gilt | Status |
 |---|---|---|
@@ -263,7 +263,7 @@ menschliche Bewertung ohne Überprüfung zu ersetzen, oder (d) eine vorbereitend
 **Rückausnahme:** Bei **Profiling natürlicher Personen** immer Hochrisiko. Der **Anbieter** dokumentiert
 die Einschätzung vor Inverkehrbringen und registriert sich (Art. 6 Abs. 4, Art. 49 Abs. 2, seit Omnibus
 mit reduziertem Umfang). **Kommissions-Leitlinien zu Art. 6:** Entwurf vom 19./20.05.2026, Konsultation
-bis Juli 2026 – Stand 09.09.2026 nicht als final bestätigt.
+im Sommer 2026 – Stand 09.11.2026 weiterhin nicht final verabschiedet.
 
 **Praxis HR-Tool:** Reines Keyword-Matching mit anschließender vollständiger menschlicher Sichtung kann
 unter (d)/(c) fallen; ein Ranking/Score über Bewerber ist Profiling → Hochrisiko. Die Einstufung trifft
@@ -291,8 +291,12 @@ der Anbieter; der Betreiber sollte sie beim Anbieter abfragen (Vorlage 06).
   in Verkehr bringt, ist Anbieter dieses Systems und muss Abs. 1/2 selbst erfüllen (z. B. über die
   Kennzeichnungsfunktionen des Modellanbieters).
 - **Praxiskodex Kennzeichnung (Code of Practice on Transparency of AI-generated Content):** final
-  10.06.2026, ca. 190 Unterzeichner; Kommissions-Leitlinien Art. 50 vom 08.05.2026; EU-Icon-Set für
-  Labels (Nutzung optional). Anbieter, die den Kodex unterzeichnen, erfüllen Abs. 2 mit Rechtssicherheit.
+  10.06.2026, ca. 190 Unterzeichner; von Kommission und KI-Gremium als **angemessener** Nachweisweg
+  bestätigt (Juli 2026). EU-Icon-Set für Labels (Nutzung optional). Wer den Kodex unterzeichnet und
+  einhält, kann die Erfüllung von Abs. 2, 4 und 5 darüber nachweisen.
+- **Kommissions-Leitlinien zu Art. 50:** Entwurf 08.05.2026, **final 20.07.2026** (C(2026) 5054,
+  Pressemitteilung IP/26/1653). Erläutern alle fünf Absätze mit Beispielen; ausdrücklich erfasst sind
+  KI-Agenten (Abs. 1). Bloße Rechtschreib- und Grammatikkorrektur ist keine Generierung.
 
 ### 6.4 Minimales Risiko
 Alle übrigen Systeme (Spam-Filter, Empfehlungen, Übersetzung, Bildoptimierung, Suche, interne
@@ -384,8 +388,10 @@ verlangen.
 | 72/73 | Beobachtung nach dem Inverkehrbringen; Meldung schwerwiegender Vorfälle (15 Tage, bei Todesfall 10 Tage, weitverbreitet 2 Tage) |
 | 62 | **KMU-Maßnahmen:** vorrangiger Reallabor-Zugang, Sensibilisierung, reduzierte Gebühren für Konformitätsbewertung |
 
-**Harmonisierte Normen (CEN-CENELEC JTC 21):** Stand 09/2026 keine Norm im Amtsblatt zitiert → keine
-Konformitätsvermutung nach Art. 40; prEN 18286 (QM), prEN 18228 (Risikomanagement) in Arbeit.
+**Harmonisierte Normen (CEN-CENELEC JTC 21):** Seit **19.10.2026** ist mit **EN 18286:2026**
+(Qualitätsmanagementsystem) die erste Norm im Amtsblatt zitiert (Durchführungsbeschluss (EU) 2026/2274) →
+Konformitätsvermutung nach Art. 40 **nur für Art. 17** (QM-System). Für alle übrigen Anforderungen
+(u. a. prEN 18228 Risikomanagement) Stand 11/2026 keine Vermutung; weitere Normen sind angekündigt.
 
 ---
 
@@ -465,7 +471,7 @@ Folgen bei Verletzung von § 87 BetrVG.
 | 6 | Zentrale Anlaufstelle |
 | 8 | **Zentrale Beschwerdestelle** (Art. 85 KI-VO) bei der BNetzA |
 | 9 | Zusammenarbeit, Einbindung der Datenschutzbehörden |
-| 13 | **KI-Reallabor** bei der BNetzA; Vorrang für KMU/Start-ups (Art. 62) und Forschung; Antragsverfahren Stand 09/2026 noch nicht veröffentlicht |
+| 13 | **KI-Reallabor** bei der BNetzA; Vorrang für KMU/Start-ups (Art. 62) und Forschung; Antragsverfahren Stand 11/2026 noch nicht veröffentlicht |
 | 15–17 | Nationale Bußgelder (s. o.) |
 | 20 | Nationales Register über Hochrisiko-KI-Systeme |
 
@@ -522,13 +528,16 @@ verletzen; irreführende KI-Bilder in der Werbung sind abmahnfähig (eRecht24-Ch
 
 ---
 
-## 16. Offene Punkte / Unsicherheiten (Stand 09.09.2026)
+## 16. Offene Punkte / Unsicherheiten (Stand 09.11.2026)
 
-- Kommissions-Leitlinien zur Hochrisiko-Einstufung (Art. 6): nur Entwurf (05/2026); finale Fassung nicht bestätigt.
-- Harmonisierte Normen: keine im Amtsblatt → keine Konformitätsvermutung; Zeitplan CEN-CENELEC unsicher.
+- Kommissions-Leitlinien zur Hochrisiko-Einstufung (Art. 6): weiterhin nur Entwurf (05/2026).
+- Harmonisierte Normen: nur EN 18286 (QM, Art. 17) im Amtsblatt (19.10.2026); übrige Normen ausstehend.
 - EU-Datenbank (Art. 71): Live-Betriebsstatus nicht verifiziert.
+- Leitlinien zur Meldung schwerwiegender Vorfälle (Art. 73): nur Entwurf (09/2025) bekannt.
 - Deutsches KI-Reallabor (§ 13 KI-MIG): Antragsverfahren nicht veröffentlicht; Frist 02.08.2027.
-- Mittelstand-Digital-Netzwerk läuft Ende 2026 aus, Nachfolgeprogramm ab 2027 (BMWE).
+- Mittelstand-Digital: altes Netzwerk endet 31.12.2026; neues Netzwerk ab 01.01.2027 mit sechs überregionalen
+  Zentren (je 2–3 Länder, mindestens eine Anlaufstelle pro Land), ab Mai 2027 elf Branchen- und Themenzentren
+  (BMWE-Pressemitteilung 20.10.2026). Zuständiges Zentrum vor dem Workshop auf mittelstand-digital.de prüfen.
 - Verfügbarkeit „Elements of AI" (deutsch) über KI-Campus nicht tagesaktuell bestätigt.
 - Exakte Bußgeldpraxis der BNetzA: noch keine veröffentlichten Verfahren.
 

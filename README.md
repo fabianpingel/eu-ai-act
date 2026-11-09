@@ -4,7 +4,7 @@ Workshop-Material zur EU-KI-Verordnung (Verordnung (EU) 2024/1689 in der Fassung
 VO (EU) 2026/1744) für kleine und mittlere Unternehmen, Software-KMU, Vereine und Kommunen – ohne eigene
 Rechtsabteilung. Mit Hands-on-Vorlagen, damit die Pflichten nicht nur verstanden, sondern erledigt werden.
 
-**Rechtsstand:** 9. September 2026
+**Rechtsstand:** 9. November 2026
 **Format:** Halbtages-Workshop (ca. 4 Stunden) mit HTML-Präsentation (47 Folien) und 9 Vorlagen
 **Autor:** PINGEL AI Solutions · Lizenz CC BY 4.0
 
@@ -18,7 +18,7 @@ Rechtsabteilung. Mit Hands-on-Vorlagen, damit die Pflichten nicht nur verstanden
 | [`workshop_rezept.md`](workshop_rezept.md) | Ablauf, Module, Lernziele, Übungen, Zielgruppen-Varianten, FAQ, Handout |
 | [`sprechtext.md`](sprechtext.md) | Sprechtext und Moderationsnotizen je Folie, Antworten auf schwierige Fragen |
 | [`glossar.md`](glossar.md) | Glossar mit 35 Begriffen für Einsteiger (AI Act, Omnibus, KI-MIG, Anbieter/Betreiber, Anhang I/III, FRIA, Praxiskodex …), als Handout nutzbar |
-| [`eu_ai_act_recherche.md`](eu_ai_act_recherche.md) | Fachliche Referenz: Rechtsstand 09/2026, Omnibus, KI-MIG, alle Artikel mit Fundstellen, „Was das Gesetz NICHT fordert" |
+| [`eu_ai_act_recherche.md`](eu_ai_act_recherche.md) | Fachliche Referenz: Rechtsstand 11/2026, Omnibus, KI-MIG, alle Artikel mit Fundstellen, „Was das Gesetz NICHT fordert" |
 | [`vorlagen/`](vorlagen/README.md) | 9 Vorlagen als Markdown + generierte DOCX/XLSX (Inventar, Risiko-Check, Richtlinie, Schulungsnachweis, Transparenz-Texte, Anbieter-Fragebogen, Betriebsrat-Info, Vorfall-Protokoll, Fahrplan) |
 | [`tools/build_vorlagen.py`](tools/build_vorlagen.py) | Erzeugt DOCX/XLSX aus den Markdown-Vorlagen (python-docx, openpyxl) |
 | [`tools/check_links.py`](tools/check_links.py) | Prüft alle URLs in Quellen, Präsentation und Vorlagen |
@@ -40,12 +40,15 @@ Navigation: Pfeiltasten, Klick, Wischen · `Home`/`End` · `F` = Vollbild · Dee
 ## Vorlagen regenerieren
 
 ```powershell
-pip install python-docx openpyxl
-python tools/build_vorlagen.py       # vorlagen/docx/*.docx, vorlagen/xlsx/*.xlsx
+uv run --with python-docx --with openpyxl --with fonttools --with brotli python tools/build_vorlagen.py
 python tools/check_links.py          # Link-Report
 ```
 
 Die Markdown-Dateien in `vorlagen/` sind die einzige Quelle; die Office-Dateien sind generiert und werden mit committet.
+Layout wie fabian-pingel.de: Red Hat Display/Text, Navy und Signalblau, Wortmarke in der Kopfzeile, Seitenzählung.
+Die Schriften sind in jede DOCX **eingebettet**, das Schriftbild stimmt also auch ohne installierte Red Hat.
+Excel kann keine Schriften einbetten: Die XLSX nutzen Red Hat Text, wenn sie installiert ist, sonst die
+Standardschrift von Excel.
 
 ---
 
@@ -61,7 +64,7 @@ Nach dem Workshop können Teilnehmende:
 
 ---
 
-## Rechtsstand in Kürze (09/2026)
+## Rechtsstand in Kürze (11/2026)
 
 | Was | Seit / ab |
 |---|---|

@@ -4,7 +4,7 @@
 **Ziel:** Teilnehmende kennen Rolle und Risikostufe ihrer KI-Systeme, haben die drei heute geltenden Pflichten mit Vorlagen abgearbeitet und einen Fahrplan bis Dezember 2027.
 **Format:** Halbtag (ca. 4,5 Stunden) · `praesentation.html` (47 Folien) · 9 Vorlagen (`vorlagen/`, MD + DOCX/XLSX) · `glossar.md` als Handout
 **Vorwissen:** keines nötig – Modul 1 erklärt Sinn, Zweck, Funktionsweise und Begriffe; Modul 2 die Bewertungsmethode Schritt für Schritt
-**Rechtsstand:** 9. September 2026 (KI-VO 2024/1689 i. d. F. Digital Omnibus VO (EU) 2026/1744; KI-MIG vom 22.07.2026)
+**Rechtsstand:** 9. November 2026 (KI-VO 2024/1689 i. d. F. Digital Omnibus VO (EU) 2026/1744; KI-MIG vom 22.07.2026)
 
 ---
 
@@ -32,7 +32,7 @@
 
 **Lernziel:** Teilnehmende wissen, dass drei Pflichten heute gelten und Hochrisiko erst Dezember 2027 kommt.
 
-- Titel: die drei Daten Feb 2025 / Aug 2026 / Dez 2027 einführen; Rechtsstand 09/2026 betonen (Omnibus!).
+- Titel: die drei Daten Feb 2025 / Aug 2026 / Dez 2027 einführen; Rechtsstand 11/2026 betonen (Omnibus!).
 - Agenda + Erwartungen auf Flipchart.
 - Bestandsaufnahme per Handzeichen: berufliche KI-Nutzung · Chatbot/HR-KI · dokumentierte Schulung · Rolle bekannt?
 
@@ -134,7 +134,7 @@ Faustregeln: „Bewertet/entscheidet es über Menschen?" → Hochrisiko-Verdacht
 | 27 Transparenz umsetzen | Chatbot-Satz, Deepfake-Label, Freigabevermerk, Anbieter-Kennzeichnung | 05 | vier Handgriffe |
 | 28 Art. 26 | vollständig: Abs. 1, 2, 4, 5, 6 (≥ 6 Monate), 7 (Beschäftigte/Betriebsrat), 9 (DSFA), 11, Art. 86; NICHT: Registrierung, FRIA, CE | 06, 07, 08 | ab 02.12.2027, jetzt Anbieter befragen |
 | 29 Sonderfälle | FRIA Art. 27 (öffentliche Stellen, öffentliche Dienste, Kredit, Versicherung); Registrierung Art. 49 Abs. 3; § 17 KI-MIG; Vereine: Bildung Nr. 3, Emotionserkennung verboten | – | Kleine Vereine: nur Art. 4, 50, DSGVO |
-| 30 Anbieter Hochrisiko | Art. 9–18, 43, 47–49, 72, 73; KMU/SMC-Erleichterungen (Art. 11, 17, 57, 62, 99 Abs. 6); keine Normen, Leitlinien Entwurf | – | Rechtsrat empfohlen |
+| 30 Anbieter Hochrisiko | Art. 9–18, 43, 47–49, 72, 73; KMU/SMC-Erleichterungen (Art. 11, 17, 57, 62, 99 Abs. 6); nur EN 18286 (QM) harmonisiert, Leitlinien Art. 6 Entwurf | – | Rechtsrat empfohlen |
 | 31 GPAI & Software-KMU | API ≠ GPAI-Anbieter; Pflichten als Systemanbieter (Art. 4, 50 Abs. 1/2); Beispieltabelle | 02, 05 G | Kennzeichnungsfunktionen des Modellanbieters nutzen |
 | 32 DSGVO/Arbeitsrecht | AVV, DSFA (Art. 26 Abs. 9), Art. 22; DSK-OH 2024/2025/RAG; Art. 26 Abs. 7 vs. § 87 BetrVG; Bitkom Mitbestimmung | 07 | AVV-Check heute |
 | 33 Bußgelder | 3 Stufen; KMU/SMC niedrigerer Wert (Art. 99 Abs. 6); seit 08/2025; Art. 4 ohne eigenes Bußgeld; keine „10 Mio/2 %"-Stufe; § 15 KI-MIG 50.000 €; Beispiel 60.000 € | – | realistische Risiken: DSGVO, UWG, AGG |
@@ -167,7 +167,7 @@ Vorlagen 07 (Beschäftigte/Betriebsrat), 08 (Vorfall-Protokoll), 09 (Fahrplan) w
 
 ## ABSCHLUSS (25 min, Folien 42–47)
 
-- **Fahrplan (42):** Jetzt / bis Ende 2026 / 2027 – Vorlage 09 als Hausaufgabe; Aufwandsschätzung.
+- **Fahrplan (42):** Jetzt / nächste drei Monate / 2027 – Vorlage 09 als Hausaufgabe; Aufwandsschätzung.
 - **Checkliste (43):** 5 Pflichten heute, 5 Vorbereitungen; Badges Pflicht/Empfehlung.
 - **Ressourcen (44):** klickbare Karten (BNetzA, eRecht24, ai-act-law.eu, Mittelstand-Digital, KI-Campus, DSK, Bitkom, GDD, Kommission).
 - **FAQ (45), Kernbotschaften (46), Danke (47):** 48-Stunden-Runde; Erwartungen vom Flipchart abgleichen.
@@ -204,7 +204,7 @@ Vorlagen 07 (Beschäftigte/Betriebsrat), 08 (Vorfall-Protokoll), 09 (Fahrplan) w
 
 ## HANDOUT FÜR TEILNEHMER (1 Seite)
 
-### AI Act Quick-Reference für kleine Organisationen – Stand 09/2026
+### AI Act Quick-Reference für kleine Organisationen – Stand 11/2026
 
 **Meine Rolle je System:** ☐ Betreiber ☐ Anbieter ☐ beides
 **Risikostufen meiner Systeme:** ☐ verboten ☐ hoch (ab 12/2027) ☐ Transparenz (seit 08/2026) ☐ minimal
@@ -225,4 +225,4 @@ Vorlagen 07 (Beschäftigte/Betriebsrat), 08 (Vorfall-Protokoll), 09 (Fahrplan) w
 
 ---
 
-*Quellen: `src.txt` · Rechtsstand 9. September 2026 · CC BY 4.0 · Kein Rechtsrat*
+*Quellen: `src.txt` · Rechtsstand 9. November 2026 · CC BY 4.0 · Kein Rechtsrat*

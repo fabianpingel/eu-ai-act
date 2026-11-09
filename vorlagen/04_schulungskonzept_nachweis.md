@@ -48,7 +48,7 @@ Kommission (Praxisbeispiele), IHK/HWK-Angebote vor Ort.
 
 | Datum | Maßnahme / Titel | Stufe | Inhalte (Stichworte) | Format & Dauer | Referent/in bzw. Quelle | Teilnehmende (Anzahl, Liste) | Unterlagen abgelegt unter |
 |---|---|---|---|---|---|---|---|
-| [__.__.____] | Workshop „EU AI Act für kleine Organisationen" | 1 + 2 | Rechtsstand 09/2026, Rollen, Risikostufen, Art. 4/50/26, Vorlagen | Präsenz, 4 h | [Name] | [n], Liste anbei | [Pfad] |
+| [__.__.____] | Workshop „EU AI Act für kleine Organisationen" | 1 + 2 | Rechtsstand 11/2026, Rollen, Risikostufen, Art. 4/50/26, Vorlagen | Präsenz, 4 h | [Name] | [n], Liste anbei | [Pfad] |
 | | | | | | | | |
 | | | | | | | | |
 
@@ -67,4 +67,4 @@ Kommission (Praxisbeispiele), IHK/HWK-Angebote vor Ort.
 - **Verantwortlich für Wiedervorlage:** [Name] · **Nächster Termin:** [Datum]
 
 ---
-*Vorlage aus dem Workshop „EU AI Act für kleine Organisationen" (PINGEL AI Solutions), Stand 09/2026, CC BY 4.0. Kein Rechtsrat.*
+*Vorlage aus dem Workshop „EU AI Act für kleine Organisationen" (PINGEL AI Solutions), Stand 11/2026, CC BY 4.0. Kein Rechtsrat.*

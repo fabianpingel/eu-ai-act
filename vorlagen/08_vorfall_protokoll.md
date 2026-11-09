@@ -51,4 +51,4 @@ Halluzinationen mit Außenwirkung, unerwartetes Verhalten nach Update, Sicherhei
 **Aufbewahrung:** Protokolle mindestens [3] Jahre, System-Logs mindestens 6 Monate (Art. 26 Abs. 6).
 
 ---
-*Vorlage aus dem Workshop „EU AI Act für kleine Organisationen" (PINGEL AI Solutions), Stand 09/2026, CC BY 4.0. Kein Rechtsrat.*
+*Vorlage aus dem Workshop „EU AI Act für kleine Organisationen" (PINGEL AI Solutions), Stand 11/2026, CC BY 4.0. Kein Rechtsrat.*

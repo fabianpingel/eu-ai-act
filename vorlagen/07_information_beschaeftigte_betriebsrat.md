@@ -88,4 +88,4 @@ Datenschutzhinweisen informiert (Art. 26 Abs. 11, Art. 13 DSGVO) · ☐ Aufsicht
 ☐ Dokumente im Ordner „KI-Compliance/[System]" abgelegt
 
 ---
-*Vorlage aus dem Workshop „EU AI Act für kleine Organisationen" (PINGEL AI Solutions), Stand 09/2026, CC BY 4.0. Kein Rechtsrat – Mitbestimmungsfragen arbeitsrechtlich prüfen lassen.*
+*Vorlage aus dem Workshop „EU AI Act für kleine Organisationen" (PINGEL AI Solutions), Stand 11/2026, CC BY 4.0. Kein Rechtsrat – Mitbestimmungsfragen arbeitsrechtlich prüfen lassen.*

@@ -1,13 +1,13 @@
 # Vorlagen – Hands-on-Material zum EU AI Act für kleine Organisationen
 
-**Rechtsstand:** 9. September 2026 (KI-VO 2024/1689 i. d. F. Digital Omnibus VO (EU) 2026/1744; KI-MIG vom 22.07.2026)
+**Rechtsstand:** 9. November 2026 (KI-VO 2024/1689 i. d. F. Digital Omnibus VO (EU) 2026/1744; KI-MIG vom 22.07.2026)
 **Lizenz:** CC BY 4.0 · **Kein Rechtsrat** – bei Hochrisiko-Systemen oder Anbieterrolle juristisch prüfen lassen.
 
 Jede Vorlage gibt es als **Markdown** (lesbar, versionierbar, hier im Ordner) und als **DOCX** bzw. **XLSX**
 zum direkten Ausfüllen (`docx/`, `xlsx/`). Die Office-Dateien werden aus den Markdown-Definitionen erzeugt:
 
 ```powershell
-python tools/build_vorlagen.py      # erzeugt vorlagen/docx/*.docx und vorlagen/xlsx/*.xlsx
+uv run --with python-docx --with openpyxl --with fonttools --with brotli python tools/build_vorlagen.py
 ```
 
 ## Übersicht und Einsatz im Workshop
@@ -29,7 +29,7 @@ python tools/build_vorlagen.py      # erzeugt vorlagen/docx/*.docx und vorlagen/
 1. **Woche 1:** Inventar (01) → Rollen-/Risiko-Check (02) für jedes Tool → Verbots-Check abhaken.
 2. **Woche 2–4:** Richtlinie (03) anpassen, kommunizieren, Kenntnisnahme sammeln → Schulungsnachweis (04) für den Workshop ablegen.
 3. **Woche 2–4:** Transparenz-Bausteine (05) für Chatbot/Deepfakes/öffentliche Texte einsetzen – diese Pflichten gelten bereits.
-4. **Bis Ende 2026:** Anbieter-Fragebogen (06) an alle Tool-Anbieter, besonders HR/Bildung/Scoring.
+4. **In den nächsten drei Monaten:** Anbieter-Fragebogen (06) an alle Tool-Anbieter, besonders HR/Bildung/Scoring.
 5. **2027:** Hochrisiko-Vorbereitung mit 07 und 08; Fahrplan (09) vierteljährlich abhaken.
 
 ## Grundsätze der Vorlagen
