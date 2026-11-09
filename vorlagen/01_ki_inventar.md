@@ -51,5 +51,5 @@ Framework oder Standardvertragsklauseln? Enterprise-/Team-Tarif mit Trainings-Op
 - Verknüpfung: Verarbeitungsverzeichnis (Art. 30 DSGVO) – gleiche Tools dort ergänzen
 
 ---
-*Vorlage aus dem Workshop „EU AI Act für kleine Organisationen" (PINGEL AI Solutions), Stand 09/2026,
+*Vorlage aus dem Workshop „EU AI Act für kleine Organisationen" (PINGEL AI Solutions), Stand 11/2026,
 CC BY 4.0. Kein Rechtsrat – bei Hochrisiko-Systemen oder Anbieterrolle juristisch prüfen lassen.*

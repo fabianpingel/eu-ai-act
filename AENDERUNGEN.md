@@ -1,5 +1,36 @@
 # Änderungsprotokoll
 
+## 2026-11-09 – Aktualitätsprüfung (Rechtsstand 9. November 2026) und Layout der Vorlagen
+
+### Rechtsstand
+
+- **Harmonisierte Normen:** EN 18286:2026 (Qualitätsmanagementsystem, Art. 17) seit 19.10.2026 im Amtsblatt
+  (Durchführungsbeschluss (EU) 2026/2274) – erste Konformitätsvermutung nach Art. 40, nur für Art. 17. Bisher hieß
+  es „keine Normen im Amtsblatt“. Geändert in Recherche, Folie 30, Sprechtext, Rezept, Glossar.
+- **Leitlinien Art. 50:** seit 20.07.2026 **final** (C(2026) 5054); Praxiskodex Kennzeichnung von Kommission und
+  KI-Gremium als angemessen bestätigt. Das Material nannte nur den Entwurf vom 08.05.2026 (Fehler im Stand 09/2026).
+- **Leitlinien Art. 6:** weiterhin nur Entwurf – unverändert, Stand-Angaben aktualisiert.
+- **Mittelstand-Digital:** neues Netzwerk ab 01.01.2027 (sechs überregionale Zentren, ab Mai 2027 elf
+  Themenzentren; BMWE 20.10.2026).
+- **KI-Reallabor (§ 13 KI-MIG):** Antragsverfahren weiterhin nicht veröffentlicht.
+- **Zeitbezüge:** „15 Monate bis Hochrisiko“ → „gut ein Jahr“; Fahrplan-Phasen „September/Oktober 2026“ und
+  „bis Ende 2026“ → „Sofort“ und „nächste drei Monate“ (Vorlage 09, Folien 10 und 42, Sprechtext, Rezept).
+- Geprüft und unverändert: Übergangsfrist Art. 50 Abs. 2 für Altsysteme bis 02.12.2026 (IP/26/1653),
+  Anhang III ab 02.12.2027, Anhang I ab 02.08.2028.
+- `src.txt`: drei neue Quellen (Leitlinien Art. 50, EN 18286, BMWE-Pressemitteilung).
+
+### Layout der Vorlagen (DOCX/XLSX)
+
+- Schriften Red Hat Display (Überschriften) und Red Hat Text (Fließtext) statt Calibri, als statische Schnitte
+  aus `fonts/` in jede DOCX eingebettet; Theme-Schriften ebenfalls umgestellt.
+- Kopfzeile mit Wortmarke und Dokumenttitel, Linie in Signalblau; Fußzeile mit „Seite X von Y“.
+- Farben nach `brand/tokens.css`: Hinweiskästen in Akzent-Tönung statt Beige, feine Tabellenlinien in Rahmenfarbe,
+  Zebrastreifen, Tabellenkopf wiederholt sich beim Seitenumbruch.
+- Spaltenbreiten nach Inhalt statt gleich breit; KI-Inventar (14 Spalten) im Querformat; Dokumentsprache Deutsch
+  mit Silbentrennung; Word-Format aktuell (kein „Kompatibilitätsmodus“).
+- **Fehler behoben:** Leere Tabellenzeilen (`| | |`) wurden als Trennzeile verworfen – Kopfdaten-Tabellen bekamen
+  dadurch einen Navy-Kopf und die leeren Ausfüllzeilen (z. B. Vorlage 04) fehlten in den DOCX ganz.
+
 ## 2026-09-09 (2) – Einsteiger-Teil ergänzt
 
 Rückmeldung: Für Neueinsteiger fehlten Sinn und Zweck des Gesetzes, Begriffserklärungen (z. B. KI-MIG) und eine

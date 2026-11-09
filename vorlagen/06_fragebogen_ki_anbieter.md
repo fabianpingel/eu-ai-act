@@ -73,4 +73,4 @@ Vielen Dank. Rückfragen: [Name, Kontakt]
 **Entscheidung:** ☐ freigeben ☐ freigeben mit Auflagen: [ ] ☐ nicht einsetzen · **Datum/Name:** [ ] · **Ins Inventar übertragen:** ☐
 
 ---
-*Vorlage aus dem Workshop „EU AI Act für kleine Organisationen" (PINGEL AI Solutions), Stand 09/2026, CC BY 4.0. Kein Rechtsrat.*
+*Vorlage aus dem Workshop „EU AI Act für kleine Organisationen" (PINGEL AI Solutions), Stand 11/2026, CC BY 4.0. Kein Rechtsrat.*

@@ -1,6 +1,6 @@
 # EU AI Act für kleine Organisationen – Sprechtext & Moderationsnotizen
 
-**Für Workshop-Leitung / Präsentator** · **Rechtsstand: 9. September 2026** · passend zu `praesentation.html` (47 Folien)
+**Für Workshop-Leitung / Präsentator** · **Rechtsstand: 9. November 2026** · passend zu `praesentation.html` (47 Folien)
 **Tonalität:** pragmatisch, direkt, „ihr/wir" – kein Juristendeutsch. Entlasten, wo das Gesetz entlastet; klar sein, wo es Pflichten gibt.
 
 ---
@@ -27,7 +27,7 @@
 Auf die drei Zahlen zeigen:
 > „Februar 2025: Verbote und die Schulungspflicht. August 2026 – also vor fünf Wochen: die Transparenzpflichten, Chatbot-Hinweis und Kennzeichnung. Dezember 2027: die großen Hochrisiko-Pflichten, zum Beispiel für KI im Bewerbungsprozess. Das war ursprünglich August 2026 – wurde im Sommer verschoben. Dazu gleich mehr."
 
-> „Der Rechtsstand ist der 9. September 2026. Das ist wichtig, weil sich im Juli 2026 einiges geändert hat. Wenn ihr Artikel von Anfang 2026 lest, stimmen die Daten nicht mehr."
+> „Der Rechtsstand ist der 9. November 2026. Das ist wichtig, weil sich im Juli 2026 einiges geändert hat. Wenn ihr Artikel von Anfang 2026 lest, stimmen die Daten nicht mehr."
 
 ---
 
@@ -171,11 +171,11 @@ Chronologisch, die drei grünen kurz, dann:
 
 > „2. Dezember 2026: Übergangsfristen enden – vor allem für Anbieter, die ihre Systeme technisch kennzeichnen müssen. Für euch als Nutzer ändert sich da nichts."
 
-> „2. Dezember 2027 – rot: Hochrisiko nach Anhang III. Das ist euer Planungshorizont, wenn ihr KI in HR, Bildung oder Kreditentscheidungen habt. 15 Monate."
+> „2. Dezember 2027 – rot: Hochrisiko nach Anhang III. Das ist euer Planungshorizont, wenn ihr KI in HR, Bildung oder Kreditentscheidungen habt. Gut ein Jahr."
 
 > „August 2028: KI in Produkten – Maschinen, Medizinprodukte. Für Hersteller."
 
-Merksatz wiederholen: „Drei Dinge gelten heute. Hochrisiko in 15 Monaten. Jetzt vorbereiten, nicht panisch umsetzen."
+Merksatz wiederholen: „Drei Dinge gelten heute. Hochrisiko in gut einem Jahr. Jetzt vorbereiten, nicht panisch umsetzen."
 
 ---
 
@@ -462,7 +462,7 @@ Rechts: „Vereine und Bildungsträger sind voll im Anwendungsbereich – ehrena
 
 Erleichterungen: „Vereinfachtes Doku-Formular, das notifizierte Stellen akzeptieren müssen. Proportionales QM. Vorrang im Reallabor der Bundesnetzagentur – Verfahren kommt 2027. Niedrigere Bußgeldobergrenze."
 
-Realität: „Stand heute keine harmonisierten Normen im Amtsblatt, Leitlinien zu Artikel 6 nur Entwurf. Wer 2027 liefern will, orientiert sich an den Normentwürfen und ISO/IEC 42001 – und holt sich Rechtsrat. Das ist der eine Fall, wo ich einen Anwalt empfehle."
+Realität: „Stand heute genau eine harmonisierte Norm im Amtsblatt, EN 18286 für das Qualitätsmanagement – seit 19. Oktober 2026. Für alles andere noch keine, Leitlinien zu Artikel 6 nur Entwurf. Wer 2027 liefern will, orientiert sich an den Normentwürfen und ISO/IEC 42001 – und holt sich Rechtsrat. Das ist der eine Fall, wo ich einen Anwalt empfehle."
 
 ---
 
@@ -602,7 +602,7 @@ Zwölf Fragen zügig. „Nehmt das Tool mit dem größten Fragezeichen. Markiert
 
 **Redezeit: ~5 Minuten**
 
-Drei Spalten: „Jetzt – das, was heute gilt, plus Inventar und Richtlinie. Bis Ende 2026 – Anbieter befragen, Hochrisiko-Kandidaten identifizieren, Stufe-2-Schulung, Betriebsrat. 2027 – je Hochrisiko-System die Artikel-26-Punkte, öffentliche Stellen die Folgenabschätzung, Anbieter die Konformität."
+Drei Spalten: „Jetzt – das, was heute gilt, plus Inventar und Richtlinie. Nächste drei Monate – Anbieter befragen, Hochrisiko-Kandidaten identifizieren, Stufe-2-Schulung, Betriebsrat. 2027 – je Hochrisiko-System die Artikel-26-Punkte, öffentliche Stellen die Folgenabschätzung, Anbieter die Konformität."
 
 Aufwand: „Typisches KMU ohne Hochrisiko: ein Arbeitstag verteilt auf zwei Wochen, dann eine Stunde pro Quartal. Mit HR-Tool zwei bis drei Tage mehr in 2027. Das ist machbar."
 
@@ -666,7 +666,7 @@ Erwartungen vom Flipchart abgleichen. Offene Fragen.
 > „Fragt nach der schriftlichen Begründung: Nutzt er die Ausnahme nach Artikel 6 Absatz 3? Ist das dokumentiert und registriert? Erstellt das Tool Profile – Scores, Rankings? Dann ist es Hochrisiko, egal was der Vertrieb sagt. Vorlage 06, Fragen 2 und 3."
 
 ### „Wir warten auf die Normen und finalen Leitlinien."
-> „Für Hochrisiko-Anbieter nachvollziehbar – aber auch die sollten jetzt mit den Normentwürfen arbeiten, sonst fehlen 2027 fünfzehn Monate. Für Betreiber sind die Pflichten heute klar genug, da helfen keine Normen weiter."
+> „Für Hochrisiko-Anbieter nachvollziehbar – aber auch die sollten jetzt mit den Normentwürfen arbeiten, sonst fehlt 2027 ein ganzes Jahr. Für das Qualitätsmanagement gibt es seit Oktober 2026 sogar schon eine harmonisierte Norm, EN 18286. Für Betreiber sind die Pflichten heute klar genug, da helfen keine Normen weiter."
 
 ### „Der Betriebsrat blockiert jedes KI-Tool."
 > „Meist aus Informationsmangel. Die KI-VO gibt ihm bei Hochrisiko ein Informationsrecht, das Betriebsverfassungsgesetz bei Kontroll-Tools echte Mitbestimmung. Bindet ihn früh ein – Vorlage 07 – und nutzt die Bitkom-Eckpfeiler für eine Betriebsvereinbarung. Ein transparenter Prozess ist schneller als ein Konflikt."
@@ -680,4 +680,4 @@ Erwartungen vom Flipchart abgleichen. Offene Fragen.
 ---
 
 *Diese Notizen sind ein Leitfaden – frei sprechen, nicht ablesen.*
-*Rechtsstand 9. September 2026 · VO (EU) 2024/1689 i. d. F. VO (EU) 2026/1744 · KI-MIG · Kein Rechtsrat.*
+*Rechtsstand 9. November 2026 · VO (EU) 2024/1689 i. d. F. VO (EU) 2026/1744 · KI-MIG · Kein Rechtsrat.*

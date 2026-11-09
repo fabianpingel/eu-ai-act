@@ -1,6 +1,6 @@
 # Glossar – EU AI Act für Einsteiger
 
-**Rechtsstand:** 9. September 2026 · zum Mitnehmen als Handout · Artikelangaben beziehen sich auf die KI-VO (VO (EU) 2024/1689 i. d. F. VO (EU) 2026/1744)
+**Rechtsstand:** 9. November 2026 · zum Mitnehmen als Handout · Artikelangaben beziehen sich auf die KI-VO (VO (EU) 2024/1689 i. d. F. VO (EU) 2026/1744)
 
 | Begriff | Erklärung in einfachen Worten | Fundstelle |
 |---|---|---|
@@ -21,7 +21,7 @@
 | **EU-Datenbank** | Öffentliches Online-Register der Kommission für Hochrisiko-KI-Systeme. Registrieren müssen Anbieter (auch bei Nutzung der Ausnahme nach Art. 6 Abs. 3) und Behörden als Betreiber – **nicht** private Betreiber. | Art. 49, 71 |
 | **GPAI-Modell** (General Purpose AI) | KI-Modell mit allgemeinem Verwendungszweck – GPT, Gemini, Claude, Llama, Mistral. Pflichten (Dokumentation, Urheberrecht, Trainingsdaten-Zusammenfassung) treffen den Modellhersteller. Wer das Modell per Schnittstelle nutzt oder leicht anpasst, wird nicht zum GPAI-Anbieter. | Art. 3 Nr. 63, 51–56 |
 | **Grundrechte-Folgenabschätzung (FRIA)** | Vor dem Einsatz eines Hochrisiko-Systems: Analyse der Auswirkungen auf Betroffene, Maßnahmen, Meldung an die Behörde. Pflicht **nur** für öffentliche Stellen, private Erbringer öffentlicher Dienste sowie Kreditwürdigkeits- und Lebens-/Krankenversicherungs-Systeme. | Art. 27 |
-| **Harmonisierte Norm** | Technische Norm (CEN/CENELEC), die im EU-Amtsblatt veröffentlicht ist. Wer sie einhält, gilt als konform. Stand 09/2026: für den AI Act noch keine veröffentlicht. | Art. 40 |
+| **Harmonisierte Norm** | Technische Norm (CEN/CENELEC), die im EU-Amtsblatt veröffentlicht ist. Wer sie einhält, gilt als konform. Stand 11/2026: erste Norm EN 18286 (Qualitätsmanagement, Art. 17) seit 19.10.2026 im Amtsblatt; weitere folgen. | Art. 40 |
 | **Hochrisiko-KI-System** | KI in Anhang I (Produkte) oder Anhang III (sensible Bereiche) – nicht verboten, aber mit strengen Anforderungen für Anbieter und klaren Pflichten für Betreiber. Nicht jedes Tool im HR-Bereich ist Hochrisiko: Ausnahme Art. 6 Abs. 3, außer bei Profiling. | Art. 6 |
 | **KI-Kompetenz** (AI literacy) | Fähigkeiten, Wissen und Verständnis, um KI sachkundig einzusetzen und Chancen wie Risiken zu kennen. Anbieter und Betreiber müssen Maßnahmen ergreifen, sie zu fördern – ohne Zertifikat, festes Format oder garantiertes Niveau. | Art. 3 Nr. 56, Art. 4 |
 | **KI-MIG** | *KI-Marktüberwachungs- und Innovationsförderungs-Gesetz* vom 22.07.2026 (BGBl. 2026 I Nr. 223), in Kraft seit 29.07.2026. Deutsches Gesetz, das festlegt, **welche Behörde** den AI Act überwacht (Bundesnetzagentur, BaFin, Landesbehörden), das KI-Reallabor einrichtet und nationale Bußgelder bis 50.000 € für wenige Spezialfälle vorsieht. **Schafft keine neuen Pflichten** für Unternehmen. | gesetze-im-internet.de/ki-mig |

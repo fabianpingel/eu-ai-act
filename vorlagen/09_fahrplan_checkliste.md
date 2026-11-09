@@ -2,8 +2,8 @@
 
 | | |
 |---|---|
-| **Zweck** | Alle Pflichten und sinnvollen Maßnahmen als abhakbarer Fahrplan – nach Rolle und Zeitraum. Ergebnis des Workshops, Hausaufgabe für die nächsten 15 Monate. |
-| **Rechtsstand** | 9. September 2026 (KI-VO i. d. F. Digital Omnibus VO (EU) 2026/1744; KI-MIG) |
+| **Zweck** | Alle Pflichten und sinnvollen Maßnahmen als abhakbarer Fahrplan – nach Rolle und Zeitraum. Ergebnis des Workshops, Hausaufgabe bis zum Hochrisiko-Stichtag 02.12.2027. |
+| **Rechtsstand** | 9. November 2026 (KI-VO i. d. F. Digital Omnibus VO (EU) 2026/1744; KI-MIG) |
 | **Wer** | Geschäftsführung mit Ansprechperson KI |
 | **Wiedervorlage** | vierteljährlich; nächster Termin: [ ] |
 
@@ -12,7 +12,7 @@ Erbringer öffentlicher Dienste. Was nicht zutrifft, streichen. Pflicht = gesetz
 
 ---
 
-## Phase 1 – Jetzt (September/Oktober 2026): Pflichten, die bereits gelten
+## Phase 1 – Sofort: Pflichten, die bereits gelten
 
 | ☐ | Maßnahme | Rolle | Pflicht/Empf. | Grundlage | Vorlage | Bis | Verantwortlich |
 |---|---|---|---|---|---|---|---|
@@ -29,7 +29,7 @@ Erbringer öffentlicher Dienste. Was nicht zutrifft, streichen. Pflicht = gesetz
 | ☐ | Meldeweg für KI-Probleme einrichten | B A Ö | Empf. | Art. 26 Abs. 5 (ab 12/2027) | 08 | [ ] | [ ] |
 | ☐ | **Anbieter:** eigene KI-Systeme mit Interaktion → KI-Hinweis; generative Systeme → maschinenlesbare Kennzeichnung (Altsysteme bis 02.12.2026) | A | **Pflicht** | Art. 50 Abs. 1, 2 | 05 G | 02.12.2026 | [ ] |
 
-## Phase 2 – bis Ende 2026
+## Phase 2 – nächste drei Monate
 
 | ☐ | Maßnahme | Rolle | Pflicht/Empf. | Grundlage | Vorlage | Bis | Verantwortlich |
 |---|---|---|---|---|---|---|---|
@@ -39,7 +39,7 @@ Erbringer öffentlicher Dienste. Was nicht zutrifft, streichen. Pflicht = gesetz
 | ☐ | Betriebsrat/Personalrat frühzeitig zu KI-Einsatz informieren; Bedarf Betriebsvereinbarung (§ 87 BetrVG) klären | B Ö | Pflicht nach BetrVG, soweit einschlägig | § 87 BetrVG | 07 | [ ] | [ ] |
 | ☐ | **Anbieter:** Kennzeichnungstechnik für Altsysteme fertig (Praxiskodex) | A | **Pflicht** | Art. 50 Abs. 2 | 05 G | 02.12.2026 | [ ] |
 | ☐ | **Anbieter generativer Bild-KI:** technische Schutzmaßnahmen gegen Erzeugung von CSAM/Intimbildern | A | **Pflicht** | Art. 5 (neu) | – | 02.12.2026 | [ ] |
-| ☐ | Inventar und Richtlinie erste Überprüfung | B A Ö | Empf. | – | 01, 03 | 12/2026 | [ ] |
+| ☐ | Inventar und Richtlinie erste Überprüfung | B A Ö | Empf. | – | 01, 03 | [ ] | [ ] |
 
 ## Phase 3 – 2027: Vorbereitung Hochrisiko (Anhang III ab 02.12.2027)
 
@@ -72,4 +72,4 @@ eRecht24 KI-Rubrik: https://www.e-recht24.de/ki/ · Mittelstand-Digital Zentren 
 Gesetzestexte: https://ai-act-law.eu/de/ · KI-MIG: https://www.gesetze-im-internet.de/ki-mig/
 
 ---
-*Vorlage aus dem Workshop „EU AI Act für kleine Organisationen" (PINGEL AI Solutions), Stand 09/2026, CC BY 4.0. Kein Rechtsrat.*
+*Vorlage aus dem Workshop „EU AI Act für kleine Organisationen" (PINGEL AI Solutions), Stand 11/2026, CC BY 4.0. Kein Rechtsrat.*

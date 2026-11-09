@@ -90,7 +90,7 @@ Macht das System eines der Folgenden? (Alle Merkmale eines Verbots müssen kumul
 **Ergebnis Hochrisiko:** ☐ nein ☐ ja, Anhang III (Betreiberpflichten Art. 26 ab 02.12.2027) ☐ ja, Anhang I (ab 02.08.2028) ☐ unklar → Anbieter fragen (Vorlage 06)
 
 *Die Einstufung nach Art. 6 Abs. 3 trifft und dokumentiert der Anbieter (Art. 6 Abs. 4). Kommissions-Leitlinien liegen
-Stand 09/2026 nur als Entwurf vor.*
+Stand 11/2026 weiterhin nur als Entwurf vor.*
 
 ## Teil E – Transparenz-Check (Art. 50, seit 02.08.2026)
 
@@ -114,5 +114,5 @@ Stand 09/2026 nur als Entwurf vor.*
 Datum, Unterschrift: ____________________
 
 ---
-*Vorlage aus dem Workshop „EU AI Act für kleine Organisationen" (PINGEL AI Solutions), Stand 09/2026, CC BY 4.0.
+*Vorlage aus dem Workshop „EU AI Act für kleine Organisationen" (PINGEL AI Solutions), Stand 11/2026, CC BY 4.0.
 Kein Rechtsrat – bei „hoch" oder „Anbieter" juristisch prüfen lassen.*
