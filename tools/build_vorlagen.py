@@ -31,7 +31,7 @@ OUT_DOCX = SRC / "docx"
 OUT_XLSX = SRC / "xlsx"
 
 NAVY = RGBColor(0x18, 0x21, 0x45)
-GOLD = RGBColor(0xC4, 0x90, 0x2A)
+ACCENT = RGBColor(0x2B, 0x5F, 0xE8)  # Signalblau, wie fabian-pingel.de
 GREY = RGBColor(0x5A, 0x6A, 0x8A)
 FOOTER = "EU AI Act für kleine Organisationen · PINGEL AI Solutions · Stand 09/2026 · CC BY 4.0 · Kein Rechtsrat"
 
@@ -119,7 +119,7 @@ def md_to_docx(md_path: Path, out_path: Path) -> None:
     for lvl, size in ((1, 18), (2, 13.5), (3, 11.5)):
         hs = doc.styles[f"Heading {lvl}"]
         hs.font.name = "Calibri"; hs.font.size = Pt(size); hs.font.bold = True
-        hs.font.color.rgb = NAVY if lvl < 3 else GOLD
+        hs.font.color.rgb = NAVY if lvl < 3 else ACCENT
 
     i = 0
     para_buf: list[str] = []

@@ -25,6 +25,7 @@ Rechtsabteilung. Mit Hands-on-Vorlagen, damit die Pflichten nicht nur verstanden
 | [`src.txt`](src.txt) | Kategorisiertes Quellenverzeichnis (~100 URLs mit Stand-Angabe) |
 | [`AENDERUNGEN.md`](AENDERUNGEN.md) | Änderungsprotokoll: Rechtsänderungen, korrigierte Fehler, offene Punkte |
 | `Logo.svg`, `Original.svg` | Grafik-Assets |
+| `fonts/` | Schriften Red Hat Display/Text (lokal eingebunden, SIL Open Font License – siehe `fonts/OFL-RedHat.txt`) |
 
 ---
 
